@@ -1,0 +1,3122 @@
+{
+  "database/image_1.jpg": {
+    "index": 0,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.4375,
+    "windows": [
+      true,
+      true,
+      true
+    ],
+    "floor_ratio": 0.22637939453125
+  },
+  "database/image_10.jpg": {
+    "index": 1,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.25579833984375
+  },
+  "database/image_100.jpg": {
+    "index": 2,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5078125,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.2442626953125
+  },
+  "database/image_101.jpg": {
+    "index": 3,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.453125,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.25830078125
+  },
+  "database/image_102.jpg": {
+    "index": 4,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.59375,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.26507568359375
+  },
+  "database/image_103.jpg": {
+    "index": 5,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.484375,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.261474609375
+  },
+  "database/image_104.jpg": {
+    "index": 6,
+    "room_type": "Corner",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.46875,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.2589111328125
+  },
+  "database/image_105.jpg": {
+    "index": 7,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.4765625,
+    "windows": [
+      false,
+      false,
+      false
+    ],
+    "floor_ratio": 0.2110595703125
+  },
+  "database/image_106.jpg": {
+    "index": 8,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.453125,
+    "windows": [
+      false,
+      false,
+      true
+    ],
+    "floor_ratio": 0.31048583984375
+  },
+  "database/image_107.jpg": {
+    "index": 9,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5078125,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.31201171875
+  },
+  "database/image_108.jpg": {
+    "index": 10,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5078125,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.29541015625
+  },
+  "database/image_109.jpg": {
+    "index": 11,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.4453125,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.206298828125
+  },
+  "database/image_11.jpg": {
+    "index": 12,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.59375,
+    "windows": [
+      false,
+      false,
+      true
+    ],
+    "floor_ratio": 0.29290771484375
+  },
+  "database/image_110.jpg": {
+    "index": 13,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.453125,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.1561279296875
+  },
+  "database/image_111.jpg": {
+    "index": 14,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.578125,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.2520751953125
+  },
+  "database/image_112.jpg": {
+    "index": 15,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.390625,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.2784423828125
+  },
+  "database/image_113.jpg": {
+    "index": 16,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.6640625,
+    "windows": [
+      true,
+      true,
+      true
+    ],
+    "floor_ratio": 0.2738037109375
+  },
+  "database/image_114.jpg": {
+    "index": 17,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.390625,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.27203369140625
+  },
+  "database/image_115.jpg": {
+    "index": 18,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.34375,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.271240234375
+  },
+  "database/image_116.jpg": {
+    "index": 19,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5390625,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.21533203125
+  },
+  "database/image_117.jpg": {
+    "index": 20,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.5546875,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.2822265625
+  },
+  "database/image_118.jpg": {
+    "index": 21,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.4296875,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.26959228515625
+  },
+  "database/image_119.jpg": {
+    "index": 22,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.1524658203125
+  },
+  "database/image_12.jpg": {
+    "index": 23,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.53125,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.31646728515625
+  },
+  "database/image_120.jpg": {
+    "index": 24,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.390625,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.20391845703125
+  },
+  "database/image_121.jpg": {
+    "index": 25,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.375,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.30682373046875
+  },
+  "database/image_122.jpg": {
+    "index": 26,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.453125,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.18524169921875
+  },
+  "database/image_123.jpg": {
+    "index": 27,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.4375,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.07269287109375
+  },
+  "database/image_124.jpg": {
+    "index": 28,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5078125,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.19000244140625
+  },
+  "database/image_125.jpg": {
+    "index": 29,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.28125,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.173583984375
+  },
+  "database/image_126.jpg": {
+    "index": 30,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5234375,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.29412841796875
+  },
+  "database/image_127.jpg": {
+    "index": 31,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.4453125,
+    "windows": [
+      false,
+      false,
+      false
+    ],
+    "floor_ratio": 0.23583984375
+  },
+  "database/image_128.jpg": {
+    "index": 32,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.484375,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.242431640625
+  },
+  "database/image_129.jpg": {
+    "index": 33,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.46875,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.32733154296875
+  },
+  "database/image_13.jpg": {
+    "index": 34,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.5625,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.30908203125
+  },
+  "database/image_130.jpg": {
+    "index": 35,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.484375,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.18133544921875
+  },
+  "database/image_131.jpg": {
+    "index": 36,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.5546875,
+    "windows": [
+      true,
+      true,
+      true
+    ],
+    "floor_ratio": 0.2266845703125
+  },
+  "database/image_132.jpg": {
+    "index": 37,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.484375,
+    "windows": [
+      false,
+      false,
+      false
+    ],
+    "floor_ratio": 0.23175048828125
+  },
+  "database/image_133.jpg": {
+    "index": 38,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.4609375,
+    "windows": [
+      false,
+      false,
+      true
+    ],
+    "floor_ratio": 0.23187255859375
+  },
+  "database/image_134.jpg": {
+    "index": 39,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.46875,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.30169677734375
+  },
+  "database/image_135.jpg": {
+    "index": 40,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.12506103515625
+  },
+  "database/image_136.jpg": {
+    "index": 41,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5078125,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.1458740234375
+  },
+  "database/image_137.jpg": {
+    "index": 42,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.421875,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.25189208984375
+  },
+  "database/image_138.jpg": {
+    "index": 43,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.8984375,
+    "windows": [
+      false,
+      false,
+      false
+    ],
+    "floor_ratio": 0.32000732421875
+  },
+  "database/image_139.jpg": {
+    "index": 44,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.3671875,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.321044921875
+  },
+  "database/image_14.jpg": {
+    "index": 45,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.421875,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.275390625
+  },
+  "database/image_140.jpg": {
+    "index": 46,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.484375,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.25811767578125
+  },
+  "database/image_141.jpg": {
+    "index": 47,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.390625,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.29461669921875
+  },
+  "database/image_142.jpg": {
+    "index": 48,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.4453125,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.31689453125
+  },
+  "database/image_143.jpg": {
+    "index": 49,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.453125,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.3074951171875
+  },
+  "database/image_144.jpg": {
+    "index": 50,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.5625,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.273681640625
+  },
+  "database/image_145.jpg": {
+    "index": 51,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.546875,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.26483154296875
+  },
+  "database/image_146.jpg": {
+    "index": 52,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.328125,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.29010009765625
+  },
+  "database/image_147.jpg": {
+    "index": 53,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.296875,
+    "windows": [
+      true,
+      true,
+      true
+    ],
+    "floor_ratio": 0.2509765625
+  },
+  "database/image_148.jpg": {
+    "index": 54,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.421875,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.2764892578125
+  },
+  "database/image_149.jpg": {
+    "index": 55,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.546875,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.24652099609375
+  },
+  "database/image_15.jpg": {
+    "index": 56,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.4375,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.265380859375
+  },
+  "database/image_150.jpg": {
+    "index": 57,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.4453125,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.19732666015625
+  },
+  "database/image_151.jpg": {
+    "index": 58,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.4296875,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.27252197265625
+  },
+  "database/image_152.jpg": {
+    "index": 59,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.578125,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.30230712890625
+  },
+  "database/image_153.jpg": {
+    "index": 60,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5234375,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.1553955078125
+  },
+  "database/image_154.jpg": {
+    "index": 61,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.546875,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.28875732421875
+  },
+  "database/image_155.jpg": {
+    "index": 62,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.4609375,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.22674560546875
+  },
+  "database/image_156.jpg": {
+    "index": 63,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.4609375,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.21966552734375
+  },
+  "database/image_157.jpg": {
+    "index": 64,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.5859375,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.19439697265625
+  },
+  "database/image_158.jpg": {
+    "index": 65,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.453125,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.19757080078125
+  },
+  "database/image_159.jpg": {
+    "index": 66,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.4375,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.2996826171875
+  },
+  "database/image_16.jpg": {
+    "index": 67,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.6640625,
+    "windows": [
+      false,
+      false,
+      true
+    ],
+    "floor_ratio": 0.28717041015625
+  },
+  "database/image_160.jpg": {
+    "index": 68,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.5703125,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.25079345703125
+  },
+  "database/image_161.jpg": {
+    "index": 69,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.484375,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.24847412109375
+  },
+  "database/image_162.jpg": {
+    "index": 70,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.4296875,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.22015380859375
+  },
+  "database/image_163.jpg": {
+    "index": 71,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.484375,
+    "windows": [
+      false,
+      false,
+      true
+    ],
+    "floor_ratio": 0.2459716796875
+  },
+  "database/image_164.jpg": {
+    "index": 72,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.46875,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.19512939453125
+  },
+  "database/image_165.jpg": {
+    "index": 73,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.4296875,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.26568603515625
+  },
+  "database/image_166.jpg": {
+    "index": 74,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.421875,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.24810791015625
+  },
+  "database/image_167.jpg": {
+    "index": 75,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.2332763671875
+  },
+  "database/image_168.jpg": {
+    "index": 76,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.546875,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.16180419921875
+  },
+  "database/image_169.jpg": {
+    "index": 77,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.4921875,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.263671875
+  },
+  "database/image_17.jpg": {
+    "index": 78,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.6640625,
+    "windows": [
+      true,
+      true,
+      true
+    ],
+    "floor_ratio": 0.250732421875
+  },
+  "database/image_170.jpg": {
+    "index": 79,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.4765625,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.27618408203125
+  },
+  "database/image_171.jpg": {
+    "index": 80,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.515625,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.245849609375
+  },
+  "database/image_172.jpg": {
+    "index": 81,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.46875,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.28350830078125
+  },
+  "database/image_173.jpg": {
+    "index": 82,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.375,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.24041748046875
+  },
+  "database/image_174.jpg": {
+    "index": 83,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.46875,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.28277587890625
+  },
+  "database/image_175.jpg": {
+    "index": 84,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5390625,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.16827392578125
+  },
+  "database/image_176.jpg": {
+    "index": 85,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.4765625,
+    "windows": [
+      true,
+      false,
+      true
+    ],
+    "floor_ratio": 0.25238037109375
+  },
+  "database/image_177.jpg": {
+    "index": 86,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.46875,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.23797607421875
+  },
+  "database/image_178.jpg": {
+    "index": 87,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.53125,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.28448486328125
+  },
+  "database/image_179.jpg": {
+    "index": 88,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.4375,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.20086669921875
+  },
+  "database/image_18.jpg": {
+    "index": 89,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.546875,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.27685546875
+  },
+  "database/image_180.jpg": {
+    "index": 90,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.640625,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.23370361328125
+  },
+  "database/image_181.jpg": {
+    "index": 91,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.7578125,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.060302734375
+  },
+  "database/image_182.JPG": {
+    "index": 92,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.5546875,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.24359130859375
+  },
+  "database/image_183.jpg": {
+    "index": 93,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.4609375,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.1632080078125
+  },
+  "database/image_184.jpg": {
+    "index": 94,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.5546875,
+    "windows": [
+      false,
+      false,
+      true
+    ],
+    "floor_ratio": 0.30615234375
+  },
+  "database/image_185.jpg": {
+    "index": 95,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.4140625,
+    "windows": [
+      false,
+      false,
+      false
+    ],
+    "floor_ratio": 0.22216796875
+  },
+  "database/image_186.jpg": {
+    "index": 96,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.2470703125
+  },
+  "database/image_187.jpg": {
+    "index": 97,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.4140625,
+    "windows": [
+      true,
+      true,
+      true
+    ],
+    "floor_ratio": 0.26251220703125
+  },
+  "database/image_188.jpg": {
+    "index": 98,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5078125,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.2410888671875
+  },
+  "database/image_189.jpg": {
+    "index": 99,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5,
+    "windows": [
+      true,
+      true,
+      true
+    ],
+    "floor_ratio": 0.295654296875
+  },
+  "database/image_19.jpg": {
+    "index": 100,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.4453125,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.24658203125
+  },
+  "database/image_190.jpg": {
+    "index": 101,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.7109375,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.3572998046875
+  },
+  "database/image_191.jpg": {
+    "index": 102,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.515625,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.281982421875
+  },
+  "database/image_192.jpg": {
+    "index": 103,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.484375,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.26507568359375
+  },
+  "database/image_193.jpg": {
+    "index": 104,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.546875,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.26483154296875
+  },
+  "database/image_194.jpg": {
+    "index": 105,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.453125,
+    "windows": [
+      false,
+      false,
+      false
+    ],
+    "floor_ratio": 0.30023193359375
+  },
+  "database/image_195.jpg": {
+    "index": 106,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5390625,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.23504638671875
+  },
+  "database/image_196.jpg": {
+    "index": 107,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.421875,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.214599609375
+  },
+  "database/image_197.jpg": {
+    "index": 108,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5078125,
+    "windows": [
+      true,
+      true,
+      true
+    ],
+    "floor_ratio": 0.2637939453125
+  },
+  "database/image_198.jpg": {
+    "index": 109,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.22808837890625
+  },
+  "database/image_199.jpg": {
+    "index": 110,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.515625,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.24737548828125
+  },
+  "database/image_2.jpg": {
+    "index": 111,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.515625,
+    "windows": [
+      false,
+      false,
+      false
+    ],
+    "floor_ratio": 0.232177734375
+  },
+  "database/image_20.jpg": {
+    "index": 112,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.546875,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.197998046875
+  },
+  "database/image_200.jpg": {
+    "index": 113,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.21923828125
+  },
+  "database/image_201.jpg": {
+    "index": 114,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.5546875,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.20458984375
+  },
+  "database/image_202.jpeg": {
+    "index": 115,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.453125,
+    "windows": [
+      false,
+      false,
+      true
+    ],
+    "floor_ratio": 0.22503662109375
+  },
+  "database/image_203.jpeg": {
+    "index": 116,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.5859375,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.24090576171875
+  },
+  "database/image_204.jpg": {
+    "index": 117,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.53125,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.2169189453125
+  },
+  "database/image_205.jpg": {
+    "index": 118,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.515625,
+    "windows": [
+      false,
+      false,
+      false
+    ],
+    "floor_ratio": 0.23699951171875
+  },
+  "database/image_206.jpg": {
+    "index": 119,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.484375,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.24456787109375
+  },
+  "database/image_207.jpg": {
+    "index": 120,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.546875,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.2509765625
+  },
+  "database/image_208.jpg": {
+    "index": 121,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.4921875,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.19512939453125
+  },
+  "database/image_209.jpg": {
+    "index": 122,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.3984375,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.22509765625
+  },
+  "database/image_21.jpg": {
+    "index": 123,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.5625,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.273193359375
+  },
+  "database/image_210.jpg": {
+    "index": 124,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.421875,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.2857666015625
+  },
+  "database/image_211.jpg": {
+    "index": 125,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.40625,
+    "windows": [
+      false,
+      false,
+      true
+    ],
+    "floor_ratio": 0.2750244140625
+  },
+  "database/image_212.jpg": {
+    "index": 126,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5078125,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.25213623046875
+  },
+  "database/image_213.jpg": {
+    "index": 127,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.640625,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.24407958984375
+  },
+  "database/image_214.jpg": {
+    "index": 128,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.390625,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.210693359375
+  },
+  "database/image_215.jpg": {
+    "index": 129,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5078125,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.31109619140625
+  },
+  "database/image_216.jpg": {
+    "index": 130,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5390625,
+    "windows": [
+      false,
+      false,
+      true
+    ],
+    "floor_ratio": 0.28216552734375
+  },
+  "database/image_217.jpeg": {
+    "index": 131,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.515625,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.2095947265625
+  },
+  "database/image_218.jpg": {
+    "index": 132,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.3359375,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.26068115234375
+  },
+  "database/image_219.jpg": {
+    "index": 133,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.421875,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.17718505859375
+  },
+  "database/image_22.jpg": {
+    "index": 134,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.4140625,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.302490234375
+  },
+  "database/image_220.jpg": {
+    "index": 135,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.5703125,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.19464111328125
+  },
+  "database/image_221.jpg": {
+    "index": 136,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.5546875,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.18707275390625
+  },
+  "database/image_222.jpg": {
+    "index": 137,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5234375,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.21112060546875
+  },
+  "database/image_223.jpg": {
+    "index": 138,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.515625,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.2296142578125
+  },
+  "database/image_224.jpg": {
+    "index": 139,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5390625,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.22833251953125
+  },
+  "database/image_225.jpg": {
+    "index": 140,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.5703125,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.31488037109375
+  },
+  "database/image_226.jpg": {
+    "index": 141,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.59375,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.3094482421875
+  },
+  "database/image_227.jpg": {
+    "index": 142,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.4609375,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.1954345703125
+  },
+  "database/image_228.jpg": {
+    "index": 143,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5234375,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.29486083984375
+  },
+  "database/image_229.jpg": {
+    "index": 144,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5078125,
+    "windows": [
+      false,
+      false,
+      false
+    ],
+    "floor_ratio": 0.2757568359375
+  },
+  "database/image_23.jpg": {
+    "index": 145,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.4609375,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.1556396484375
+  },
+  "database/image_230.jpg": {
+    "index": 146,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.4765625,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.24517822265625
+  },
+  "database/image_231.jpg": {
+    "index": 147,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.53125,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.2554931640625
+  },
+  "database/image_232.jpg": {
+    "index": 148,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.3984375,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.26568603515625
+  },
+  "database/image_233.jpg": {
+    "index": 149,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.26141357421875
+  },
+  "database/image_234.jpg": {
+    "index": 150,
+    "room_type": "Corner",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.515625,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.2579345703125
+  },
+  "database/image_235.jpg": {
+    "index": 151,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.4765625,
+    "windows": [
+      false,
+      false,
+      false
+    ],
+    "floor_ratio": 0.2108154296875
+  },
+  "database/image_236.jpg": {
+    "index": 152,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5234375,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.3089599609375
+  },
+  "database/image_237.jpg": {
+    "index": 153,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.484375,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.3121337890625
+  },
+  "database/image_238.jpg": {
+    "index": 154,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.484375,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.29473876953125
+  },
+  "database/image_239.jpg": {
+    "index": 155,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5390625,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.20648193359375
+  },
+  "database/image_24.jpg": {
+    "index": 156,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.4375,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.2884521484375
+  },
+  "database/image_240.jpg": {
+    "index": 157,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5390625,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.15740966796875
+  },
+  "database/image_241.jpg": {
+    "index": 158,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.40625,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.250732421875
+  },
+  "database/image_242.jpg": {
+    "index": 159,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.6015625,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.2767333984375
+  },
+  "database/image_243.jpg": {
+    "index": 160,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.328125,
+    "windows": [
+      true,
+      true,
+      true
+    ],
+    "floor_ratio": 0.27447509765625
+  },
+  "database/image_244.jpg": {
+    "index": 161,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.59375,
+    "windows": [
+      false,
+      false,
+      true
+    ],
+    "floor_ratio": 0.2720947265625
+  },
+  "database/image_245.jpg": {
+    "index": 162,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.6484375,
+    "windows": [
+      false,
+      false,
+      true
+    ],
+    "floor_ratio": 0.27362060546875
+  },
+  "database/image_246.jpg": {
+    "index": 163,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.4453125,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.21649169921875
+  },
+  "database/image_247.jpg": {
+    "index": 164,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.4375,
+    "windows": [
+      false,
+      false,
+      true
+    ],
+    "floor_ratio": 0.28253173828125
+  },
+  "database/image_248.jpg": {
+    "index": 165,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.5546875,
+    "windows": [
+      false,
+      false,
+      true
+    ],
+    "floor_ratio": 0.2703857421875
+  },
+  "database/image_249.jpg": {
+    "index": 166,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.4921875,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.1527099609375
+  },
+  "database/image_25.jpg": {
+    "index": 167,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5234375,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.2274169921875
+  },
+  "database/image_250.jpg": {
+    "index": 168,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.6171875,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.2022705078125
+  },
+  "database/image_251.jpg": {
+    "index": 169,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.6171875,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.3056640625
+  },
+  "database/image_252.jpg": {
+    "index": 170,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.53125,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.18280029296875
+  },
+  "database/image_253.jpg": {
+    "index": 171,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.578125,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.079833984375
+  },
+  "database/image_254.jpg": {
+    "index": 172,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.4765625,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.188232421875
+  },
+  "database/image_255.jpg": {
+    "index": 173,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.7109375,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.17071533203125
+  },
+  "database/image_256.jpg": {
+    "index": 174,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.4609375,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.29254150390625
+  },
+  "database/image_257.jpg": {
+    "index": 175,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.53125,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.2366943359375
+  },
+  "database/image_258.jpg": {
+    "index": 176,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.24249267578125
+  },
+  "database/image_259.jpg": {
+    "index": 177,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5234375,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.32720947265625
+  },
+  "database/image_26.jpg": {
+    "index": 178,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5234375,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.2208251953125
+  },
+  "database/image_260.jpg": {
+    "index": 179,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.18218994140625
+  },
+  "database/image_27.jpg": {
+    "index": 180,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.40625,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.195068359375
+  },
+  "database/image_28.jpg": {
+    "index": 181,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5390625,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.1944580078125
+  },
+  "database/image_29.jpg": {
+    "index": 182,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.5546875,
+    "windows": [
+      false,
+      false,
+      true
+    ],
+    "floor_ratio": 0.2998046875
+  },
+  "database/image_3.jpg": {
+    "index": 183,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5234375,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.2315673828125
+  },
+  "database/image_30.jpg": {
+    "index": 184,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.421875,
+    "windows": [
+      false,
+      false,
+      false
+    ],
+    "floor_ratio": 0.25390625
+  },
+  "database/image_31.jpg": {
+    "index": 185,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.24737548828125
+  },
+  "database/image_32.jpg": {
+    "index": 186,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.4765625,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.219970703125
+  },
+  "database/image_33.jpg": {
+    "index": 187,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.245849609375
+  },
+  "database/image_34.jpg": {
+    "index": 188,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5078125,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.19598388671875
+  },
+  "database/image_35.jpg": {
+    "index": 189,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.5546875,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.26544189453125
+  },
+  "database/image_36.jpg": {
+    "index": 190,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.5703125,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.24713134765625
+  },
+  "database/image_37.jpg": {
+    "index": 191,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.4921875,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.23370361328125
+  },
+  "database/image_38.jpg": {
+    "index": 192,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.453125,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.1624755859375
+  },
+  "database/image_39.jpg": {
+    "index": 193,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.484375,
+    "windows": [
+      false,
+      false,
+      true
+    ],
+    "floor_ratio": 0.2633056640625
+  },
+  "database/image_4.jpg": {
+    "index": 194,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.515625,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.30206298828125
+  },
+  "database/image_40.jpg": {
+    "index": 195,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5078125,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.27532958984375
+  },
+  "database/image_41.jpg": {
+    "index": 196,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.4765625,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.24639892578125
+  },
+  "database/image_42.jpg": {
+    "index": 197,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.53125,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.27508544921875
+  },
+  "database/image_43.jpg": {
+    "index": 198,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.6171875,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.2373046875
+  },
+  "database/image_44.jpg": {
+    "index": 199,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.4765625,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.2825927734375
+  },
+  "database/image_45.jpg": {
+    "index": 200,
+    "room_type": "Corner",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.453125,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.167724609375
+  },
+  "database/image_46.jpg": {
+    "index": 201,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5078125,
+    "windows": [
+      true,
+      false,
+      true
+    ],
+    "floor_ratio": 0.25115966796875
+  },
+  "database/image_47.jpg": {
+    "index": 202,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5234375,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.238525390625
+  },
+  "database/image_48.jpg": {
+    "index": 203,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.4609375,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.2843017578125
+  },
+  "database/image_49.jpg": {
+    "index": 204,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.5546875,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.201171875
+  },
+  "database/image_5.jpg": {
+    "index": 205,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.453125,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.12481689453125
+  },
+  "database/image_50.jpg": {
+    "index": 206,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.375,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.232666015625
+  },
+  "database/image_51.jpg": {
+    "index": 207,
+    "room_type": "Corner",
+    "dominant_wall": "Right",
+    "corner_x": 0.21875,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.06170654296875
+  },
+  "database/image_52.JPG": {
+    "index": 208,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.4375,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.24407958984375
+  },
+  "database/image_53.jpg": {
+    "index": 209,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5234375,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.16278076171875
+  },
+  "database/image_54.jpg": {
+    "index": 210,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.4296875,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.30596923828125
+  },
+  "database/image_55.jpg": {
+    "index": 211,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.578125,
+    "windows": [
+      false,
+      false,
+      false
+    ],
+    "floor_ratio": 0.22412109375
+  },
+  "database/image_56.jpg": {
+    "index": 212,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.484375,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.2481689453125
+  },
+  "database/image_57.jpg": {
+    "index": 213,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.5703125,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.26171875
+  },
+  "database/image_58.jpg": {
+    "index": 214,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.46875,
+    "windows": [
+      false,
+      false,
+      true
+    ],
+    "floor_ratio": 0.242431640625
+  },
+  "database/image_59.jpg": {
+    "index": 215,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.484375,
+    "windows": [
+      true,
+      true,
+      true
+    ],
+    "floor_ratio": 0.2960205078125
+  },
+  "database/image_6.jpg": {
+    "index": 216,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.484375,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.14581298828125
+  },
+  "database/image_60.jpg": {
+    "index": 217,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.2578125,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.35760498046875
+  },
+  "database/image_61.jpg": {
+    "index": 218,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.46875,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.28094482421875
+  },
+  "database/image_62.jpg": {
+    "index": 219,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5078125,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.26495361328125
+  },
+  "database/image_63.jpg": {
+    "index": 220,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.4375,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.2657470703125
+  },
+  "database/image_64.jpg": {
+    "index": 221,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.515625,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.30023193359375
+  },
+  "database/image_65.jpg": {
+    "index": 222,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.453125,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.2344970703125
+  },
+  "database/image_66.jpg": {
+    "index": 223,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.5625,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.213623046875
+  },
+  "database/image_67.jpg": {
+    "index": 224,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.484375,
+    "windows": [
+      true,
+      true,
+      true
+    ],
+    "floor_ratio": 0.26336669921875
+  },
+  "database/image_68.jpg": {
+    "index": 225,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.4765625,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.22796630859375
+  },
+  "database/image_69.jpg": {
+    "index": 226,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.2467041015625
+  },
+  "database/image_7.jpg": {
+    "index": 227,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5390625,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.25262451171875
+  },
+  "database/image_70.jpg": {
+    "index": 228,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.4921875,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.2186279296875
+  },
+  "database/image_71.jpg": {
+    "index": 229,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.3671875,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.2054443359375
+  },
+  "database/image_72.jpeg": {
+    "index": 230,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.53125,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.22393798828125
+  },
+  "database/image_73.jpeg": {
+    "index": 231,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.3984375,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.23968505859375
+  },
+  "database/image_74.jpg": {
+    "index": 232,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.4609375,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.21624755859375
+  },
+  "database/image_75.jpg": {
+    "index": 233,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.4765625,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.23529052734375
+  },
+  "database/image_76.jpg": {
+    "index": 234,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5078125,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.2447509765625
+  },
+  "database/image_77.jpg": {
+    "index": 235,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.4375,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.25103759765625
+  },
+  "database/image_78.jpg": {
+    "index": 236,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.1964111328125
+  },
+  "database/image_79.jpg": {
+    "index": 237,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.5859375,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.22564697265625
+  },
+  "database/image_8.jpg": {
+    "index": 238,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.09375,
+    "windows": [
+      false,
+      false,
+      false
+    ],
+    "floor_ratio": 0.3192138671875
+  },
+  "database/image_80.jpg": {
+    "index": 239,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.5625,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.28570556640625
+  },
+  "database/image_81.jpg": {
+    "index": 240,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.59375,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.275390625
+  },
+  "database/image_82.jpg": {
+    "index": 241,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.484375,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.2515869140625
+  },
+  "database/image_83.jpg": {
+    "index": 242,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.359375,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.2445068359375
+  },
+  "database/image_84.jpg": {
+    "index": 243,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.6015625,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.21087646484375
+  },
+  "database/image_85.jpg": {
+    "index": 244,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.4765625,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.3109130859375
+  },
+  "database/image_86.jpg": {
+    "index": 245,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.4453125,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.2823486328125
+  },
+  "database/image_87.jpeg": {
+    "index": 246,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.4765625,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.20947265625
+  },
+  "database/image_88.jpg": {
+    "index": 247,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.6484375,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.26043701171875
+  },
+  "database/image_89.jpg": {
+    "index": 248,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.5703125,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.17657470703125
+  },
+  "database/image_9.jpg": {
+    "index": 249,
+    "room_type": "Frontal",
+    "dominant_wall": "Left",
+    "corner_x": 0.6171875,
+    "windows": [
+      true,
+      false,
+      true
+    ],
+    "floor_ratio": 0.32244873046875
+  },
+  "database/image_90.jpg": {
+    "index": 250,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.4140625,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.192626953125
+  },
+  "database/image_91.jpg": {
+    "index": 251,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.4296875,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.1876220703125
+  },
+  "database/image_92.jpg": {
+    "index": 252,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.46875,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.212646484375
+  },
+  "database/image_93.jpg": {
+    "index": 253,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.46875,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.23138427734375
+  },
+  "database/image_94.jpg": {
+    "index": 254,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.4375,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.227783203125
+  },
+  "database/image_95.jpg": {
+    "index": 255,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.4140625,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.31549072265625
+  },
+  "database/image_96.jpg": {
+    "index": 256,
+    "room_type": "Frontal",
+    "dominant_wall": "Right",
+    "corner_x": 0.390625,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.3094482421875
+  },
+  "database/image_97.jpg": {
+    "index": 257,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.5234375,
+    "windows": [
+      false,
+      true,
+      true
+    ],
+    "floor_ratio": 0.19378662109375
+  },
+  "database/image_98.jpg": {
+    "index": 258,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.4609375,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.29345703125
+  },
+  "database/image_99.jpg": {
+    "index": 259,
+    "room_type": "Frontal",
+    "dominant_wall": "Symmetric",
+    "corner_x": 0.515625,
+    "windows": [
+      false,
+      true,
+      false
+    ],
+    "floor_ratio": 0.285888671875
+  }
+}
