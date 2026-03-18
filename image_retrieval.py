@@ -45,6 +45,7 @@ from transformers import AutoImageProcessor, SegformerForSemanticSegmentation, A
 # ---------------------------------------------------------------------------
 INDEX_JSON_PATH = "staging_index.json"
 INDEX_FLOOR_MASKS = "staging_floor_masks.npy"
+INDEX_CEILING_MASKS = "staging_ceiling_masks.npy"
 INDEX_FURNITURE_MASKS = "staging_furniture_masks.npy"
 INDEX_DEPTH_MAPS = "staging_depth_maps.npy"
 
@@ -184,8 +185,17 @@ def analyze_topology(image_path: str | Path, processor, seg_model, device):
 
     floor_ratio = float(np.sum(clean_floor) / (W * H))
     
+    # Маска потолка
+    ceiling_mask = (preds == 5).astype(np.uint8)
+    clean_ceiling = np.zeros_like(ceiling_mask)
+    ceil_contours, _ = cv2.findContours(ceiling_mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    if ceil_contours:
+        largest_ceil = max(ceil_contours, key=cv2.contourArea)
+        cv2.fillPoly(clean_ceiling, [largest_ceil], 1)
+    
     # Собираем маски (64x64)
     small_floor = cv2.resize(clean_floor, (64, 64), interpolation=cv2.INTER_NEAREST)
+    small_ceiling = cv2.resize(clean_ceiling, (64, 64), interpolation=cv2.INTER_NEAREST)
     
     # "Запретная зона" - окна и двери, которые нельзя перекрывать мебелью
     no_go_zone = np.logical_or(window_mask, door_mask).astype(np.uint8)
@@ -195,7 +205,7 @@ def analyze_topology(image_path: str | Path, processor, seg_model, device):
     if str(device) == 'mps': torch.mps.empty_cache()
     gc.collect()
 
-    return room_type, dominant_wall, corner_x_ratio, windows, floor_ratio, small_floor, small_no_go_zone
+    return room_type, dominant_wall, corner_x_ratio, windows, floor_ratio, small_floor, small_ceiling, small_no_go_zone
 
 
 def extract_furniture_footprint(after_image_path: Path, processor, seg_model, device):
@@ -233,6 +243,7 @@ def build_index(database_dir, extensions=(".jpg", ".jpeg", ".png", ".bmp", ".web
     processor, seg_model, depth_processor, depth_model, device = load_models()
     logical_db = {}
     floor_masks = []
+    ceiling_masks = []
     furniture_masks = []
     depth_maps = []
 
@@ -243,7 +254,7 @@ def build_index(database_dir, extensions=(".jpg", ".jpeg", ".png", ".bmp", ".web
 
         try:
             # 1. Анализ пустой комнаты
-            r_type, dom_wall, corner_x, wins, ratio, floor_m, _ = analyze_topology(img_path, processor, seg_model, device)
+            r_type, dom_wall, corner_x, wins, ratio, floor_m, ceil_m, _ = analyze_topology(img_path, processor, seg_model, device)
             
             # 2. Извлечение карты глубины
             depth_m = extract_depth_map(img_path, depth_processor, depth_model, device)
@@ -272,6 +283,7 @@ def build_index(database_dir, extensions=(".jpg", ".jpeg", ".png", ".bmp", ".web
                 "floor_ratio": ratio
             }
             floor_masks.append(floor_m)
+            ceiling_masks.append(ceil_m)
             furniture_masks.append(furn_m)
             depth_maps.append(depth_m)
 
@@ -282,9 +294,10 @@ def build_index(database_dir, extensions=(".jpg", ".jpeg", ".png", ".bmp", ".web
         json.dump(logical_db, f, ensure_ascii=False, indent=2)
     
     np.save(INDEX_FLOOR_MASKS, np.stack(floor_masks))
+    np.save(INDEX_CEILING_MASKS, np.stack(ceiling_masks))
     np.save(INDEX_FURNITURE_MASKS, np.stack(furniture_masks))
     np.save(INDEX_DEPTH_MAPS, np.stack(depth_maps))
-    print(f"[OK] База стейджинга сохранена! ({len(logical_db)} комнат с мебелью + depth)")
+    print(f"[OK] База стейджинга сохранена! ({len(logical_db)} комнат с мебелью + depth + ceiling)")
 
 
 # ---------------------------------------------------------------------------
@@ -302,6 +315,7 @@ def search_similar(query_image_path, top_k=5):
     with open(INDEX_JSON_PATH, "r") as f:
         db = json.load(f)
     db_floor_masks = np.load(INDEX_FLOOR_MASKS)
+    db_ceiling_masks = np.load(INDEX_CEILING_MASKS)
     db_furniture_masks = np.load(INDEX_FURNITURE_MASKS)
     db_depth_maps = np.load(INDEX_DEPTH_MAPS)
 
@@ -309,13 +323,14 @@ def search_similar(query_image_path, top_k=5):
 
     print(f"\n[INFO] АНАЛИЗ ЗАПРОСА: {Path(query_image_path).name}")
     # Для запроса нам важна No-Go Zone (Окна и Двери)
-    q_type, q_dom_wall, _, q_wins, q_ratio, q_floor, q_nogo = analyze_topology(query_image_path, processor, seg_model, device)
+    q_type, q_dom_wall, _, q_wins, q_ratio, q_floor, q_ceiling, q_nogo = analyze_topology(query_image_path, processor, seg_model, device)
     # Извлекаем depth-карту запроса
     q_depth = extract_depth_map(query_image_path, depth_processor, depth_model, device)
     
     print(f" ├─ Тип комнаты: {'Фронтальная' if q_type == 'Frontal' else 'Угловая'}")
     print(f" ├─ Доминирует: {'Стена 1' if q_dom_wall == 'Left' else 'Стена 2' if q_dom_wall == 'Right' else 'Симметрия'}")
     print(f" ├─ Depth-карта: извлечена (64×64)")
+    print(f" ├─ Потолок: {np.sum(q_ceiling)} пикселей")
     print(f" └─ Запретных зон для мебели (окна/двери): {np.sum(q_nogo)} пикселей\n")
 
     # =========================================================
@@ -342,40 +357,43 @@ def search_similar(query_image_path, top_k=5):
         # 1. Насколько хорошо совпал пол
         floor_iou = compute_iou(q_floor, db_floor_masks[idx])
         
-        # 2. ПРОВЕРКА КОЛЛИЗИЙ (Накладываем чужую мебель на наши окна)
+        # 2. Насколько хорошо совпал потолок
+        ceiling_iou = compute_iou(q_ceiling, db_ceiling_masks[idx])
+        
+        # 3. ПРОВЕРКА КОЛЛИЗИЙ (Накладываем чужую мебель на наши окна)
         candidate_furniture = db_furniture_masks[idx]
         blocked_pixels = np.logical_and(q_nogo, candidate_furniture).sum()
         
         # Какой процент окна перекрыт?
         collision_percent = (blocked_pixels / total_nogo_pixels) if total_nogo_pixels > 0 else 0.0
         
-        # 3. Совпадение глубины (NCC)
+        # 4. Совпадение глубины (NCC)
         depth_sim = compute_depth_similarity(q_depth, db_depth_maps[idx])
         
-        # 4. Финальный балл (Топология + Глубина - Штрафы)
+        # 5. Финальный балл (Топология + Потолок + Глубина - Штрафы)
         area_penalty = abs(data["floor_ratio"] - q_ratio)
         
-        final_score = floor_iou + (depth_sim * 0.3) - (area_penalty * 0.5) - (collision_percent * 2.0)
+        final_score = floor_iou + (ceiling_iou * 0.3) + (depth_sim * 0.3) - (area_penalty * 0.5) - (collision_percent * 2.0)
         
-        results.append((final_score, filepath, floor_iou, collision_percent, depth_sim))
+        results.append((final_score, filepath, floor_iou, ceiling_iou, collision_percent, depth_sim))
 
     results.sort(key=lambda x: x[0], reverse=True)
     top_results = results[:top_k]
 
-    print(f"\n{'='*110}")
-    print(f" ТОП-{top_k} ИДЕАЛЬНЫХ СОВПАДЕНИЙ С УЧЕТОМ МЕБЕЛИ И ГЛУБИНЫ:")
-    print(f"{'='*110}")
+    print(f"\n{'='*120}")
+    print(f" ТОП-{top_k} ИДЕАЛЬНЫХ СОВПАДЕНИЙ С УЧЕТОМ МЕБЕЛИ, ГЛУБИНЫ И ПОТОЛКА:")
+    print(f"{'='*120}")
     
-    for rank, (score, filepath, iou, collision, d_sim) in enumerate(top_results, start=1):
+    for rank, (score, filepath, iou, c_iou, collision, d_sim) in enumerate(top_results, start=1):
         before_path = Path(filepath)
         after_name = f"{before_path.stem}_after{before_path.suffix}"
         
         # Выводим инфу, блокирует ли мебель окна
         warning = " [!] Внимание: Мебель частично перекрывает окно" if collision > 0.05 else " [OK] Мебель встает идеально"
         
-        print(f" #{rank:>2} | Пол: {max(0, iou)*100:>4.1f}% | Глубина: {max(0, d_sim)*100:>4.1f}% | База: {before_path.name:25} ---> {after_name}")
+        print(f" #{rank:>2} | Пол: {max(0, iou)*100:>4.1f}% | Потолок: {max(0, c_iou)*100:>4.1f}% | Глубина: {max(0, d_sim)*100:>4.1f}% | База: {before_path.name:25} ---> {after_name}")
         print(f"       └─ {warning} (Блокировка: {collision*100:.1f}%)")
-        print("-" * 110)
+        print("-" * 120)
     print("\n")
 
 
