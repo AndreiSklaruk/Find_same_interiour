@@ -31,6 +31,7 @@ from pydantic import BaseModel
 BASE_DIR = Path(__file__).parent.parent
 INDEX_JSON_PATH = BASE_DIR / "staging_index.json"
 INDEX_FLOOR_MASKS = BASE_DIR / "staging_floor_masks.npy"
+INDEX_CEILING_MASKS = BASE_DIR / "staging_ceiling_masks.npy"
 INDEX_FURNITURE_MASKS = BASE_DIR / "staging_furniture_masks.npy"
 INDEX_DEPTH_MAPS = BASE_DIR / "staging_depth_maps.npy"
 DATABASE_DIR = BASE_DIR / "database"
@@ -58,6 +59,7 @@ _depth_model = None
 _device = None
 _db = None
 _db_floor_masks = None
+_db_ceiling_masks = None
 _db_furniture_masks = None
 _db_depth_maps = None
 
@@ -73,7 +75,7 @@ def get_device():
 @app.on_event("startup")
 def load_resources():
     global _processor, _model, _depth_processor, _depth_model, _device
-    global _db, _db_floor_masks, _db_furniture_masks, _db_depth_maps
+    global _db, _db_floor_masks, _db_ceiling_masks, _db_furniture_masks, _db_depth_maps
     print("[INFO] Loading SegFormer model...")
     _device = get_device()
     model_name = "nvidia/segformer-b0-finetuned-ade-512-512"
@@ -96,9 +98,10 @@ def load_resources():
     with open(INDEX_JSON_PATH, "r", encoding="utf-8") as f:
         _db = json.load(f)
     _db_floor_masks = np.load(INDEX_FLOOR_MASKS)
+    _db_ceiling_masks = np.load(INDEX_CEILING_MASKS)
     _db_furniture_masks = np.load(INDEX_FURNITURE_MASKS)
     _db_depth_maps = np.load(INDEX_DEPTH_MAPS)
-    print(f"[INFO] Index loaded: {len(_db)} rooms (with depth maps)")
+    print(f"[INFO] Index loaded: {len(_db)} rooms (with depth + ceiling maps)")
 
 
 # ---------------------------------------------------------------------------
@@ -158,7 +161,17 @@ def analyze_topology(image: Image.Image):
     windows = [bool(w_left), bool(w_center), bool(w_right)]
 
     floor_ratio = float(np.sum(clean_floor) / (W * H))
+
+    # Маска потолка
+    ceiling_mask = (preds == 5).astype(np.uint8)
+    clean_ceiling = np.zeros_like(ceiling_mask)
+    ceil_contours, _ = cv2.findContours(ceiling_mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    if ceil_contours:
+        largest_ceil = max(ceil_contours, key=cv2.contourArea)
+        cv2.fillPoly(clean_ceiling, [largest_ceil], 1)
+
     small_floor = cv2.resize(clean_floor, (64, 64), interpolation=cv2.INTER_NEAREST)
+    small_ceiling = cv2.resize(clean_ceiling, (64, 64), interpolation=cv2.INTER_NEAREST)
     no_go_zone = np.logical_or(window_mask, door_mask).astype(np.uint8)
     small_no_go_zone = cv2.resize(no_go_zone, (64, 64), interpolation=cv2.INTER_NEAREST)
 
@@ -167,7 +180,7 @@ def analyze_topology(image: Image.Image):
         torch.mps.empty_cache()
     gc.collect()
 
-    return room_type, dominant_wall, corner_x_ratio, windows, floor_ratio, small_floor, small_no_go_zone
+    return room_type, dominant_wall, corner_x_ratio, windows, floor_ratio, small_floor, small_ceiling, small_no_go_zone
 
 
 def extract_depth_map(image: Image.Image):
@@ -237,6 +250,7 @@ class ReferenceResult(BaseModel):
     after_image_base64: Optional[str]
     score: float
     floor_iou: float
+    ceiling_iou: float
     depth_similarity: float
     collision_percent: float
     collision_warning: bool
@@ -267,7 +281,7 @@ async def search_similar(image: UploadFile = File(...), top_k: int = 5):
     pil_image = Image.open(BytesIO(contents))
 
     # Analyze query room topology
-    q_type, q_dom_wall, _, q_wins, q_ratio, q_floor, q_nogo = analyze_topology(pil_image)
+    q_type, q_dom_wall, _, q_wins, q_ratio, q_floor, q_ceiling, q_nogo = analyze_topology(pil_image)
     # Extract query depth map
     q_depth = extract_depth_map(pil_image)
 
@@ -294,13 +308,14 @@ async def search_similar(image: UploadFile = File(...), top_k: int = 5):
     for filepath, data in candidates:
         idx = data["index"]
         floor_iou = compute_iou(q_floor, _db_floor_masks[idx])
+        ceiling_iou = compute_iou(q_ceiling, _db_ceiling_masks[idx])
         candidate_furniture = _db_furniture_masks[idx]
         blocked_pixels = np.logical_and(q_nogo, candidate_furniture).sum()
         collision_percent = float(blocked_pixels / total_nogo_pixels) if total_nogo_pixels > 0 else 0.0
         depth_sim = compute_depth_similarity(q_depth, _db_depth_maps[idx])
         area_penalty = abs(data["floor_ratio"] - q_ratio)
-        final_score = floor_iou + (depth_sim * 0.3) - (area_penalty * 0.5) - (collision_percent * 2.0)
-        results.append((final_score, filepath, data, floor_iou, collision_percent, depth_sim))
+        final_score = floor_iou + (ceiling_iou * 0.3) + (depth_sim * 0.3) - (area_penalty * 0.5) - (collision_percent * 2.0)
+        results.append((final_score, filepath, data, floor_iou, ceiling_iou, collision_percent, depth_sim))
 
     results.sort(key=lambda x: x[0], reverse=True)
 
@@ -308,7 +323,7 @@ async def search_similar(image: UploadFile = File(...), top_k: int = 5):
     response_results = []
     rank = 1
     
-    for (score, filepath, data, iou, collision, d_sim) in results:
+    for (score, filepath, data, iou, c_iou, collision, d_sim) in results:
         if len(response_results) >= top_k:
             break
 
@@ -348,6 +363,7 @@ async def search_similar(image: UploadFile = File(...), top_k: int = 5):
             after_image_base64=after_b64,
             score=round(score, 4),
             floor_iou=round(iou, 4),
+            ceiling_iou=round(c_iou, 4),
             depth_similarity=round(d_sim, 4),
             collision_percent=round(collision, 4),
             collision_warning=collision > 0.05,
