@@ -201,11 +201,19 @@ def analyze_topology(image_path: str | Path, processor, seg_model, device):
     no_go_zone = np.logical_or(window_mask, door_mask).astype(np.uint8)
     small_no_go_zone = cv2.resize(no_go_zone, (64, 64), interpolation=cv2.INTER_NEAREST)
 
+    # Wall layout ratios (class 0 = wall in ADE20K)
+    wall_mask = (preds == 0).astype(np.uint8)
+    mid = W // 2
+    left_half_pixels = H * mid
+    right_half_pixels = H * (W - mid)
+    wall_left_ratio = float(np.sum(wall_mask[:, :mid])) / left_half_pixels if left_half_pixels > 0 else 0.0
+    wall_right_ratio = float(np.sum(wall_mask[:, mid:])) / right_half_pixels if right_half_pixels > 0 else 0.0
+
     del inputs, outputs, logits, preds, image
     if str(device) == 'mps': torch.mps.empty_cache()
     gc.collect()
 
-    return room_type, dominant_wall, corner_x_ratio, windows, floor_ratio, small_floor, small_ceiling, small_no_go_zone
+    return room_type, dominant_wall, corner_x_ratio, windows, floor_ratio, small_floor, small_ceiling, small_no_go_zone, wall_left_ratio, wall_right_ratio
 
 
 def extract_furniture_footprint(after_image_path: Path, processor, seg_model, device):
@@ -254,7 +262,7 @@ def build_index(database_dir, extensions=(".jpg", ".jpeg", ".png", ".bmp", ".web
 
         try:
             # 1. Анализ пустой комнаты
-            r_type, dom_wall, corner_x, wins, ratio, floor_m, ceil_m, _ = analyze_topology(img_path, processor, seg_model, device)
+            r_type, dom_wall, corner_x, wins, ratio, floor_m, ceil_m, _, wl_ratio, wr_ratio = analyze_topology(img_path, processor, seg_model, device)
             
             # 2. Извлечение карты глубины
             depth_m = extract_depth_map(img_path, depth_processor, depth_model, device)
@@ -280,7 +288,9 @@ def build_index(database_dir, extensions=(".jpg", ".jpeg", ".png", ".bmp", ".web
                 "dominant_wall": dom_wall,
                 "corner_x": corner_x,
                 "windows": wins,
-                "floor_ratio": ratio
+                "floor_ratio": ratio,
+                "wall_left_ratio": round(wl_ratio, 4),
+                "wall_right_ratio": round(wr_ratio, 4)
             }
             floor_masks.append(floor_m)
             ceiling_masks.append(ceil_m)
@@ -323,7 +333,7 @@ def search_similar(query_image_path, top_k=5):
 
     print(f"\n[INFO] АНАЛИЗ ЗАПРОСА: {Path(query_image_path).name}")
     # Для запроса нам важна No-Go Zone (Окна и Двери)
-    q_type, q_dom_wall, _, q_wins, q_ratio, q_floor, q_ceiling, q_nogo = analyze_topology(query_image_path, processor, seg_model, device)
+    q_type, q_dom_wall, _, q_wins, q_ratio, q_floor, q_ceiling, q_nogo, q_wall_left, q_wall_right = analyze_topology(query_image_path, processor, seg_model, device)
     # Извлекаем depth-карту запроса
     q_depth = extract_depth_map(query_image_path, depth_processor, depth_model, device)
     
@@ -370,10 +380,15 @@ def search_similar(query_image_path, top_k=5):
         # 4. Совпадение глубины (NCC)
         depth_sim = compute_depth_similarity(q_depth, db_depth_maps[idx])
         
-        # 5. Финальный балл (Топология + Потолок + Глубина - Штрафы)
+        # 5. Финальный балл (Топология + Потолок + Глубина + Wall Layout - Штрафы)
         area_penalty = abs(data["floor_ratio"] - q_ratio)
-        
-        final_score = floor_iou + (ceiling_iou * 0.3) + (depth_sim * 0.3) - (area_penalty * 0.5) - (collision_percent * 2.0)
+
+        # Wall layout similarity (camera angle matching)
+        c_wall_left = data.get("wall_left_ratio", 0.0)
+        c_wall_right = data.get("wall_right_ratio", 0.0)
+        wall_sim = 1.0 - (abs(q_wall_left - c_wall_left) + abs(q_wall_right - c_wall_right)) / 2.0
+
+        final_score = floor_iou + (ceiling_iou * 0.3) + (depth_sim * 0.3) + (wall_sim * 0.4) - (area_penalty * 0.5) - (collision_percent * 2.0)
         
         results.append((final_score, filepath, floor_iou, ceiling_iou, collision_percent, depth_sim))
 

@@ -175,12 +175,20 @@ def analyze_topology(image: Image.Image):
     no_go_zone = np.logical_or(window_mask, door_mask).astype(np.uint8)
     small_no_go_zone = cv2.resize(no_go_zone, (64, 64), interpolation=cv2.INTER_NEAREST)
 
+    # Wall layout ratios (class 0 = wall in ADE20K)
+    wall_mask = (preds == 0).astype(np.uint8)
+    mid = W // 2
+    left_half_pixels = H * mid
+    right_half_pixels = H * (W - mid)
+    wall_left_ratio = float(np.sum(wall_mask[:, :mid])) / left_half_pixels if left_half_pixels > 0 else 0.0
+    wall_right_ratio = float(np.sum(wall_mask[:, mid:])) / right_half_pixels if right_half_pixels > 0 else 0.0
+
     del inputs, outputs, logits, preds
     if str(_device) == "mps":
         torch.mps.empty_cache()
     gc.collect()
 
-    return room_type, dominant_wall, corner_x_ratio, windows, floor_ratio, small_floor, small_ceiling, small_no_go_zone
+    return room_type, dominant_wall, corner_x_ratio, windows, floor_ratio, small_floor, small_ceiling, small_no_go_zone, wall_left_ratio, wall_right_ratio
 
 
 def extract_depth_map(image: Image.Image):
@@ -281,7 +289,7 @@ async def search_similar(image: UploadFile = File(...), top_k: int = 5):
     pil_image = Image.open(BytesIO(contents))
 
     # Analyze query room topology
-    q_type, q_dom_wall, _, q_wins, q_ratio, q_floor, q_ceiling, q_nogo = analyze_topology(pil_image)
+    q_type, q_dom_wall, _, q_wins, q_ratio, q_floor, q_ceiling, q_nogo, q_wall_left, q_wall_right = analyze_topology(pil_image)
     # Extract query depth map
     q_depth = extract_depth_map(pil_image)
 
@@ -314,7 +322,13 @@ async def search_similar(image: UploadFile = File(...), top_k: int = 5):
         collision_percent = float(blocked_pixels / total_nogo_pixels) if total_nogo_pixels > 0 else 0.0
         depth_sim = compute_depth_similarity(q_depth, _db_depth_maps[idx])
         area_penalty = abs(data["floor_ratio"] - q_ratio)
-        final_score = floor_iou + (ceiling_iou * 0.3) + (depth_sim * 0.3) - (area_penalty * 0.5) - (collision_percent * 2.0)
+
+        # Wall layout similarity (camera angle matching)
+        c_wall_left = data.get("wall_left_ratio", 0.0)
+        c_wall_right = data.get("wall_right_ratio", 0.0)
+        wall_sim = 1.0 - (abs(q_wall_left - c_wall_left) + abs(q_wall_right - c_wall_right)) / 2.0
+
+        final_score = floor_iou + (ceiling_iou * 0.3) + (depth_sim * 0.3) + (wall_sim * 0.4) - (area_penalty * 0.5) - (collision_percent * 2.0)
         results.append((final_score, filepath, data, floor_iou, ceiling_iou, collision_percent, depth_sim))
 
     results.sort(key=lambda x: x[0], reverse=True)
@@ -326,6 +340,10 @@ async def search_similar(image: UploadFile = File(...), top_k: int = 5):
     for (score, filepath, data, iou, c_iou, collision, d_sim) in results:
         if len(response_results) >= top_k:
             break
+
+        # Skip candidates below minimum similarity threshold
+        if score < 1.3:
+            break  # Results are sorted, so all remaining will be below threshold too
 
         before_path = Path(filepath)
         if not before_path.is_absolute():
@@ -375,3 +393,61 @@ async def search_similar(image: UploadFile = File(...), top_k: int = 5):
         room_type=q_type,
         dominant_wall=q_dom_wall,
     )
+
+
+# ---------------------------------------------------------------------------
+@app.post("/segment-doors")
+async def segment_doors(image: UploadFile = File(...)):
+    """
+    Accept an image, run SegFormer segmentation, and return a base64 PNG mask
+    where doors (class 14) and windows (class 8) are white on black background.
+    The mask is returned at the original image resolution.
+    """
+    if _model is None:
+        raise HTTPException(status_code=503, detail="Model not loaded yet")
+
+    contents = await image.read()
+    from io import BytesIO
+    pil_image = Image.open(BytesIO(contents)).convert("RGB")
+    orig_w, orig_h = pil_image.size
+
+    # Resize for inference
+    resized = pil_image.copy()
+    resized.thumbnail((512, 512), Image.Resampling.LANCZOS)
+
+    inputs = _processor(images=resized, return_tensors="pt").to(_device)
+    with torch.no_grad():
+        outputs = _model(**inputs)
+        logits = torch.nn.functional.interpolate(
+            outputs.logits, size=(orig_h, orig_w), mode="bilinear", align_corners=False
+        )
+        preds = logits.argmax(dim=1).squeeze().cpu().numpy()
+
+    # Build binary mask: doors (14) + windows (8)
+    door_mask = (preds == 14).astype(np.uint8)
+    window_mask = (preds == 8).astype(np.uint8)
+    combined = np.logical_or(door_mask, window_mask).astype(np.uint8) * 255
+
+    # Dilate slightly to cover edges
+    kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (15, 15))
+    combined = cv2.dilate(combined, kernel, iterations=1)
+
+    # Encode as PNG base64
+    _, png_buf = cv2.imencode(".png", combined)
+    mask_b64 = base64.b64encode(png_buf.tobytes()).decode("utf-8")
+
+    del inputs, outputs, logits, preds
+    if str(_device) == "mps":
+        torch.mps.empty_cache()
+    gc.collect()
+
+    has_doors = bool(np.any(door_mask))
+    has_windows = bool(np.any(window_mask))
+
+    return {
+        "mask_base64": mask_b64,
+        "has_doors": has_doors,
+        "has_windows": has_windows,
+        "width": orig_w,
+        "height": orig_h,
+    }
