@@ -224,7 +224,15 @@ def analyze_topology(image: Image.Image):
         torch.mps.empty_cache()
     gc.collect()
 
-    return room_type, dominant_wall, corner_x_ratio, windows, floor_ratio, small_floor, small_ceiling, small_no_go_zone, wall_left_ratio, wall_right_ratio, preds
+    # Window position: normalized X centroid (0=left, 1=right, -1=no windows)
+    win_pixels = np.sum(window_mask)
+    if win_pixels > 0:
+        ys, xs = np.where(window_mask > 0)
+        window_x_center = float(np.mean(xs)) / W
+    else:
+        window_x_center = -1.0
+
+    return room_type, dominant_wall, corner_x_ratio, windows, floor_ratio, small_floor, small_ceiling, small_no_go_zone, wall_left_ratio, wall_right_ratio, preds, window_x_center
 
 
 def extract_depth_map(image: Image.Image):
@@ -353,7 +361,10 @@ def compute_angle_histogram(lines, num_bins=NUM_ANGLE_BINS):
 
 def extract_line_features(pil_image: Image.Image, depth_map=None):
     """Extract MLSD line features from depth map (not original image!).
-    Depth map removes textures/shadows, keeping only room geometry."""
+    Depth map removes textures/shadows, keeping only room geometry.
+    Returns: vp_x, vp_y, angle_hist, x_spread, y_spread"""
+    empty_result = (0.5, 0.5, np.zeros(NUM_ANGLE_BINS, dtype=np.float32), 0.25, 0.25)
+    
     if depth_map is not None:
         d = depth_map.astype(np.float32)
         d = (d - d.min()) / (d.max() - d.min() + 1e-6) * 255
@@ -368,11 +379,18 @@ def extract_line_features(pil_image: Image.Image, depth_map=None):
                        input_shape=[512, 512], score_thr=0.10, dist_thr=20.0)
     
     if len(lines) == 0:
-        return 0.5, 0.5, np.zeros(NUM_ANGLE_BINS, dtype=np.float32)
+        return empty_result
     
     vp_x, vp_y = find_vanishing_point(lines, w, h)
     angle_hist = compute_angle_histogram(lines)
-    return vp_x, vp_y, angle_hist
+    
+    # Room scale metric: line spread
+    midpoints_x = [(l[0] + l[2]) / 2.0 / w for l in lines]
+    midpoints_y = [(l[1] + l[3]) / 2.0 / h for l in lines]
+    x_spread = float(np.std(midpoints_x))
+    y_spread = float(np.std(midpoints_y))
+    
+    return vp_x, vp_y, angle_hist, x_spread, y_spread
 
 
 def compute_vp_similarity(vp1_x, vp1_y, vp2_x, vp2_y, hist1, hist2):
@@ -419,6 +437,7 @@ class ReferenceResult(BaseModel):
     ceiling_iou: float
     depth_similarity: float
     vp_similarity: float
+    scale_similarity: float
     collision_percent: float
     collision_warning: bool
 
@@ -448,11 +467,11 @@ async def search_similar(image: UploadFile = File(...), top_k: int = 5):
     pil_image = Image.open(BytesIO(contents))
 
     # Analyze query room topology
-    q_type, q_dom_wall, _, q_wins, q_ratio, q_floor, q_ceiling, q_nogo, q_wall_left, q_wall_right, _ = analyze_topology(pil_image)
+    q_type, q_dom_wall, _, q_wins, q_ratio, q_floor, q_ceiling, q_nogo, q_wall_left, q_wall_right, _, q_win_x = analyze_topology(pil_image)
     # Extract depth map (64x64 for similarity + full-res for MLSD)
     q_depth, q_depth_full = extract_depth_map(pil_image)
-    # MLSD on depth map → clean room geometry
-    q_vp_x, q_vp_y, q_angle_hist = extract_line_features(pil_image, depth_map=q_depth_full)
+    # MLSD on depth map → clean room geometry + scale
+    q_vp_x, q_vp_y, q_angle_hist, q_x_spread, q_y_spread = extract_line_features(pil_image, depth_map=q_depth_full)
 
     # Filter candidates by topology match (with progressive relaxation)
     # Step 1: Strict match (room_type + dominant_wall)
@@ -504,14 +523,31 @@ async def search_similar(image: UploadFile = File(...), top_k: int = 5):
             c_hist = np.zeros(NUM_ANGLE_BINS, dtype=np.float32)
         vp_sim = compute_vp_similarity(q_vp_x, q_vp_y, c_vp_x, c_vp_y, q_angle_hist, c_hist)
 
+        # Room scale similarity (line spread comparison)
+        c_x_spread = data.get("x_spread", 0.25)
+        c_y_spread = data.get("y_spread", 0.25)
+        scale_sim = 1.0 - (abs(q_x_spread - c_x_spread) + abs(q_y_spread - c_y_spread))
+        scale_sim = max(0.0, scale_sim)  # clamp to [0, 1]
+
+        # Window position similarity
+        c_win_x = data.get("window_x_center", -1.0)
+        if q_win_x >= 0 and c_win_x >= 0:
+            # Both have windows → compare positions (0=identical, 1=opposite sides)
+            win_pos_sim = 1.0 - abs(q_win_x - c_win_x)
+        else:
+            # One or both have no windows → neutral
+            win_pos_sim = 0.5
+
         final_score = (floor_iou 
                       + (ceiling_iou * 0.3) 
                       + (depth_sim * 0.5) 
                       + (wall_sim * 0.4) 
                       + (vp_sim * 0.7)
+                      + (scale_sim * 0.4)
+                      + (win_pos_sim * 0.5)
                       - (area_penalty * 0.5) 
                       - (collision_percent * 2.0))
-        results.append((final_score, filepath, data, floor_iou, ceiling_iou, collision_percent, depth_sim, vp_sim))
+        results.append((final_score, filepath, data, floor_iou, ceiling_iou, collision_percent, depth_sim, vp_sim, scale_sim, win_pos_sim))
 
     results.sort(key=lambda x: x[0], reverse=True)
 
@@ -519,7 +555,7 @@ async def search_similar(image: UploadFile = File(...), top_k: int = 5):
     response_results = []
     rank = 1
     
-    for (score, filepath, data, iou, c_iou, collision, d_sim, vp_s) in results:
+    for (score, filepath, data, iou, c_iou, collision, d_sim, vp_s, sc_sim, wp_sim) in results:
         if len(response_results) >= top_k:
             break
 
@@ -566,6 +602,7 @@ async def search_similar(image: UploadFile = File(...), top_k: int = 5):
             ceiling_iou=round(c_iou, 4),
             depth_similarity=round(d_sim, 4),
             vp_similarity=round(vp_s, 4),
+            scale_similarity=round(sc_sim, 4),
             collision_percent=round(collision, 4),
             collision_warning=collision > 0.05,
         ))

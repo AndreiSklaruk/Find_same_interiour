@@ -315,7 +315,7 @@ def filter_structural_lines(lines, seg_preds, img_h, img_w):
 
 def extract_line_features(image_path_or_pil, mlsd_model, mlsd_device, depth_map=None):
     """
-    Извлекает линейные фичи: VP + гистограмму углов.
+    Извлекает линейные фичи: VP + гистограмму углов + метрику масштаба.
     
     КЛЮЧЕВАЯ ИДЕЯ: MLSD запускается на depth-карте, а НЕ на оригинальной фотографии.
     Depth-карта убирает текстуры (паркет, тени, отражения) и оставляет только
@@ -328,7 +328,11 @@ def extract_line_features(image_path_or_pil, mlsd_model, mlsd_device, depth_map=
     Returns:
         vp_x, vp_y: нормализованные координаты vanishing point
         angle_hist: numpy array (NUM_ANGLE_BINS,) — гистограмма углов
+        x_spread: float — std X-координат середин линий (метрика масштаба)
+        y_spread: float — std Y-координат середин линий
     """
+    empty_result = (0.5, 0.5, np.zeros(NUM_ANGLE_BINS, dtype=np.float32), 0.25, 0.25)
+    
     if depth_map is not None:
         # Нормализуем depth в 0-255 и конвертируем в RGB для MLSD
         d = depth_map.astype(np.float32)
@@ -341,7 +345,7 @@ def extract_line_features(image_path_or_pil, mlsd_model, mlsd_device, depth_map=
         if isinstance(image_path_or_pil, (str, Path)):
             img = cv2.imread(str(image_path_or_pil))
             if img is None:
-                return 0.5, 0.5, np.zeros(NUM_ANGLE_BINS, dtype=np.float32)
+                return empty_result
             mlsd_input = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
         else:
             mlsd_input = np.array(image_path_or_pil.convert("RGB"))
@@ -352,7 +356,7 @@ def extract_line_features(image_path_or_pil, mlsd_model, mlsd_device, depth_map=
                        input_shape=[512, 512], score_thr=0.10, dist_thr=20.0)
     
     if len(lines) == 0:
-        return 0.5, 0.5, np.zeros(NUM_ANGLE_BINS, dtype=np.float32)
+        return empty_result
 
     # Vanishing point
     vp_x, vp_y = find_vanishing_point(lines, w, h)
@@ -360,7 +364,15 @@ def extract_line_features(image_path_or_pil, mlsd_model, mlsd_device, depth_map=
     # Гистограмма углов
     angle_hist = compute_angle_histogram(lines)
     
-    return vp_x, vp_y, angle_hist
+    # Метрика масштаба: разброс линий
+    # Маленькая комната → линии сконцентрированы (spread ~0.15-0.20)
+    # Большая комната → линии разбросаны (spread ~0.30-0.40)
+    midpoints_x = [(l[0] + l[2]) / 2.0 / w for l in lines]
+    midpoints_y = [(l[1] + l[3]) / 2.0 / h for l in lines]
+    x_spread = float(np.std(midpoints_x))
+    y_spread = float(np.std(midpoints_y))
+    
+    return vp_x, vp_y, angle_hist, x_spread, y_spread
 
 
 def compute_vp_similarity(vp1_x, vp1_y, vp2_x, vp2_y, hist1, hist2):
@@ -475,8 +487,15 @@ def analyze_topology(image_path: str | Path, processor, seg_model, device):
     del inputs, outputs, logits, image
     if str(device) == 'mps': torch.mps.empty_cache()
     gc.collect()
+    # Позиция окон: нормализованный X центра масс (0=лево, 1=право, -1=нет окон)
+    win_pixels = np.sum(window_mask)
+    if win_pixels > 0:
+        ys, xs = np.where(window_mask > 0)
+        window_x_center = float(np.mean(xs)) / W  # 0.0 = left edge, 1.0 = right edge
+    else:
+        window_x_center = -1.0  # Нет окон
 
-    return room_type, dominant_wall, corner_x_ratio, windows, floor_ratio, small_floor, small_ceiling, small_no_go_zone, wall_left_ratio, wall_right_ratio, preds
+    return room_type, dominant_wall, corner_x_ratio, windows, floor_ratio, small_floor, small_ceiling, small_no_go_zone, wall_left_ratio, wall_right_ratio, preds, window_x_center
 
 
 def extract_furniture_footprint(after_image_path: Path, processor, seg_model, device):
@@ -526,7 +545,7 @@ def build_index(database_dir, extensions=(".jpg", ".jpeg", ".png", ".bmp", ".web
 
         try:
             # 1. Анализ пустой комнаты
-            r_type, dom_wall, corner_x, wins, ratio, floor_m, ceil_m, _, wl_ratio, wr_ratio, _ = analyze_topology(img_path, processor, seg_model, device)
+            r_type, dom_wall, corner_x, wins, ratio, floor_m, ceil_m, _, wl_ratio, wr_ratio, _, win_x = analyze_topology(img_path, processor, seg_model, device)
             
             # 2. Извлечение карты глубины (64x64 для similarity + полноразмер для MLSD)
             depth_m, depth_full = extract_depth_map(img_path, depth_processor, depth_model, device)
@@ -544,8 +563,8 @@ def build_index(database_dir, extensions=(".jpg", ".jpeg", ".png", ".bmp", ".web
             else:
                 furn_m = np.zeros((64, 64), dtype=np.uint8) # Мебели нет
 
-            # 5. MLSD на depth-карте → VP + гистограмма углов (чистая геометрия)
-            vp_x, vp_y, angle_hist = extract_line_features(img_path, mlsd_model, mlsd_device, depth_map=depth_full)
+            # 5. MLSD на depth-карте → VP + гистограмма + масштаб (чистая геометрия)
+            vp_x, vp_y, angle_hist, x_spread, y_spread = extract_line_features(img_path, mlsd_model, mlsd_device, depth_map=depth_full)
 
             # Сохраняем в базу
             idx = len(floor_masks)
@@ -559,7 +578,10 @@ def build_index(database_dir, extensions=(".jpg", ".jpeg", ".png", ".bmp", ".web
                 "wall_left_ratio": round(wl_ratio, 4),
                 "wall_right_ratio": round(wr_ratio, 4),
                 "vp_x": round(vp_x, 4),
-                "vp_y": round(vp_y, 4)
+                "vp_y": round(vp_y, 4),
+                "x_spread": round(x_spread, 4),
+                "y_spread": round(y_spread, 4),
+                "window_x_center": round(win_x, 4)
             }
             floor_masks.append(floor_m)
             ceiling_masks.append(ceil_m)
@@ -610,11 +632,11 @@ def search_similar(query_image_path, top_k=5):
 
     print(f"\n[INFO] АНАЛИЗ ЗАПРОСА: {Path(query_image_path).name}")
     # Для запроса нам важна No-Go Zone (Окна и Двери)
-    q_type, q_dom_wall, _, q_wins, q_ratio, q_floor, q_ceiling, q_nogo, q_wall_left, q_wall_right, _ = analyze_topology(query_image_path, processor, seg_model, device)
+    q_type, q_dom_wall, _, q_wins, q_ratio, q_floor, q_ceiling, q_nogo, q_wall_left, q_wall_right, _, q_win_x = analyze_topology(query_image_path, processor, seg_model, device)
     # Извлекаем depth-карту запроса (64x64 для similarity + полноразмер для MLSD)
     q_depth, q_depth_full = extract_depth_map(query_image_path, depth_processor, depth_model, device)
-    # MLSD на depth-карте → чистая геометрия комнаты
-    q_vp_x, q_vp_y, q_angle_hist = extract_line_features(query_image_path, mlsd_model, mlsd_device, depth_map=q_depth_full)
+    # MLSD на depth-карте → чистая геометрия + масштаб
+    q_vp_x, q_vp_y, q_angle_hist, q_x_spread, q_y_spread = extract_line_features(query_image_path, mlsd_model, mlsd_device, depth_map=q_depth_full)
     
     print(f" ├─ Тип комнаты: {'Фронтальная' if q_type == 'Frontal' else 'Угловая'}")
     print(f" ├─ Доминирует: {'Стена 1' if q_dom_wall == 'Left' else 'Стена 2' if q_dom_wall == 'Right' else 'Симметрия'}")
