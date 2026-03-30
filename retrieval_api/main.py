@@ -2,7 +2,9 @@
 retrieval_api/main.py
 ======================
 FastAPI microservice wrapping image_retrieval.py search_similar() logic.
-Exposes a single POST /search endpoint.
+Exposes POST /search and POST /segment-doors endpoints.
+
+Now includes MLSD Vanishing Point matching for improved camera angle detection.
 
 Run with:
     uvicorn retrieval_api.main:app --reload --port 8000
@@ -25,6 +27,11 @@ from PIL import Image
 from transformers import AutoImageProcessor, SegformerForSemanticSegmentation, AutoModelForDepthEstimation
 from pydantic import BaseModel
 
+# MLSD
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from mlsd.model import MobileV2_MLSD_Tiny
+from mlsd.utils import pred_lines
+
 # ---------------------------------------------------------------------------
 # Paths — all relative to proj_2.1/ root
 # ---------------------------------------------------------------------------
@@ -34,12 +41,17 @@ INDEX_FLOOR_MASKS = BASE_DIR / "staging_floor_masks.npy"
 INDEX_CEILING_MASKS = BASE_DIR / "staging_ceiling_masks.npy"
 INDEX_FURNITURE_MASKS = BASE_DIR / "staging_furniture_masks.npy"
 INDEX_DEPTH_MAPS = BASE_DIR / "staging_depth_maps.npy"
+INDEX_LINE_HISTOGRAMS = BASE_DIR / "staging_line_histograms.npy"
 DATABASE_DIR = BASE_DIR / "database"
+MLSD_WEIGHTS_PATH = BASE_DIR / "mlsd" / "weights" / "mlsd_tiny_512_fp32.pth"
+
+# Количество бинов для гистограммы углов линий
+NUM_ANGLE_BINS = 12
 
 # ---------------------------------------------------------------------------
 # App
 # ---------------------------------------------------------------------------
-app = FastAPI(title="Image Retrieval API", version="1.0.0")
+app = FastAPI(title="Image Retrieval API", version="2.0.0")
 
 app.add_middleware(
     CORSMiddleware,
@@ -56,12 +68,15 @@ _processor = None
 _model = None
 _depth_processor = None
 _depth_model = None
+_mlsd_model = None
+_mlsd_device = None
 _device = None
 _db = None
 _db_floor_masks = None
 _db_ceiling_masks = None
 _db_furniture_masks = None
 _db_depth_maps = None
+_db_line_histograms = None
 
 
 def get_device():
@@ -75,7 +90,10 @@ def get_device():
 @app.on_event("startup")
 def load_resources():
     global _processor, _model, _depth_processor, _depth_model, _device
+    global _mlsd_model, _mlsd_device
     global _db, _db_floor_masks, _db_ceiling_masks, _db_furniture_masks, _db_depth_maps
+    global _db_line_histograms
+    
     print("[INFO] Loading SegFormer model...")
     _device = get_device()
     model_name = "nvidia/segformer-b0-finetuned-ade-512-512"
@@ -94,6 +112,15 @@ def load_resources():
     _depth_model.eval()
     print(f"[INFO] Depth model loaded on {_device}")
 
+    # MLSD Tiny
+    print("[INFO] Loading MLSD Tiny model...")
+    _mlsd_device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
+    _mlsd_model = MobileV2_MLSD_Tiny()
+    _mlsd_model.load_state_dict(torch.load(MLSD_WEIGHTS_PATH, map_location=_mlsd_device), strict=True)
+    _mlsd_model.to(_mlsd_device)
+    _mlsd_model.eval()
+    print(f"[INFO] MLSD Tiny loaded on {_mlsd_device}")
+
     print("[INFO] Loading index...")
     with open(INDEX_JSON_PATH, "r", encoding="utf-8") as f:
         _db = json.load(f)
@@ -101,7 +128,16 @@ def load_resources():
     _db_ceiling_masks = np.load(INDEX_CEILING_MASKS)
     _db_furniture_masks = np.load(INDEX_FURNITURE_MASKS)
     _db_depth_maps = np.load(INDEX_DEPTH_MAPS)
-    print(f"[INFO] Index loaded: {len(_db)} rooms (with depth + ceiling maps)")
+    
+    # Загружаем гистограммы линий (если есть)
+    if INDEX_LINE_HISTOGRAMS.exists():
+        _db_line_histograms = np.load(INDEX_LINE_HISTOGRAMS)
+        print(f"[INFO] Line histograms loaded: {_db_line_histograms.shape}")
+    else:
+        _db_line_histograms = None
+        print("[WARN] Line histograms not found — VP similarity will be disabled")
+    
+    print(f"[INFO] Index loaded: {len(_db)} rooms (with depth + ceiling + MLSD VP)")
 
 
 # ---------------------------------------------------------------------------
@@ -183,16 +219,16 @@ def analyze_topology(image: Image.Image):
     wall_left_ratio = float(np.sum(wall_mask[:, :mid])) / left_half_pixels if left_half_pixels > 0 else 0.0
     wall_right_ratio = float(np.sum(wall_mask[:, mid:])) / right_half_pixels if right_half_pixels > 0 else 0.0
 
-    del inputs, outputs, logits, preds
+    del inputs, outputs, logits, image
     if str(_device) == "mps":
         torch.mps.empty_cache()
     gc.collect()
 
-    return room_type, dominant_wall, corner_x_ratio, windows, floor_ratio, small_floor, small_ceiling, small_no_go_zone, wall_left_ratio, wall_right_ratio
+    return room_type, dominant_wall, corner_x_ratio, windows, floor_ratio, small_floor, small_ceiling, small_no_go_zone, wall_left_ratio, wall_right_ratio, preds
 
 
 def extract_depth_map(image: Image.Image):
-    """Extract normalized 64x64 depth map from a PIL Image."""
+    """Extract depth map: 64x64 for similarity + full-res for MLSD."""
     image = image.convert("RGB")
     image.thumbnail((512, 512), Image.Resampling.LANCZOS)
 
@@ -200,6 +236,11 @@ def extract_depth_map(image: Image.Image):
     with torch.no_grad():
         outputs = _depth_model(**inputs)
         depth = outputs.predicted_depth
+        
+        # Full-res for MLSD
+        depth_full = depth.squeeze().cpu().numpy()
+        
+        # 64x64 for similarity
         depth_64 = torch.nn.functional.interpolate(
             depth.unsqueeze(1), size=(64, 64), mode="bicubic", align_corners=False
         ).squeeze().cpu().numpy()
@@ -215,7 +256,7 @@ def extract_depth_map(image: Image.Image):
         torch.mps.empty_cache()
     gc.collect()
 
-    return depth_64.astype(np.float32)
+    return depth_64.astype(np.float32), depth_full.astype(np.float32)
 
 
 def compute_depth_similarity(depth1, depth2):
@@ -234,6 +275,123 @@ def compute_iou(mask1, mask2):
     intersection = np.logical_and(mask1, mask2).sum()
     union = np.logical_or(mask1, mask2).sum()
     return float(intersection / union) if union > 0 else 0.0
+
+
+# ---------------------------------------------------------------------------
+# MLSD Vanishing Point functions
+# ---------------------------------------------------------------------------
+def find_vanishing_point(lines, img_w, img_h):
+    """RANSAC-based vanishing point detection from line segments."""
+    if len(lines) < 2:
+        return 0.5, 0.5
+
+    filtered_lines = []
+    for line in lines:
+        x1, y1, x2, y2 = line
+        dx = x2 - x1
+        dy = y2 - y1
+        length = np.sqrt(dx * dx + dy * dy)
+        if length < 10:
+            continue
+        angle = abs(np.degrees(np.arctan2(dy, dx)))
+        if angle < 5 or angle > 175 or (85 < angle < 95):
+            continue
+        filtered_lines.append(line)
+
+    if len(filtered_lines) < 2:
+        return 0.5, 0.5
+
+    filtered_lines = np.array(filtered_lines)
+    x1s, y1s, x2s, y2s = filtered_lines[:, 0], filtered_lines[:, 1], filtered_lines[:, 2], filtered_lines[:, 3]
+    a_arr = y2s - y1s
+    b_arr = x1s - x2s
+    c_arr = a_arr * x1s + b_arr * y1s
+
+    best_vp = np.array([img_w / 2, img_h / 2])
+    best_inliers = 0
+    n_lines = len(filtered_lines)
+    n_iterations = min(500, n_lines * (n_lines - 1) // 2)
+
+    rng = np.random.default_rng(42)
+    
+    for _ in range(n_iterations):
+        idx = rng.choice(n_lines, size=2, replace=False)
+        i, j = idx[0], idx[1]
+        det = a_arr[i] * b_arr[j] - a_arr[j] * b_arr[i]
+        if abs(det) < 1e-10:
+            continue
+        px = (c_arr[i] * b_arr[j] - c_arr[j] * b_arr[i]) / det
+        py = (a_arr[i] * c_arr[j] - a_arr[j] * c_arr[i]) / det
+        if px < -img_w * 0.5 or px > img_w * 1.5 or py < -img_h * 0.5 or py > img_h * 1.5:
+            continue
+        dists = np.abs(a_arr * px + b_arr * py - c_arr) / (np.sqrt(a_arr ** 2 + b_arr ** 2) + 1e-10)
+        inliers = np.sum(dists < 15.0)
+        if inliers > best_inliers:
+            best_inliers = inliers
+            best_vp = np.array([px, py])
+
+    vp_x_ratio = float(np.clip(best_vp[0] / img_w, 0, 1))
+    vp_y_ratio = float(np.clip(best_vp[1] / img_h, 0, 1))
+    return vp_x_ratio, vp_y_ratio
+
+
+def compute_angle_histogram(lines, num_bins=NUM_ANGLE_BINS):
+    """Compute normalized angle histogram from line segments."""
+    if len(lines) == 0:
+        return np.zeros(num_bins, dtype=np.float32)
+    dx = lines[:, 2] - lines[:, 0]
+    dy = lines[:, 3] - lines[:, 1]
+    angles = np.degrees(np.arctan2(dy, dx))
+    angles = angles % 180
+    hist, _ = np.histogram(angles, bins=num_bins, range=(0, 180))
+    hist = hist.astype(np.float32)
+    total = hist.sum()
+    if total > 0:
+        hist /= total
+    return hist
+
+
+def extract_line_features(pil_image: Image.Image, depth_map=None):
+    """Extract MLSD line features from depth map (not original image!).
+    Depth map removes textures/shadows, keeping only room geometry."""
+    if depth_map is not None:
+        d = depth_map.astype(np.float32)
+        d = (d - d.min()) / (d.max() - d.min() + 1e-6) * 255
+        depth_u8 = d.astype(np.uint8)
+        mlsd_input = cv2.cvtColor(depth_u8, cv2.COLOR_GRAY2RGB)
+        h, w = mlsd_input.shape[:2]
+    else:
+        mlsd_input = np.array(pil_image.convert("RGB"))
+        h, w = mlsd_input.shape[:2]
+    
+    lines = pred_lines(mlsd_input, _mlsd_model, _mlsd_device,
+                       input_shape=[512, 512], score_thr=0.10, dist_thr=20.0)
+    
+    if len(lines) == 0:
+        return 0.5, 0.5, np.zeros(NUM_ANGLE_BINS, dtype=np.float32)
+    
+    vp_x, vp_y = find_vanishing_point(lines, w, h)
+    angle_hist = compute_angle_histogram(lines)
+    return vp_x, vp_y, angle_hist
+
+
+def compute_vp_similarity(vp1_x, vp1_y, vp2_x, vp2_y, hist1, hist2):
+    """Compute combined VP position + angle histogram similarity."""
+    vp_dist = np.sqrt((vp1_x - vp2_x) ** 2 + (vp1_y - vp2_y) ** 2)
+    vp_sim = max(0.0, 1.0 - vp_dist / 0.5)
+    
+    h1 = hist1.astype(np.float64)
+    h2 = hist2.astype(np.float64)
+    h1 -= h1.mean()
+    h2 -= h2.mean()
+    n1, n2 = np.linalg.norm(h1), np.linalg.norm(h2)
+    if n1 < 1e-8 or n2 < 1e-8:
+        hist_sim = 0.0
+    else:
+        hist_sim = float(np.dot(h1, h2) / (n1 * n2))
+        hist_sim = max(0.0, hist_sim)
+    
+    return 0.7 * vp_sim + 0.3 * hist_sim
 
 
 def image_to_base64(img_path: Path) -> Optional[str]:
@@ -260,6 +418,7 @@ class ReferenceResult(BaseModel):
     floor_iou: float
     ceiling_iou: float
     depth_similarity: float
+    vp_similarity: float
     collision_percent: float
     collision_warning: bool
 
@@ -275,7 +434,7 @@ class SearchResponse(BaseModel):
 # ---------------------------------------------------------------------------
 @app.get("/health")
 def health():
-    return {"status": "ok", "model_loaded": _model is not None}
+    return {"status": "ok", "model_loaded": _model is not None, "mlsd_loaded": _mlsd_model is not None}
 
 
 @app.post("/search", response_model=SearchResponse)
@@ -289,11 +448,14 @@ async def search_similar(image: UploadFile = File(...), top_k: int = 5):
     pil_image = Image.open(BytesIO(contents))
 
     # Analyze query room topology
-    q_type, q_dom_wall, _, q_wins, q_ratio, q_floor, q_ceiling, q_nogo, q_wall_left, q_wall_right = analyze_topology(pil_image)
-    # Extract query depth map
-    q_depth = extract_depth_map(pil_image)
+    q_type, q_dom_wall, _, q_wins, q_ratio, q_floor, q_ceiling, q_nogo, q_wall_left, q_wall_right, _ = analyze_topology(pil_image)
+    # Extract depth map (64x64 for similarity + full-res for MLSD)
+    q_depth, q_depth_full = extract_depth_map(pil_image)
+    # MLSD on depth map → clean room geometry
+    q_vp_x, q_vp_y, q_angle_hist = extract_line_features(pil_image, depth_map=q_depth_full)
 
-    # Filter candidates by topology match
+    # Filter candidates by topology match (with progressive relaxation)
+    # Step 1: Strict match (room_type + dominant_wall)
     candidates = []
     for filepath, data in _db.items():
         if data["room_type"] != q_type:
@@ -302,12 +464,17 @@ async def search_similar(image: UploadFile = File(...), top_k: int = 5):
             continue
         candidates.append((filepath, data))
 
-    # If no exact match — relax dominant_wall constraint
-    if not candidates:
+    # Step 2: If too few — relax dominant_wall constraint
+    if len(candidates) < top_k:
+        candidates = []
         for filepath, data in _db.items():
             if data["room_type"] != q_type:
                 continue
             candidates.append((filepath, data))
+
+    # Step 3: If still too few — use ALL candidates (let scoring decide)
+    if len(candidates) < top_k:
+        candidates = [(fp, d) for fp, d in _db.items()]
 
     # Score candidates
     results = []
@@ -328,8 +495,23 @@ async def search_similar(image: UploadFile = File(...), top_k: int = 5):
         c_wall_right = data.get("wall_right_ratio", 0.0)
         wall_sim = 1.0 - (abs(q_wall_left - c_wall_left) + abs(q_wall_right - c_wall_right)) / 2.0
 
-        final_score = floor_iou + (ceiling_iou * 0.3) + (depth_sim * 0.3) + (wall_sim * 0.4) - (area_penalty * 0.5) - (collision_percent * 2.0)
-        results.append((final_score, filepath, data, floor_iou, ceiling_iou, collision_percent, depth_sim))
+        # Vanishing Point similarity (NEW!)
+        c_vp_x = data.get("vp_x", 0.5)
+        c_vp_y = data.get("vp_y", 0.5)
+        if _db_line_histograms is not None:
+            c_hist = _db_line_histograms[idx]
+        else:
+            c_hist = np.zeros(NUM_ANGLE_BINS, dtype=np.float32)
+        vp_sim = compute_vp_similarity(q_vp_x, q_vp_y, c_vp_x, c_vp_y, q_angle_hist, c_hist)
+
+        final_score = (floor_iou 
+                      + (ceiling_iou * 0.3) 
+                      + (depth_sim * 0.5) 
+                      + (wall_sim * 0.4) 
+                      + (vp_sim * 0.7)
+                      - (area_penalty * 0.5) 
+                      - (collision_percent * 2.0))
+        results.append((final_score, filepath, data, floor_iou, ceiling_iou, collision_percent, depth_sim, vp_sim))
 
     results.sort(key=lambda x: x[0], reverse=True)
 
@@ -337,12 +519,12 @@ async def search_similar(image: UploadFile = File(...), top_k: int = 5):
     response_results = []
     rank = 1
     
-    for (score, filepath, data, iou, c_iou, collision, d_sim) in results:
+    for (score, filepath, data, iou, c_iou, collision, d_sim, vp_s) in results:
         if len(response_results) >= top_k:
             break
 
         # Skip candidates below minimum similarity threshold
-        if score < 1.3:
+        if score < 0.5:
             break  # Results are sorted, so all remaining will be below threshold too
 
         before_path = Path(filepath)
@@ -383,6 +565,7 @@ async def search_similar(image: UploadFile = File(...), top_k: int = 5):
             floor_iou=round(iou, 4),
             ceiling_iou=round(c_iou, 4),
             depth_similarity=round(d_sim, 4),
+            vp_similarity=round(vp_s, 4),
             collision_percent=round(collision, 4),
             collision_warning=collision > 0.05,
         ))

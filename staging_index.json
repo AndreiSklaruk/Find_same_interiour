@@ -1,3642 +1,4162 @@
 {
   "database/image_1.jpg": {
     "index": 0,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.4375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9609375,
     "windows": [
       true,
       true,
-      true
+      false
     ],
-    "floor_ratio": 0.22637939453125,
-    "wall_left_ratio": 0.4408,
-    "wall_right_ratio": 0.4355
+    "floor_ratio": 0.001953125,
+    "wall_left_ratio": 0.2084,
+    "wall_right_ratio": 0.2302,
+    "vp_x": 0.5992,
+    "vp_y": 0.4891
   },
   "database/image_10.jpg": {
     "index": 1,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6484375,
     "windows": [
-      false,
       true,
+      false,
       false
     ],
-    "floor_ratio": 0.25579833984375,
-    "wall_left_ratio": 0.4915,
-    "wall_right_ratio": 0.5382
+    "floor_ratio": 0.0028076171875,
+    "wall_left_ratio": 0.2173,
+    "wall_right_ratio": 0.2351,
+    "vp_x": 0.4898,
+    "vp_y": 0.4516
   },
   "database/image_100.jpg": {
     "index": 2,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5078125,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.65625,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.2442626953125,
-    "wall_left_ratio": 0.3301,
-    "wall_right_ratio": 0.5372
+    "floor_ratio": 0.00250244140625,
+    "wall_left_ratio": 0.2086,
+    "wall_right_ratio": 0.2365,
+    "vp_x": 0.2167,
+    "vp_y": 0.5017
   },
   "database/image_101.jpg": {
     "index": 3,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.453125,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.921875,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.25830078125,
-    "wall_left_ratio": 0.3168,
-    "wall_right_ratio": 0.6476
+    "floor_ratio": 0.0029296875,
+    "wall_left_ratio": 0.212,
+    "wall_right_ratio": 0.2401,
+    "vp_x": 0.4711,
+    "vp_y": 0.6318
   },
   "database/image_102.jpg": {
     "index": 4,
-    "room_type": "Frontal",
+    "room_type": "Corner",
     "dominant_wall": "Left",
-    "corner_x": 0.59375,
+    "corner_x": 0.6484375,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.26507568359375,
-    "wall_left_ratio": 0.145,
-    "wall_right_ratio": 0.4648
+    "floor_ratio": 0.00244140625,
+    "wall_left_ratio": 0.217,
+    "wall_right_ratio": 0.2301,
+    "vp_x": 1.0,
+    "vp_y": 0.5104
   },
   "database/image_103.jpg": {
     "index": 5,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.484375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.953125,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.261474609375,
-    "wall_left_ratio": 0.2991,
-    "wall_right_ratio": 0.5615
+    "floor_ratio": 0.0013427734375,
+    "wall_left_ratio": 0.2031,
+    "wall_right_ratio": 0.2231,
+    "vp_x": 0.9278,
+    "vp_y": 0.5003
   },
   "database/image_104.jpg": {
     "index": 6,
     "room_type": "Corner",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.46875,
+    "dominant_wall": "Left",
+    "corner_x": 0.96875,
     "windows": [
-      false,
       true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.2589111328125,
-    "wall_left_ratio": 0.5215,
-    "wall_right_ratio": 0.4608
+    "floor_ratio": 0.0030517578125,
+    "wall_left_ratio": 0.2094,
+    "wall_right_ratio": 0.2412,
+    "vp_x": 0.7554,
+    "vp_y": 0.5266
   },
   "database/image_105.jpg": {
     "index": 7,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.4765625,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.65625,
     "windows": [
-      false,
-      false,
+      true,
+      true,
       false
     ],
-    "floor_ratio": 0.2110595703125,
-    "wall_left_ratio": 0.5215,
-    "wall_right_ratio": 0.5957
+    "floor_ratio": 0.00238037109375,
+    "wall_left_ratio": 0.2202,
+    "wall_right_ratio": 0.24,
+    "vp_x": 0.5128,
+    "vp_y": 0.5126
   },
   "database/image_106.jpg": {
     "index": 8,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.453125,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9765625,
     "windows": [
+      true,
       false,
-      false,
-      true
+      false
     ],
-    "floor_ratio": 0.31048583984375,
-    "wall_left_ratio": 0.4666,
-    "wall_right_ratio": 0.1234
+    "floor_ratio": 0.00140380859375,
+    "wall_left_ratio": 0.2161,
+    "wall_right_ratio": 0.2384,
+    "vp_x": 0.8422,
+    "vp_y": 0.5018
   },
   "database/image_107.jpg": {
     "index": 9,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5078125,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.953125,
     "windows": [
-      false,
       true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.31201171875,
-    "wall_left_ratio": 0.5623,
-    "wall_right_ratio": 0.2598
+    "floor_ratio": 0.00177001953125,
+    "wall_left_ratio": 0.2122,
+    "wall_right_ratio": 0.2426,
+    "vp_x": 0.4991,
+    "vp_y": 0.3374
   },
   "database/image_108.jpg": {
     "index": 10,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5078125,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.828125,
     "windows": [
-      false,
       true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.29541015625,
-    "wall_left_ratio": 0.6216,
-    "wall_right_ratio": 0.5062
+    "floor_ratio": 0.00213623046875,
+    "wall_left_ratio": 0.2003,
+    "wall_right_ratio": 0.2411,
+    "vp_x": 0.0,
+    "vp_y": 0.3758
   },
   "database/image_109.jpg": {
     "index": 11,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.4453125,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9296875,
     "windows": [
-      false,
       true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.206298828125,
-    "wall_left_ratio": 0.502,
-    "wall_right_ratio": 0.3976
+    "floor_ratio": 0.003173828125,
+    "wall_left_ratio": 0.2026,
+    "wall_right_ratio": 0.2269,
+    "vp_x": 0.0802,
+    "vp_y": 0.4462
   },
   "database/image_11.jpg": {
     "index": 12,
-    "room_type": "Frontal",
+    "room_type": "Corner",
     "dominant_wall": "Left",
-    "corner_x": 0.59375,
+    "corner_x": 0.6484375,
     "windows": [
+      true,
       false,
-      false,
-      true
+      false
     ],
-    "floor_ratio": 0.29290771484375,
-    "wall_left_ratio": 0.4646,
-    "wall_right_ratio": 0.2698
+    "floor_ratio": 0.00286865234375,
+    "wall_left_ratio": 0.2036,
+    "wall_right_ratio": 0.2314,
+    "vp_x": 0.9195,
+    "vp_y": 0.5161
   },
   "database/image_110.jpg": {
     "index": 13,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.453125,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.8203125,
     "windows": [
-      false,
       true,
+      false,
       false
     ],
-    "floor_ratio": 0.1561279296875,
-    "wall_left_ratio": 0.4783,
-    "wall_right_ratio": 0.5625
+    "floor_ratio": 0.0025634765625,
+    "wall_left_ratio": 0.2151,
+    "wall_right_ratio": 0.2208,
+    "vp_x": 0.2834,
+    "vp_y": 0.7306
   },
   "database/image_111.jpg": {
     "index": 14,
-    "room_type": "Frontal",
+    "room_type": "Corner",
     "dominant_wall": "Left",
-    "corner_x": 0.578125,
+    "corner_x": 0.9296875,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.2520751953125,
-    "wall_left_ratio": 0.4265,
-    "wall_right_ratio": 0.3649
+    "floor_ratio": 0.0009765625,
+    "wall_left_ratio": 0.2001,
+    "wall_right_ratio": 0.2411,
+    "vp_x": 0.2609,
+    "vp_y": 0.4424
   },
   "database/image_112.jpg": {
     "index": 15,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.390625,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.65625,
     "windows": [
-      false,
       true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.2784423828125,
-    "wall_left_ratio": 0.3618,
-    "wall_right_ratio": 0.4697
+    "floor_ratio": 0.0020751953125,
+    "wall_left_ratio": 0.1953,
+    "wall_right_ratio": 0.2395,
+    "vp_x": 0.0673,
+    "vp_y": 0.5076
   },
   "database/image_113.jpg": {
     "index": 16,
-    "room_type": "Frontal",
+    "room_type": "Corner",
     "dominant_wall": "Left",
-    "corner_x": 0.6640625,
+    "corner_x": 0.6484375,
     "windows": [
       true,
       true,
-      true
+      false
     ],
-    "floor_ratio": 0.2738037109375,
-    "wall_left_ratio": 0.3828,
-    "wall_right_ratio": 0.241
+    "floor_ratio": 0.00250244140625,
+    "wall_left_ratio": 0.2003,
+    "wall_right_ratio": 0.2338,
+    "vp_x": 1.0,
+    "vp_y": 0.5025
   },
   "database/image_114.jpg": {
     "index": 17,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.390625,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.65625,
     "windows": [
       true,
-      false,
+      true,
       false
     ],
-    "floor_ratio": 0.27203369140625,
-    "wall_left_ratio": 0.3173,
-    "wall_right_ratio": 0.5658
+    "floor_ratio": 0.00213623046875,
+    "wall_left_ratio": 0.2008,
+    "wall_right_ratio": 0.2314,
+    "vp_x": 0.0493,
+    "vp_y": 0.4964
   },
   "database/image_115.jpg": {
     "index": 18,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.34375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.828125,
     "windows": [
       true,
       false,
       false
     ],
-    "floor_ratio": 0.271240234375,
-    "wall_left_ratio": 0.4041,
-    "wall_right_ratio": 0.582
+    "floor_ratio": 0.00177001953125,
+    "wall_left_ratio": 0.1991,
+    "wall_right_ratio": 0.22,
+    "vp_x": 0.1411,
+    "vp_y": 0.5267
   },
   "database/image_116.jpg": {
     "index": 19,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5390625,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.828125,
     "windows": [
-      false,
+      true,
       true,
       false
     ],
-    "floor_ratio": 0.21533203125,
-    "wall_left_ratio": 0.4843,
-    "wall_right_ratio": 0.6208
+    "floor_ratio": 0.00177001953125,
+    "wall_left_ratio": 0.207,
+    "wall_right_ratio": 0.2271,
+    "vp_x": 0.1637,
+    "vp_y": 0.5031
   },
   "database/image_117.jpg": {
     "index": 20,
-    "room_type": "Frontal",
+    "room_type": "Corner",
     "dominant_wall": "Left",
-    "corner_x": 0.5546875,
+    "corner_x": 0.96875,
     "windows": [
       true,
       false,
       false
     ],
-    "floor_ratio": 0.2822265625,
-    "wall_left_ratio": 0.3843,
-    "wall_right_ratio": 0.098
+    "floor_ratio": 0.001953125,
+    "wall_left_ratio": 0.2091,
+    "wall_right_ratio": 0.2371,
+    "vp_x": 0.9059,
+    "vp_y": 0.5127
   },
   "database/image_118.jpg": {
     "index": 21,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.4296875,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6640625,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.26959228515625,
-    "wall_left_ratio": 0.2614,
-    "wall_right_ratio": 0.6068
+    "floor_ratio": 0.00286865234375,
+    "wall_left_ratio": 0.2095,
+    "wall_right_ratio": 0.2405,
+    "vp_x": 0.4062,
+    "vp_y": 0.3423
   },
   "database/image_119.jpg": {
     "index": 22,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.96875,
     "windows": [
-      false,
       true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.1524658203125,
-    "wall_left_ratio": 0.4006,
-    "wall_right_ratio": 0.369
+    "floor_ratio": 0.00201416015625,
+    "wall_left_ratio": 0.2081,
+    "wall_right_ratio": 0.2506,
+    "vp_x": 0.9537,
+    "vp_y": 0.7284
   },
   "database/image_12.jpg": {
     "index": 23,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.53125,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.671875,
     "windows": [
-      false,
       true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.31646728515625,
-    "wall_left_ratio": 0.3616,
-    "wall_right_ratio": 0.245
+    "floor_ratio": 0.0030517578125,
+    "wall_left_ratio": 0.1898,
+    "wall_right_ratio": 0.2255,
+    "vp_x": 0.8605,
+    "vp_y": 0.498
   },
   "database/image_120.jpg": {
     "index": 24,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.390625,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9609375,
     "windows": [
       true,
       true,
       false
     ],
-    "floor_ratio": 0.20391845703125,
-    "wall_left_ratio": 0.1694,
-    "wall_right_ratio": 0.4938
+    "floor_ratio": 0.0020751953125,
+    "wall_left_ratio": 0.2162,
+    "wall_right_ratio": 0.2363,
+    "vp_x": 0.247,
+    "vp_y": 0.4532
   },
   "database/image_121.jpg": {
     "index": 25,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.65625,
     "windows": [
-      false,
       true,
-      true
+      true,
+      false
     ],
-    "floor_ratio": 0.30682373046875,
-    "wall_left_ratio": 0.4668,
-    "wall_right_ratio": 0.427
+    "floor_ratio": 0.0029296875,
+    "wall_left_ratio": 0.2054,
+    "wall_right_ratio": 0.2466,
+    "vp_x": 0.0,
+    "vp_y": 0.4182
   },
   "database/image_122.jpg": {
     "index": 26,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.453125,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9296875,
     "windows": [
-      false,
       true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.18524169921875,
-    "wall_left_ratio": 0.5336,
-    "wall_right_ratio": 0.5414
+    "floor_ratio": 0.0025634765625,
+    "wall_left_ratio": 0.2032,
+    "wall_right_ratio": 0.24,
+    "vp_x": 0.0,
+    "vp_y": 0.378
   },
   "database/image_123.jpg": {
     "index": 27,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.4375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9375,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.07269287109375,
-    "wall_left_ratio": 0.2223,
-    "wall_right_ratio": 0.5295
+    "floor_ratio": 0.0028076171875,
+    "wall_left_ratio": 0.1948,
+    "wall_right_ratio": 0.2358,
+    "vp_x": 1.0,
+    "vp_y": 0.5075
   },
   "database/image_124.jpg": {
     "index": 28,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5078125,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.953125,
     "windows": [
-      false,
+      true,
       true,
       false
     ],
-    "floor_ratio": 0.19000244140625,
-    "wall_left_ratio": 0.7426,
-    "wall_right_ratio": 0.5542
+    "floor_ratio": 0.00225830078125,
+    "wall_left_ratio": 0.1993,
+    "wall_right_ratio": 0.2361,
+    "vp_x": 0.7597,
+    "vp_y": 0.4988
   },
   "database/image_125.jpg": {
     "index": 29,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.28125,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9609375,
     "windows": [
       true,
       true,
       false
     ],
-    "floor_ratio": 0.173583984375,
-    "wall_left_ratio": 0.1846,
-    "wall_right_ratio": 0.5549
+    "floor_ratio": 0.00177001953125,
+    "wall_left_ratio": 0.2051,
+    "wall_right_ratio": 0.2278,
+    "vp_x": 0.7486,
+    "vp_y": 0.4115
   },
   "database/image_126.jpg": {
     "index": 30,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5234375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.8203125,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.29412841796875,
-    "wall_left_ratio": 0.0948,
-    "wall_right_ratio": 0.4851
+    "floor_ratio": 0.00152587890625,
+    "wall_left_ratio": 0.2036,
+    "wall_right_ratio": 0.2496,
+    "vp_x": 1.0,
+    "vp_y": 0.4972
   },
   "database/image_127.jpg": {
     "index": 31,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.4453125,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.671875,
     "windows": [
-      false,
+      true,
       false,
       false
     ],
-    "floor_ratio": 0.23583984375,
-    "wall_left_ratio": 0.6381,
-    "wall_right_ratio": 0.4828
+    "floor_ratio": 0.003173828125,
+    "wall_left_ratio": 0.1985,
+    "wall_right_ratio": 0.2489,
+    "vp_x": 0.437,
+    "vp_y": 0.6578
   },
   "database/image_128.jpg": {
     "index": 32,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.484375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6484375,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.242431640625,
-    "wall_left_ratio": 0.1953,
-    "wall_right_ratio": 0.4371
+    "floor_ratio": 0.002685546875,
+    "wall_left_ratio": 0.1924,
+    "wall_right_ratio": 0.23,
+    "vp_x": 0.5193,
+    "vp_y": 0.4445
   },
   "database/image_129.jpg": {
     "index": 33,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.46875,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9140625,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.32733154296875,
-    "wall_left_ratio": 0.1989,
-    "wall_right_ratio": 0.51
+    "floor_ratio": 0.00146484375,
+    "wall_left_ratio": 0.2078,
+    "wall_right_ratio": 0.2271,
+    "vp_x": 1.0,
+    "vp_y": 0.5064
   },
   "database/image_13.jpg": {
     "index": 34,
-    "room_type": "Frontal",
+    "room_type": "Corner",
     "dominant_wall": "Left",
-    "corner_x": 0.5625,
+    "corner_x": 0.96875,
     "windows": [
-      false,
       true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.30908203125,
-    "wall_left_ratio": 0.5742,
-    "wall_right_ratio": 0.283
+    "floor_ratio": 0.001220703125,
+    "wall_left_ratio": 0.2061,
+    "wall_right_ratio": 0.2322,
+    "vp_x": 0.1629,
+    "vp_y": 0.4735
   },
   "database/image_130.jpg": {
     "index": 35,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.484375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.65625,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.18133544921875,
-    "wall_left_ratio": 0.2501,
-    "wall_right_ratio": 0.637
+    "floor_ratio": 0.00177001953125,
+    "wall_left_ratio": 0.2061,
+    "wall_right_ratio": 0.2361,
+    "vp_x": 0.1269,
+    "vp_y": 0.6116
   },
   "database/image_131.jpg": {
     "index": 36,
-    "room_type": "Frontal",
+    "room_type": "Corner",
     "dominant_wall": "Left",
-    "corner_x": 0.5546875,
+    "corner_x": 0.65625,
     "windows": [
       true,
-      true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.2266845703125,
-    "wall_left_ratio": 0.4349,
-    "wall_right_ratio": 0.4567
+    "floor_ratio": 0.00323486328125,
+    "wall_left_ratio": 0.2079,
+    "wall_right_ratio": 0.2423,
+    "vp_x": 0.3931,
+    "vp_y": 0.5049
   },
   "database/image_132.jpg": {
     "index": 37,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.484375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9140625,
     "windows": [
-      false,
+      true,
       false,
       false
     ],
-    "floor_ratio": 0.23175048828125,
-    "wall_left_ratio": 0.2612,
-    "wall_right_ratio": 0.4672
+    "floor_ratio": 0.002197265625,
+    "wall_left_ratio": 0.2045,
+    "wall_right_ratio": 0.2421,
+    "vp_x": 0.6796,
+    "vp_y": 0.3406
   },
   "database/image_133.jpg": {
     "index": 38,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.4609375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6484375,
     "windows": [
+      true,
       false,
-      false,
-      true
+      false
     ],
-    "floor_ratio": 0.23187255859375,
-    "wall_left_ratio": 0.522,
-    "wall_right_ratio": 0.5427
+    "floor_ratio": 0.0013427734375,
+    "wall_left_ratio": 0.2148,
+    "wall_right_ratio": 0.2487,
+    "vp_x": 0.284,
+    "vp_y": 0.5249
   },
   "database/image_134.jpg": {
     "index": 39,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.46875,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6640625,
     "windows": [
-      false,
       true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.30169677734375,
-    "wall_left_ratio": 0.5654,
-    "wall_right_ratio": 0.2517
+    "floor_ratio": 0.00311279296875,
+    "wall_left_ratio": 0.1896,
+    "wall_right_ratio": 0.2251,
+    "vp_x": 0.4956,
+    "vp_y": 0.2677
   },
   "database/image_135.jpg": {
     "index": 40,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.96875,
     "windows": [
-      false,
       true,
+      false,
       false
     ],
-    "floor_ratio": 0.12506103515625,
-    "wall_left_ratio": 0.6022,
-    "wall_right_ratio": 0.6471
+    "floor_ratio": 0.00213623046875,
+    "wall_left_ratio": 0.202,
+    "wall_right_ratio": 0.2397,
+    "vp_x": 0.4872,
+    "vp_y": 0.5139
   },
   "database/image_136.jpg": {
     "index": 41,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5078125,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.828125,
     "windows": [
-      false,
       true,
+      false,
       false
     ],
-    "floor_ratio": 0.1458740234375,
-    "wall_left_ratio": 0.6437,
-    "wall_right_ratio": 0.6167
+    "floor_ratio": 0.00225830078125,
+    "wall_left_ratio": 0.1941,
+    "wall_right_ratio": 0.2203,
+    "vp_x": 0.4871,
+    "vp_y": 0.4819
   },
   "database/image_137.jpg": {
     "index": 42,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.421875,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6171875,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.25189208984375,
-    "wall_left_ratio": 0.3442,
-    "wall_right_ratio": 0.6271
+    "floor_ratio": 0.002197265625,
+    "wall_left_ratio": 0.2056,
+    "wall_right_ratio": 0.2313,
+    "vp_x": 0.2147,
+    "vp_y": 0.4916
   },
   "database/image_138.jpg": {
     "index": 43,
-    "room_type": "Frontal",
+    "room_type": "Corner",
     "dominant_wall": "Left",
-    "corner_x": 0.8984375,
+    "corner_x": 0.96875,
     "windows": [
-      false,
+      true,
       false,
       false
     ],
-    "floor_ratio": 0.32000732421875,
-    "wall_left_ratio": 0.5765,
-    "wall_right_ratio": 0.1742
+    "floor_ratio": 0.00152587890625,
+    "wall_left_ratio": 0.2139,
+    "wall_right_ratio": 0.2429,
+    "vp_x": 0.8852,
+    "vp_y": 0.4819
   },
   "database/image_139.jpg": {
     "index": 44,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.3671875,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.96875,
     "windows": [
       true,
       false,
       false
     ],
-    "floor_ratio": 0.321044921875,
-    "wall_left_ratio": 0.2399,
-    "wall_right_ratio": 0.3419
+    "floor_ratio": 0.00244140625,
+    "wall_left_ratio": 0.1965,
+    "wall_right_ratio": 0.2578,
+    "vp_x": 0.3795,
+    "vp_y": 0.3375
   },
   "database/image_14.jpg": {
     "index": 45,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.421875,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.65625,
     "windows": [
-      false,
       true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.275390625,
-    "wall_left_ratio": 0.5504,
-    "wall_right_ratio": 0.2427
+    "floor_ratio": 0.00164794921875,
+    "wall_left_ratio": 0.191,
+    "wall_right_ratio": 0.2275,
+    "vp_x": 0.0,
+    "vp_y": 0.5105
   },
   "database/image_140.jpg": {
     "index": 46,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.484375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9609375,
     "windows": [
-      false,
       true,
+      false,
       false
     ],
-    "floor_ratio": 0.25811767578125,
-    "wall_left_ratio": 0.5349,
-    "wall_right_ratio": 0.4957
+    "floor_ratio": 0.001953125,
+    "wall_left_ratio": 0.203,
+    "wall_right_ratio": 0.222,
+    "vp_x": 0.4624,
+    "vp_y": 0.4683
   },
   "database/image_141.jpg": {
     "index": 47,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.390625,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9921875,
     "windows": [
       true,
       false,
       false
     ],
-    "floor_ratio": 0.29461669921875,
-    "wall_left_ratio": 0.2727,
-    "wall_right_ratio": 0.4597
+    "floor_ratio": 0.0025634765625,
+    "wall_left_ratio": 0.198,
+    "wall_right_ratio": 0.2454,
+    "vp_x": 0.1019,
+    "vp_y": 0.4932
   },
   "database/image_142.jpg": {
     "index": 48,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.4453125,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.65625,
     "windows": [
       true,
       true,
       false
     ],
-    "floor_ratio": 0.31689453125,
-    "wall_left_ratio": 0.2474,
-    "wall_right_ratio": 0.3824
+    "floor_ratio": 0.00439453125,
+    "wall_left_ratio": 0.1998,
+    "wall_right_ratio": 0.2334,
+    "vp_x": 0.146,
+    "vp_y": 0.4772
   },
   "database/image_143.jpg": {
     "index": 49,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.453125,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6640625,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.3074951171875,
-    "wall_left_ratio": 0.2372,
-    "wall_right_ratio": 0.5819
+    "floor_ratio": 0.00262451171875,
+    "wall_left_ratio": 0.1995,
+    "wall_right_ratio": 0.2349,
+    "vp_x": 0.4193,
+    "vp_y": 0.5566
   },
   "database/image_144.jpg": {
     "index": 50,
-    "room_type": "Frontal",
+    "room_type": "Corner",
     "dominant_wall": "Left",
-    "corner_x": 0.5625,
+    "corner_x": 0.828125,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.273681640625,
-    "wall_left_ratio": 0.2366,
-    "wall_right_ratio": 0.5532
+    "floor_ratio": 0.00128173828125,
+    "wall_left_ratio": 0.198,
+    "wall_right_ratio": 0.2383,
+    "vp_x": 1.0,
+    "vp_y": 0.4974
   },
   "database/image_145.jpg": {
     "index": 51,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.546875,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.65625,
     "windows": [
-      false,
       true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.26483154296875,
-    "wall_left_ratio": 0.5414,
-    "wall_right_ratio": 0.3279
+    "floor_ratio": 0.00244140625,
+    "wall_left_ratio": 0.2025,
+    "wall_right_ratio": 0.2466,
+    "vp_x": 0.5657,
+    "vp_y": 0.3436
   },
   "database/image_146.jpg": {
     "index": 52,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.328125,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9609375,
     "windows": [
       true,
       false,
       false
     ],
-    "floor_ratio": 0.29010009765625,
-    "wall_left_ratio": 0.3002,
-    "wall_right_ratio": 0.5428
+    "floor_ratio": 0.00274658203125,
+    "wall_left_ratio": 0.205,
+    "wall_right_ratio": 0.2286,
+    "vp_x": 0.0,
+    "vp_y": 0.5059
   },
   "database/image_147.jpg": {
     "index": 53,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.296875,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9140625,
     "windows": [
       true,
-      true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.2509765625,
-    "wall_left_ratio": 0.4557,
-    "wall_right_ratio": 0.1831
+    "floor_ratio": 0.00323486328125,
+    "wall_left_ratio": 0.2069,
+    "wall_right_ratio": 0.2196,
+    "vp_x": 0.6484,
+    "vp_y": 0.4846
   },
   "database/image_148.jpg": {
     "index": 54,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.421875,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9609375,
     "windows": [
       true,
       false,
       false
     ],
-    "floor_ratio": 0.2764892578125,
-    "wall_left_ratio": 0.318,
-    "wall_right_ratio": 0.4614
+    "floor_ratio": 0.0018310546875,
+    "wall_left_ratio": 0.2104,
+    "wall_right_ratio": 0.2299,
+    "vp_x": 0.1531,
+    "vp_y": 0.5022
   },
   "database/image_149.jpg": {
     "index": 55,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.546875,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.953125,
     "windows": [
-      false,
       true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.24652099609375,
-    "wall_left_ratio": 0.5812,
-    "wall_right_ratio": 0.3931
+    "floor_ratio": 0.00189208984375,
+    "wall_left_ratio": 0.1924,
+    "wall_right_ratio": 0.222,
+    "vp_x": 0.794,
+    "vp_y": 0.4796
   },
   "database/image_15.jpg": {
     "index": 56,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.4375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6640625,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.265380859375,
-    "wall_left_ratio": 0.2649,
-    "wall_right_ratio": 0.5421
+    "floor_ratio": 0.00311279296875,
+    "wall_left_ratio": 0.2177,
+    "wall_right_ratio": 0.2334,
+    "vp_x": 0.4159,
+    "vp_y": 0.3567
   },
   "database/image_150.jpg": {
     "index": 57,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.4453125,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.828125,
     "windows": [
       true,
       true,
       false
     ],
-    "floor_ratio": 0.19732666015625,
-    "wall_left_ratio": 0.4846,
-    "wall_right_ratio": 0.6632
+    "floor_ratio": 0.0023193359375,
+    "wall_left_ratio": 0.2103,
+    "wall_right_ratio": 0.2218,
+    "vp_x": 0.2446,
+    "vp_y": 0.4846
   },
   "database/image_151.jpg": {
     "index": 58,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.4296875,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.65625,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.27252197265625,
-    "wall_left_ratio": 0.3248,
-    "wall_right_ratio": 0.5135
+    "floor_ratio": 0.00323486328125,
+    "wall_left_ratio": 0.2179,
+    "wall_right_ratio": 0.2347,
+    "vp_x": 0.1525,
+    "vp_y": 0.512
   },
   "database/image_152.jpg": {
     "index": 59,
-    "room_type": "Frontal",
+    "room_type": "Corner",
     "dominant_wall": "Left",
-    "corner_x": 0.578125,
+    "corner_x": 0.96875,
     "windows": [
-      false,
       true,
-      true
+      true,
+      false
     ],
-    "floor_ratio": 0.30230712890625,
-    "wall_left_ratio": 0.5142,
-    "wall_right_ratio": 0.2898
+    "floor_ratio": 0.00250244140625,
+    "wall_left_ratio": 0.2106,
+    "wall_right_ratio": 0.2449,
+    "vp_x": 0.8651,
+    "vp_y": 0.4697
   },
   "database/image_153.jpg": {
     "index": 60,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5234375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.984375,
     "windows": [
-      false,
+      true,
       true,
       false
     ],
-    "floor_ratio": 0.1553955078125,
-    "wall_left_ratio": 0.6738,
-    "wall_right_ratio": 0.6772
+    "floor_ratio": 0.0023193359375,
+    "wall_left_ratio": 0.1879,
+    "wall_right_ratio": 0.2316,
+    "vp_x": 0.4939,
+    "vp_y": 0.5033
   },
   "database/image_154.jpg": {
     "index": 61,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.546875,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.96875,
     "windows": [
-      false,
+      true,
       true,
       false
     ],
-    "floor_ratio": 0.28875732421875,
-    "wall_left_ratio": 0.4197,
-    "wall_right_ratio": 0.449
+    "floor_ratio": 0.00225830078125,
+    "wall_left_ratio": 0.2228,
+    "wall_right_ratio": 0.2335,
+    "vp_x": 0.1806,
+    "vp_y": 0.4808
   },
   "database/image_155.jpg": {
     "index": 62,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.4609375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6171875,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.22674560546875,
-    "wall_left_ratio": 0.4355,
-    "wall_right_ratio": 0.7001
+    "floor_ratio": 0.00164794921875,
+    "wall_left_ratio": 0.2186,
+    "wall_right_ratio": 0.2264,
+    "vp_x": 0.5161,
+    "vp_y": 0.6597
   },
   "database/image_156.jpg": {
     "index": 63,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.4609375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.828125,
     "windows": [
       true,
       true,
       false
     ],
-    "floor_ratio": 0.21966552734375,
-    "wall_left_ratio": 0.381,
-    "wall_right_ratio": 0.751
+    "floor_ratio": 0.0018310546875,
+    "wall_left_ratio": 0.2089,
+    "wall_right_ratio": 0.2235,
+    "vp_x": 0.832,
+    "vp_y": 0.488
   },
   "database/image_157.jpg": {
     "index": 64,
-    "room_type": "Frontal",
+    "room_type": "Corner",
     "dominant_wall": "Left",
-    "corner_x": 0.5859375,
+    "corner_x": 0.65625,
     "windows": [
-      false,
       true,
+      false,
       false
     ],
-    "floor_ratio": 0.19439697265625,
-    "wall_left_ratio": 0.655,
-    "wall_right_ratio": 0.6768
+    "floor_ratio": 0.00189208984375,
+    "wall_left_ratio": 0.2107,
+    "wall_right_ratio": 0.2311,
+    "vp_x": 0.2187,
+    "vp_y": 0.4803
   },
   "database/image_158.jpg": {
     "index": 65,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.453125,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.671875,
     "windows": [
-      false,
       true,
-      false
+      false,
+      true
     ],
-    "floor_ratio": 0.19757080078125,
-    "wall_left_ratio": 0.7096,
-    "wall_right_ratio": 0.6174
+    "floor_ratio": 0.0030517578125,
+    "wall_left_ratio": 0.2036,
+    "wall_right_ratio": 0.2336,
+    "vp_x": 0.7771,
+    "vp_y": 0.4833
   },
   "database/image_159.jpg": {
     "index": 66,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.4375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.921875,
     "windows": [
       true,
       false,
       false
     ],
-    "floor_ratio": 0.2996826171875,
-    "wall_left_ratio": 0.3228,
-    "wall_right_ratio": 0.631
+    "floor_ratio": 0.002197265625,
+    "wall_left_ratio": 0.2035,
+    "wall_right_ratio": 0.2354,
+    "vp_x": 0.1407,
+    "vp_y": 0.5102
   },
   "database/image_16.jpg": {
     "index": 67,
-    "room_type": "Frontal",
+    "room_type": "Corner",
     "dominant_wall": "Left",
-    "corner_x": 0.6640625,
+    "corner_x": 0.9296875,
     "windows": [
-      false,
-      false,
-      true
+      true,
+      true,
+      false
     ],
-    "floor_ratio": 0.28717041015625,
-    "wall_left_ratio": 0.5479,
-    "wall_right_ratio": 0.2999
+    "floor_ratio": 0.0018310546875,
+    "wall_left_ratio": 0.2019,
+    "wall_right_ratio": 0.2307,
+    "vp_x": 1.0,
+    "vp_y": 0.5033
   },
   "database/image_160.jpg": {
     "index": 68,
-    "room_type": "Frontal",
+    "room_type": "Corner",
     "dominant_wall": "Left",
-    "corner_x": 0.5703125,
+    "corner_x": 0.9140625,
     "windows": [
-      false,
       true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.25079345703125,
-    "wall_left_ratio": 0.6587,
-    "wall_right_ratio": 0.4633
+    "floor_ratio": 0.002197265625,
+    "wall_left_ratio": 0.199,
+    "wall_right_ratio": 0.2345,
+    "vp_x": 0.7285,
+    "vp_y": 0.4893
   },
   "database/image_161.jpg": {
     "index": 69,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.484375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.953125,
     "windows": [
-      false,
       true,
+      false,
       false
     ],
-    "floor_ratio": 0.24847412109375,
-    "wall_left_ratio": 0.5142,
-    "wall_right_ratio": 0.6829
+    "floor_ratio": 0.0023193359375,
+    "wall_left_ratio": 0.2124,
+    "wall_right_ratio": 0.236,
+    "vp_x": 0.2423,
+    "vp_y": 0.4789
   },
   "database/image_162.jpg": {
     "index": 70,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.4296875,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9140625,
     "windows": [
-      false,
       true,
+      false,
       false
     ],
-    "floor_ratio": 0.22015380859375,
-    "wall_left_ratio": 0.452,
-    "wall_right_ratio": 0.6509
+    "floor_ratio": 0.001708984375,
+    "wall_left_ratio": 0.1992,
+    "wall_right_ratio": 0.2394,
+    "vp_x": 0.4769,
+    "vp_y": 0.5036
   },
   "database/image_163.jpg": {
     "index": 71,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.484375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6484375,
     "windows": [
+      true,
       false,
-      false,
-      true
+      false
     ],
-    "floor_ratio": 0.2459716796875,
-    "wall_left_ratio": 0.5677,
-    "wall_right_ratio": 0.5447
+    "floor_ratio": 0.001953125,
+    "wall_left_ratio": 0.2271,
+    "wall_right_ratio": 0.2261,
+    "vp_x": 0.514,
+    "vp_y": 0.4992
   },
   "database/image_164.jpg": {
     "index": 72,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.46875,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.65625,
     "windows": [
-      false,
       true,
-      true
+      true,
+      false
     ],
-    "floor_ratio": 0.19512939453125,
-    "wall_left_ratio": 0.5767,
-    "wall_right_ratio": 0.209
+    "floor_ratio": 0.0023193359375,
+    "wall_left_ratio": 0.1979,
+    "wall_right_ratio": 0.2296,
+    "vp_x": 0.0,
+    "vp_y": 0.5673
   },
   "database/image_165.jpg": {
     "index": 73,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.4296875,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.640625,
     "windows": [
-      false,
       true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.26568603515625,
-    "wall_left_ratio": 0.5153,
-    "wall_right_ratio": 0.2019
+    "floor_ratio": 0.00372314453125,
+    "wall_left_ratio": 0.2012,
+    "wall_right_ratio": 0.2476,
+    "vp_x": 0.0003,
+    "vp_y": 0.5017
   },
   "database/image_166.jpg": {
     "index": 74,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.421875,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9609375,
     "windows": [
-      false,
       true,
+      false,
       true
     ],
-    "floor_ratio": 0.24810791015625,
-    "wall_left_ratio": 0.5427,
-    "wall_right_ratio": 0.2566
+    "floor_ratio": 0.0018310546875,
+    "wall_left_ratio": 0.2017,
+    "wall_right_ratio": 0.2197,
+    "vp_x": 0.6709,
+    "vp_y": 0.4853
   },
   "database/image_167.jpg": {
     "index": 75,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9140625,
     "windows": [
-      false,
+      true,
       true,
       false
     ],
-    "floor_ratio": 0.2332763671875,
-    "wall_left_ratio": 0.443,
-    "wall_right_ratio": 0.4972
+    "floor_ratio": 0.00244140625,
+    "wall_left_ratio": 0.2133,
+    "wall_right_ratio": 0.2185,
+    "vp_x": 0.4881,
+    "vp_y": 0.4791
   },
   "database/image_168.jpg": {
     "index": 76,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.546875,
-    "windows": [
-      true,
-      true,
-      false
-    ],
-    "floor_ratio": 0.16180419921875,
-    "wall_left_ratio": 0.2523,
-    "wall_right_ratio": 0.5702
-  },
-  "database/image_169.jpg": {
-    "index": 77,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.4921875,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.828125,
     "windows": [
       true,
       false,
       false
     ],
-    "floor_ratio": 0.263671875,
-    "wall_left_ratio": 0.4396,
-    "wall_right_ratio": 0.6112
+    "floor_ratio": 0.0013427734375,
+    "wall_left_ratio": 0.1953,
+    "wall_right_ratio": 0.241,
+    "vp_x": 0.9783,
+    "vp_y": 0.511
+  },
+  "database/image_169.jpg": {
+    "index": 77,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.65625,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.001708984375,
+    "wall_left_ratio": 0.1973,
+    "wall_right_ratio": 0.2262,
+    "vp_x": 0.5397,
+    "vp_y": 0.6538
   },
   "database/image_17.jpg": {
     "index": 78,
-    "room_type": "Frontal",
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9765625,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00189208984375,
+    "wall_left_ratio": 0.1947,
+    "wall_right_ratio": 0.233,
+    "vp_x": 0.3719,
+    "vp_y": 0.4741
+  },
+  "database/image_170.jpg": {
+    "index": 79,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.921875,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00323486328125,
+    "wall_left_ratio": 0.1963,
+    "wall_right_ratio": 0.2384,
+    "vp_x": 0.0,
+    "vp_y": 0.4723
+  },
+  "database/image_171.jpg": {
+    "index": 80,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.8203125,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00140380859375,
+    "wall_left_ratio": 0.2135,
+    "wall_right_ratio": 0.2469,
+    "vp_x": 1.0,
+    "vp_y": 0.4971
+  },
+  "database/image_172.jpg": {
+    "index": 81,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9609375,
+    "windows": [
+      true,
+      false,
+      true
+    ],
+    "floor_ratio": 0.0023193359375,
+    "wall_left_ratio": 0.1914,
+    "wall_right_ratio": 0.233,
+    "vp_x": 0.1744,
+    "vp_y": 0.477
+  },
+  "database/image_173.jpg": {
+    "index": 82,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6484375,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00286865234375,
+    "wall_left_ratio": 0.2114,
+    "wall_right_ratio": 0.2273,
+    "vp_x": 0.0358,
+    "vp_y": 0.4903
+  },
+  "database/image_174.jpg": {
+    "index": 83,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.640625,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00244140625,
+    "wall_left_ratio": 0.2172,
+    "wall_right_ratio": 0.2467,
+    "vp_x": 0.5985,
+    "vp_y": 0.4166
+  },
+  "database/image_175.jpg": {
+    "index": 84,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.96875,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00299072265625,
+    "wall_left_ratio": 0.197,
+    "wall_right_ratio": 0.2421,
+    "vp_x": 0.1316,
+    "vp_y": 0.4957
+  },
+  "database/image_176.jpg": {
+    "index": 85,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6484375,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.0028076171875,
+    "wall_left_ratio": 0.2179,
+    "wall_right_ratio": 0.246,
+    "vp_x": 0.8996,
+    "vp_y": 0.4786
+  },
+  "database/image_177.jpg": {
+    "index": 86,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.671875,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.002685546875,
+    "wall_left_ratio": 0.2177,
+    "wall_right_ratio": 0.2463,
+    "vp_x": 1.0,
+    "vp_y": 0.4797
+  },
+  "database/image_178.jpg": {
+    "index": 87,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.828125,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00164794921875,
+    "wall_left_ratio": 0.2002,
+    "wall_right_ratio": 0.2191,
+    "vp_x": 0.8113,
+    "vp_y": 0.4656
+  },
+  "database/image_179.jpg": {
+    "index": 88,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.671875,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.0028076171875,
+    "wall_left_ratio": 0.2023,
+    "wall_right_ratio": 0.2473,
+    "vp_x": 0.9763,
+    "vp_y": 0.5023
+  },
+  "database/image_18.jpg": {
+    "index": 89,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9453125,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00250244140625,
+    "wall_left_ratio": 0.184,
+    "wall_right_ratio": 0.2289,
+    "vp_x": 0.8631,
+    "vp_y": 0.4964
+  },
+  "database/image_180.jpg": {
+    "index": 90,
+    "room_type": "Corner",
     "dominant_wall": "Left",
     "corner_x": 0.6640625,
     "windows": [
       true,
-      true,
-      true
-    ],
-    "floor_ratio": 0.250732421875,
-    "wall_left_ratio": 0.1816,
-    "wall_right_ratio": 0.4525
-  },
-  "database/image_170.jpg": {
-    "index": 79,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.4765625,
-    "windows": [
       false,
-      true,
-      true
-    ],
-    "floor_ratio": 0.27618408203125,
-    "wall_left_ratio": 0.7279,
-    "wall_right_ratio": 0.3433
-  },
-  "database/image_171.jpg": {
-    "index": 80,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.515625,
-    "windows": [
-      true,
-      true,
       false
     ],
-    "floor_ratio": 0.245849609375,
-    "wall_left_ratio": 0.2397,
-    "wall_right_ratio": 0.6575
-  },
-  "database/image_172.jpg": {
-    "index": 81,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.46875,
-    "windows": [
-      true,
-      true,
-      false
-    ],
-    "floor_ratio": 0.28350830078125,
-    "wall_left_ratio": 0.3676,
-    "wall_right_ratio": 0.4968
-  },
-  "database/image_173.jpg": {
-    "index": 82,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.375,
-    "windows": [
-      true,
-      true,
-      false
-    ],
-    "floor_ratio": 0.24041748046875,
-    "wall_left_ratio": 0.1731,
-    "wall_right_ratio": 0.7009
-  },
-  "database/image_174.jpg": {
-    "index": 83,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.46875,
-    "windows": [
-      false,
-      true,
-      false
-    ],
-    "floor_ratio": 0.28277587890625,
-    "wall_left_ratio": 0.6118,
-    "wall_right_ratio": 0.4585
-  },
-  "database/image_175.jpg": {
-    "index": 84,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5390625,
-    "windows": [
-      true,
-      true,
-      false
-    ],
-    "floor_ratio": 0.16827392578125,
-    "wall_left_ratio": 0.2699,
-    "wall_right_ratio": 0.3451
-  },
-  "database/image_176.jpg": {
-    "index": 85,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.4765625,
-    "windows": [
-      true,
-      false,
-      true
-    ],
-    "floor_ratio": 0.25238037109375,
-    "wall_left_ratio": 0.4041,
-    "wall_right_ratio": 0.4536
-  },
-  "database/image_177.jpg": {
-    "index": 86,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.46875,
-    "windows": [
-      true,
-      true,
-      false
-    ],
-    "floor_ratio": 0.23797607421875,
-    "wall_left_ratio": 0.3394,
-    "wall_right_ratio": 0.6934
-  },
-  "database/image_178.jpg": {
-    "index": 87,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.53125,
-    "windows": [
-      false,
-      true,
-      false
-    ],
-    "floor_ratio": 0.28448486328125,
-    "wall_left_ratio": 0.5161,
-    "wall_right_ratio": 0.4083
-  },
-  "database/image_179.jpg": {
-    "index": 88,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.4375,
-    "windows": [
-      true,
-      true,
-      false
-    ],
-    "floor_ratio": 0.20086669921875,
-    "wall_left_ratio": 0.3224,
-    "wall_right_ratio": 0.8112
-  },
-  "database/image_18.jpg": {
-    "index": 89,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.546875,
-    "windows": [
-      false,
-      true,
-      true
-    ],
-    "floor_ratio": 0.27685546875,
-    "wall_left_ratio": 0.3191,
-    "wall_right_ratio": 0.3182
-  },
-  "database/image_180.jpg": {
-    "index": 90,
-    "room_type": "Frontal",
-    "dominant_wall": "Left",
-    "corner_x": 0.640625,
-    "windows": [
-      false,
-      true,
-      false
-    ],
-    "floor_ratio": 0.23370361328125,
-    "wall_left_ratio": 0.7018,
-    "wall_right_ratio": 0.4299
+    "floor_ratio": 0.002685546875,
+    "wall_left_ratio": 0.22,
+    "wall_right_ratio": 0.2363,
+    "vp_x": 0.3708,
+    "vp_y": 0.5055
   },
   "database/image_181.jpg": {
     "index": 91,
     "room_type": "Corner",
     "dominant_wall": "Left",
-    "corner_x": 0.7578125,
+    "corner_x": 0.65625,
     "windows": [
-      false,
       true,
-      true
+      true,
+      false
     ],
-    "floor_ratio": 0.060302734375,
-    "wall_left_ratio": 0.509,
-    "wall_right_ratio": 0.212
+    "floor_ratio": 0.00335693359375,
+    "wall_left_ratio": 0.2026,
+    "wall_right_ratio": 0.2213,
+    "vp_x": 0.8785,
+    "vp_y": 0.5085
   },
   "database/image_182.JPG": {
     "index": 92,
-    "room_type": "Frontal",
+    "room_type": "Corner",
     "dominant_wall": "Left",
-    "corner_x": 0.5546875,
+    "corner_x": 0.984375,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.24359130859375,
-    "wall_left_ratio": 0.4009,
-    "wall_right_ratio": 0.7301
+    "floor_ratio": 0.002197265625,
+    "wall_left_ratio": 0.2161,
+    "wall_right_ratio": 0.2399,
+    "vp_x": 0.0,
+    "vp_y": 0.7659
   },
   "database/image_183.jpg": {
     "index": 93,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.4609375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6484375,
     "windows": [
-      false,
       true,
-      true
+      true,
+      false
     ],
-    "floor_ratio": 0.1632080078125,
-    "wall_left_ratio": 0.6299,
-    "wall_right_ratio": 0.4551
+    "floor_ratio": 0.00372314453125,
+    "wall_left_ratio": 0.2115,
+    "wall_right_ratio": 0.2163,
+    "vp_x": 0.0,
+    "vp_y": 0.529
   },
   "database/image_184.jpg": {
     "index": 94,
-    "room_type": "Frontal",
+    "room_type": "Corner",
     "dominant_wall": "Left",
-    "corner_x": 0.5546875,
+    "corner_x": 0.8984375,
     "windows": [
-      false,
-      false,
-      true
+      true,
+      true,
+      false
     ],
-    "floor_ratio": 0.30615234375,
-    "wall_left_ratio": 0.5399,
-    "wall_right_ratio": 0.2137
+    "floor_ratio": 0.002197265625,
+    "wall_left_ratio": 0.2084,
+    "wall_right_ratio": 0.2471,
+    "vp_x": 0.108,
+    "vp_y": 0.4776
   },
   "database/image_185.jpg": {
     "index": 95,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.4140625,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.953125,
     "windows": [
-      false,
-      false,
+      true,
+      true,
       false
     ],
-    "floor_ratio": 0.22216796875,
-    "wall_left_ratio": 0.4215,
-    "wall_right_ratio": 0.5201
+    "floor_ratio": 0.00238037109375,
+    "wall_left_ratio": 0.2239,
+    "wall_right_ratio": 0.2312,
+    "vp_x": 0.871,
+    "vp_y": 0.4917
   },
   "database/image_186.jpg": {
     "index": 96,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9140625,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.2470703125,
-    "wall_left_ratio": 0.3354,
-    "wall_right_ratio": 0.4854
+    "floor_ratio": 0.00201416015625,
+    "wall_left_ratio": 0.208,
+    "wall_right_ratio": 0.2448,
+    "vp_x": 1.0,
+    "vp_y": 0.5286
   },
   "database/image_187.jpg": {
     "index": 97,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.4140625,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.921875,
     "windows": [
       true,
       true,
-      true
+      false
     ],
-    "floor_ratio": 0.26251220703125,
-    "wall_left_ratio": 0.3806,
-    "wall_right_ratio": 0.3185
+    "floor_ratio": 0.002685546875,
+    "wall_left_ratio": 0.2014,
+    "wall_right_ratio": 0.2424,
+    "vp_x": 0.1497,
+    "vp_y": 0.4868
   },
   "database/image_188.jpg": {
     "index": 98,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5078125,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6640625,
     "windows": [
       true,
       false,
-      false
+      true
     ],
-    "floor_ratio": 0.2410888671875,
-    "wall_left_ratio": 0.2368,
-    "wall_right_ratio": 0.4929
+    "floor_ratio": 0.0029296875,
+    "wall_left_ratio": 0.2338,
+    "wall_right_ratio": 0.2356,
+    "vp_x": 0.5151,
+    "vp_y": 0.3492
   },
   "database/image_189.jpg": {
     "index": 99,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.828125,
     "windows": [
       true,
       true,
-      true
+      false
     ],
-    "floor_ratio": 0.295654296875,
-    "wall_left_ratio": 0.4075,
-    "wall_right_ratio": 0.4078
+    "floor_ratio": 0.00201416015625,
+    "wall_left_ratio": 0.192,
+    "wall_right_ratio": 0.2239,
+    "vp_x": 0.0,
+    "vp_y": 0.476
   },
   "database/image_19.jpg": {
     "index": 100,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.4453125,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6484375,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.24658203125,
-    "wall_left_ratio": 0.375,
-    "wall_right_ratio": 0.5668
+    "floor_ratio": 0.0025634765625,
+    "wall_left_ratio": 0.2078,
+    "wall_right_ratio": 0.2302,
+    "vp_x": 0.2004,
+    "vp_y": 0.5042
   },
   "database/image_190.jpg": {
     "index": 101,
-    "room_type": "Frontal",
+    "room_type": "Corner",
     "dominant_wall": "Left",
-    "corner_x": 0.7109375,
+    "corner_x": 0.9609375,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.3572998046875,
-    "wall_left_ratio": 0.4774,
-    "wall_right_ratio": 0.3235
+    "floor_ratio": 0.00286865234375,
+    "wall_left_ratio": 0.203,
+    "wall_right_ratio": 0.2174,
+    "vp_x": 0.9807,
+    "vp_y": 0.4581
   },
   "database/image_191.jpg": {
     "index": 102,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.515625,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.828125,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.281982421875,
-    "wall_left_ratio": 0.4889,
-    "wall_right_ratio": 0.5886
+    "floor_ratio": 0.002685546875,
+    "wall_left_ratio": 0.2,
+    "wall_right_ratio": 0.2303,
+    "vp_x": 0.2587,
+    "vp_y": 0.4838
   },
   "database/image_192.jpg": {
     "index": 103,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.484375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.828125,
     "windows": [
-      false,
       true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.26507568359375,
-    "wall_left_ratio": 0.5886,
-    "wall_right_ratio": 0.2465
+    "floor_ratio": 0.00152587890625,
+    "wall_left_ratio": 0.1865,
+    "wall_right_ratio": 0.2386,
+    "vp_x": 0.1659,
+    "vp_y": 0.4871
   },
   "database/image_193.jpg": {
     "index": 104,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.546875,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.65625,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.26483154296875,
-    "wall_left_ratio": 0.2955,
-    "wall_right_ratio": 0.5756
+    "floor_ratio": 0.00213623046875,
+    "wall_left_ratio": 0.2068,
+    "wall_right_ratio": 0.2382,
+    "vp_x": 1.0,
+    "vp_y": 0.4886
   },
   "database/image_194.jpg": {
     "index": 105,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.453125,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6640625,
     "windows": [
-      false,
+      true,
       false,
       false
     ],
-    "floor_ratio": 0.30023193359375,
-    "wall_left_ratio": 0.3297,
-    "wall_right_ratio": 0.4806
+    "floor_ratio": 0.003173828125,
+    "wall_left_ratio": 0.1847,
+    "wall_right_ratio": 0.2324,
+    "vp_x": 0.2703,
+    "vp_y": 0.4973
   },
   "database/image_195.jpg": {
     "index": 106,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5390625,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.953125,
     "windows": [
-      false,
       true,
-      true
+      true,
+      false
     ],
-    "floor_ratio": 0.23504638671875,
-    "wall_left_ratio": 0.7444,
-    "wall_right_ratio": 0.3025
+    "floor_ratio": 0.0018310546875,
+    "wall_left_ratio": 0.1885,
+    "wall_right_ratio": 0.2173,
+    "vp_x": 0.0,
+    "vp_y": 0.4759
   },
   "database/image_196.jpg": {
     "index": 107,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.421875,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9453125,
     "windows": [
-      false,
       true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.214599609375,
-    "wall_left_ratio": 0.6871,
-    "wall_right_ratio": 0.3165
+    "floor_ratio": 0.001953125,
+    "wall_left_ratio": 0.2086,
+    "wall_right_ratio": 0.2407,
+    "vp_x": 0.0,
+    "vp_y": 0.4982
   },
   "database/image_197.jpg": {
     "index": 108,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5078125,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.765625,
     "windows": [
       true,
-      true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.2637939453125,
-    "wall_left_ratio": 0.4524,
-    "wall_right_ratio": 0.3379
+    "floor_ratio": 0.00177001953125,
+    "wall_left_ratio": 0.1924,
+    "wall_right_ratio": 0.2321,
+    "vp_x": 0.0,
+    "vp_y": 0.4601
   },
   "database/image_198.jpg": {
     "index": 109,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.65625,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.22808837890625,
-    "wall_left_ratio": 0.1949,
-    "wall_right_ratio": 0.6678
+    "floor_ratio": 0.00250244140625,
+    "wall_left_ratio": 0.2064,
+    "wall_right_ratio": 0.2338,
+    "vp_x": 1.0,
+    "vp_y": 0.4899
   },
   "database/image_199.jpg": {
     "index": 110,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.515625,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6484375,
     "windows": [
-      false,
       true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.24737548828125,
-    "wall_left_ratio": 0.5796,
-    "wall_right_ratio": 0.3286
+    "floor_ratio": 0.00250244140625,
+    "wall_left_ratio": 0.2036,
+    "wall_right_ratio": 0.2423,
+    "vp_x": 1.0,
+    "vp_y": 0.7882
   },
   "database/image_2.jpg": {
     "index": 111,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.515625,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6640625,
     "windows": [
-      false,
+      true,
       false,
       false
     ],
-    "floor_ratio": 0.232177734375,
-    "wall_left_ratio": 0.449,
-    "wall_right_ratio": 0.2554
+    "floor_ratio": 0.002685546875,
+    "wall_left_ratio": 0.2195,
+    "wall_right_ratio": 0.2375,
+    "vp_x": 0.4648,
+    "vp_y": 0.5422
   },
   "database/image_20.jpg": {
     "index": 112,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.546875,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.65625,
     "windows": [
-      false,
       true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.197998046875,
-    "wall_left_ratio": 0.6639,
-    "wall_right_ratio": 0.4785
+    "floor_ratio": 0.00274658203125,
+    "wall_left_ratio": 0.1985,
+    "wall_right_ratio": 0.2352,
+    "vp_x": 0.7538,
+    "vp_y": 0.4695
   },
   "database/image_200.jpg": {
     "index": 113,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9296875,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.21923828125,
-    "wall_left_ratio": 0.4446,
-    "wall_right_ratio": 0.6007
+    "floor_ratio": 0.00152587890625,
+    "wall_left_ratio": 0.2006,
+    "wall_right_ratio": 0.2181,
+    "vp_x": 1.0,
+    "vp_y": 0.5022
   },
   "database/image_201.jpg": {
     "index": 114,
-    "room_type": "Frontal",
+    "room_type": "Corner",
     "dominant_wall": "Left",
-    "corner_x": 0.5546875,
+    "corner_x": 0.6484375,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.20458984375,
-    "wall_left_ratio": 0.4459,
-    "wall_right_ratio": 0.5068
+    "floor_ratio": 0.0013427734375,
+    "wall_left_ratio": 0.2136,
+    "wall_right_ratio": 0.2389,
+    "vp_x": 0.45,
+    "vp_y": 0.4735
   },
   "database/image_202.jpeg": {
     "index": 115,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.453125,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9140625,
     "windows": [
+      true,
       false,
-      false,
-      true
+      false
     ],
-    "floor_ratio": 0.22503662109375,
-    "wall_left_ratio": 0.5697,
-    "wall_right_ratio": 0.4232
+    "floor_ratio": 0.00244140625,
+    "wall_left_ratio": 0.2155,
+    "wall_right_ratio": 0.2317,
+    "vp_x": 0.0135,
+    "vp_y": 0.5053
   },
   "database/image_203.jpeg": {
     "index": 116,
-    "room_type": "Frontal",
+    "room_type": "Corner",
     "dominant_wall": "Left",
-    "corner_x": 0.5859375,
+    "corner_x": 0.828125,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.24090576171875,
-    "wall_left_ratio": 0.5283,
-    "wall_right_ratio": 0.5586
+    "floor_ratio": 0.00201416015625,
+    "wall_left_ratio": 0.2076,
+    "wall_right_ratio": 0.2295,
+    "vp_x": 1.0,
+    "vp_y": 0.4972
   },
   "database/image_204.jpg": {
     "index": 117,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.53125,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6484375,
     "windows": [
-      false,
       true,
+      false,
       false
     ],
-    "floor_ratio": 0.2169189453125,
-    "wall_left_ratio": 0.7469,
-    "wall_right_ratio": 0.3411
+    "floor_ratio": 0.0015869140625,
+    "wall_left_ratio": 0.1958,
+    "wall_right_ratio": 0.2448,
+    "vp_x": 0.8214,
+    "vp_y": 0.3834
   },
   "database/image_205.jpg": {
     "index": 118,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.515625,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9140625,
     "windows": [
-      false,
+      true,
       false,
       false
     ],
-    "floor_ratio": 0.23699951171875,
-    "wall_left_ratio": 0.4857,
-    "wall_right_ratio": 0.6311
+    "floor_ratio": 0.0015869140625,
+    "wall_left_ratio": 0.2284,
+    "wall_right_ratio": 0.2341,
+    "vp_x": 1.0,
+    "vp_y": 0.482
   },
   "database/image_206.jpg": {
     "index": 119,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.484375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.96875,
     "windows": [
       true,
       true,
       false
     ],
-    "floor_ratio": 0.24456787109375,
-    "wall_left_ratio": 0.2684,
-    "wall_right_ratio": 0.6371
+    "floor_ratio": 0.001953125,
+    "wall_left_ratio": 0.1978,
+    "wall_right_ratio": 0.2153,
+    "vp_x": 0.8464,
+    "vp_y": 0.4076
   },
   "database/image_207.jpg": {
     "index": 120,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.546875,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6640625,
     "windows": [
-      false,
       true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.2509765625,
-    "wall_left_ratio": 0.6437,
-    "wall_right_ratio": 0.4182
+    "floor_ratio": 0.00274658203125,
+    "wall_left_ratio": 0.2086,
+    "wall_right_ratio": 0.2292,
+    "vp_x": 0.5353,
+    "vp_y": 0.2872
   },
   "database/image_208.jpg": {
     "index": 121,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.4921875,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.8203125,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.19512939453125,
-    "wall_left_ratio": 0.401,
-    "wall_right_ratio": 0.6669
+    "floor_ratio": 0.00146484375,
+    "wall_left_ratio": 0.2017,
+    "wall_right_ratio": 0.2324,
+    "vp_x": 0.4528,
+    "vp_y": 0.3082
   },
   "database/image_209.jpg": {
     "index": 122,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.3984375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.828125,
     "windows": [
       true,
       true,
       false
     ],
-    "floor_ratio": 0.22509765625,
-    "wall_left_ratio": 0.2418,
-    "wall_right_ratio": 0.7529
+    "floor_ratio": 0.00262451171875,
+    "wall_left_ratio": 0.2036,
+    "wall_right_ratio": 0.2322,
+    "vp_x": 0.0906,
+    "vp_y": 0.4931
   },
   "database/image_21.jpg": {
     "index": 123,
-    "room_type": "Frontal",
+    "room_type": "Corner",
     "dominant_wall": "Left",
-    "corner_x": 0.5625,
+    "corner_x": 0.6484375,
     "windows": [
-      false,
       true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.273193359375,
-    "wall_left_ratio": 0.5282,
-    "wall_right_ratio": 0.3295
+    "floor_ratio": 0.00164794921875,
+    "wall_left_ratio": 0.2086,
+    "wall_right_ratio": 0.2366,
+    "vp_x": 0.8443,
+    "vp_y": 0.5226
   },
   "database/image_210.jpg": {
     "index": 124,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.421875,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.640625,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00323486328125,
+    "wall_left_ratio": 0.2059,
+    "wall_right_ratio": 0.235,
+    "vp_x": 0.9095,
+    "vp_y": 0.4851
+  },
+  "database/image_211.jpg": {
+    "index": 125,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.921875,
     "windows": [
       true,
       true,
       false
     ],
-    "floor_ratio": 0.2857666015625,
-    "wall_left_ratio": 0.4388,
-    "wall_right_ratio": 0.6719
-  },
-  "database/image_211.jpg": {
-    "index": 125,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.40625,
-    "windows": [
-      false,
-      false,
-      true
-    ],
-    "floor_ratio": 0.2750244140625,
-    "wall_left_ratio": 0.4458,
-    "wall_right_ratio": 0.6221
+    "floor_ratio": 0.00201416015625,
+    "wall_left_ratio": 0.2096,
+    "wall_right_ratio": 0.2485,
+    "vp_x": 0.7942,
+    "vp_y": 0.6243
   },
   "database/image_212.jpg": {
     "index": 126,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5078125,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.96875,
     "windows": [
-      false,
       true,
-      true
+      true,
+      false
     ],
-    "floor_ratio": 0.25213623046875,
-    "wall_left_ratio": 0.7319,
-    "wall_right_ratio": 0.4594
+    "floor_ratio": 0.00177001953125,
+    "wall_left_ratio": 0.2042,
+    "wall_right_ratio": 0.2397,
+    "vp_x": 0.0,
+    "vp_y": 0.4914
   },
   "database/image_213.jpg": {
     "index": 127,
-    "room_type": "Frontal",
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.8203125,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00152587890625,
+    "wall_left_ratio": 0.2053,
+    "wall_right_ratio": 0.2385,
+    "vp_x": 0.2178,
+    "vp_y": 0.4905
+  },
+  "database/image_214.jpg": {
+    "index": 128,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9609375,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.0015869140625,
+    "wall_left_ratio": 0.1957,
+    "wall_right_ratio": 0.2328,
+    "vp_x": 0.7532,
+    "vp_y": 0.5013
+  },
+  "database/image_215.jpg": {
+    "index": 129,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.65625,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.001708984375,
+    "wall_left_ratio": 0.1991,
+    "wall_right_ratio": 0.2339,
+    "vp_x": 0.874,
+    "vp_y": 0.4965
+  },
+  "database/image_216.jpg": {
+    "index": 130,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6484375,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.0029296875,
+    "wall_left_ratio": 0.2056,
+    "wall_right_ratio": 0.2336,
+    "vp_x": 0.9347,
+    "vp_y": 0.4717
+  },
+  "database/image_217.jpeg": {
+    "index": 131,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.65625,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00286865234375,
+    "wall_left_ratio": 0.2062,
+    "wall_right_ratio": 0.2418,
+    "vp_x": 0.5138,
+    "vp_y": 0.4852
+  },
+  "database/image_218.jpg": {
+    "index": 132,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6640625,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00341796875,
+    "wall_left_ratio": 0.2196,
+    "wall_right_ratio": 0.2428,
+    "vp_x": 1.0,
+    "vp_y": 0.4939
+  },
+  "database/image_219.jpg": {
+    "index": 133,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.828125,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00201416015625,
+    "wall_left_ratio": 0.205,
+    "wall_right_ratio": 0.2394,
+    "vp_x": 0.0,
+    "vp_y": 0.4713
+  },
+  "database/image_22.jpg": {
+    "index": 134,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.96875,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00201416015625,
+    "wall_left_ratio": 0.205,
+    "wall_right_ratio": 0.2347,
+    "vp_x": 0.902,
+    "vp_y": 0.4824
+  },
+  "database/image_220.jpg": {
+    "index": 135,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6484375,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00262451171875,
+    "wall_left_ratio": 0.2095,
+    "wall_right_ratio": 0.2365,
+    "vp_x": 0.0686,
+    "vp_y": 0.5118
+  },
+  "database/image_221.jpg": {
+    "index": 136,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.8203125,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.0013427734375,
+    "wall_left_ratio": 0.2056,
+    "wall_right_ratio": 0.2241,
+    "vp_x": 1.0,
+    "vp_y": 0.4835
+  },
+  "database/image_222.jpg": {
+    "index": 137,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.953125,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.0015869140625,
+    "wall_left_ratio": 0.1898,
+    "wall_right_ratio": 0.2458,
+    "vp_x": 0.5758,
+    "vp_y": 0.2888
+  },
+  "database/image_223.jpg": {
+    "index": 138,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6484375,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.002197265625,
+    "wall_left_ratio": 0.2018,
+    "wall_right_ratio": 0.2391,
+    "vp_x": 1.0,
+    "vp_y": 0.4986
+  },
+  "database/image_224.jpg": {
+    "index": 139,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.8203125,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.0018310546875,
+    "wall_left_ratio": 0.1934,
+    "wall_right_ratio": 0.2236,
+    "vp_x": 0.7459,
+    "vp_y": 0.4887
+  },
+  "database/image_225.jpg": {
+    "index": 140,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.96875,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.0020751953125,
+    "wall_left_ratio": 0.2117,
+    "wall_right_ratio": 0.2515,
+    "vp_x": 0.0,
+    "vp_y": 0.4283
+  },
+  "database/image_226.jpg": {
+    "index": 141,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.65625,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.001220703125,
+    "wall_left_ratio": 0.2031,
+    "wall_right_ratio": 0.238,
+    "vp_x": 0.1538,
+    "vp_y": 0.4964
+  },
+  "database/image_227.jpg": {
+    "index": 142,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.65625,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.0032958984375,
+    "wall_left_ratio": 0.2026,
+    "wall_right_ratio": 0.2366,
+    "vp_x": 0.4248,
+    "vp_y": 0.6064
+  },
+  "database/image_228.jpg": {
+    "index": 143,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.953125,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.00201416015625,
+    "wall_left_ratio": 0.1969,
+    "wall_right_ratio": 0.2476,
+    "vp_x": 0.0763,
+    "vp_y": 0.4861
+  },
+  "database/image_229.jpg": {
+    "index": 144,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.984375,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00299072265625,
+    "wall_left_ratio": 0.1886,
+    "wall_right_ratio": 0.2156,
+    "vp_x": 0.5152,
+    "vp_y": 0.4827
+  },
+  "database/image_23.jpg": {
+    "index": 145,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.953125,
+    "windows": [
+      true,
+      false,
+      true
+    ],
+    "floor_ratio": 0.0020751953125,
+    "wall_left_ratio": 0.1952,
+    "wall_right_ratio": 0.2438,
+    "vp_x": 0.5083,
+    "vp_y": 0.5324
+  },
+  "database/image_230.jpg": {
+    "index": 146,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.96875,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00225830078125,
+    "wall_left_ratio": 0.2015,
+    "wall_right_ratio": 0.2437,
+    "vp_x": 0.5254,
+    "vp_y": 0.3498
+  },
+  "database/image_231.jpg": {
+    "index": 147,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9921875,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00262451171875,
+    "wall_left_ratio": 0.2083,
+    "wall_right_ratio": 0.228,
+    "vp_x": 0.824,
+    "vp_y": 0.7196
+  },
+  "database/image_232.jpg": {
+    "index": 148,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.96875,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00244140625,
+    "wall_left_ratio": 0.2094,
+    "wall_right_ratio": 0.2369,
+    "vp_x": 0.0,
+    "vp_y": 0.5068
+  },
+  "database/image_233.jpg": {
+    "index": 149,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.8203125,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00146484375,
+    "wall_left_ratio": 0.2168,
+    "wall_right_ratio": 0.2413,
+    "vp_x": 0.0608,
+    "vp_y": 0.5104
+  },
+  "database/image_234.jpg": {
+    "index": 150,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9609375,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00225830078125,
+    "wall_left_ratio": 0.2015,
+    "wall_right_ratio": 0.2269,
+    "vp_x": 0.2415,
+    "vp_y": 0.5005
+  },
+  "database/image_235.jpg": {
+    "index": 151,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6640625,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.0029296875,
+    "wall_left_ratio": 0.2202,
+    "wall_right_ratio": 0.234,
+    "vp_x": 0.4947,
+    "vp_y": 0.4956
+  },
+  "database/image_236.jpg": {
+    "index": 152,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6640625,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00335693359375,
+    "wall_left_ratio": 0.2014,
+    "wall_right_ratio": 0.231,
+    "vp_x": 0.1587,
+    "vp_y": 0.5401
+  },
+  "database/image_237.jpg": {
+    "index": 153,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.96875,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00201416015625,
+    "wall_left_ratio": 0.2068,
+    "wall_right_ratio": 0.2362,
+    "vp_x": 0.5006,
+    "vp_y": 0.34
+  },
+  "database/image_238.jpg": {
+    "index": 154,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.65625,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.002197265625,
+    "wall_left_ratio": 0.1968,
+    "wall_right_ratio": 0.2313,
+    "vp_x": 0.5202,
+    "vp_y": 0.2205
+  },
+  "database/image_239.jpg": {
+    "index": 155,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9765625,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.0023193359375,
+    "wall_left_ratio": 0.2062,
+    "wall_right_ratio": 0.2378,
+    "vp_x": 0.8981,
+    "vp_y": 0.452
+  },
+  "database/image_24.jpg": {
+    "index": 156,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.671875,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.0029296875,
+    "wall_left_ratio": 0.2039,
+    "wall_right_ratio": 0.2239,
+    "vp_x": 0.7887,
+    "vp_y": 0.4888
+  },
+  "database/image_240.jpg": {
+    "index": 157,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9765625,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.00286865234375,
+    "wall_left_ratio": 0.2148,
+    "wall_right_ratio": 0.231,
+    "vp_x": 0.8959,
+    "vp_y": 0.426
+  },
+  "database/image_241.jpg": {
+    "index": 158,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9765625,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.0009765625,
+    "wall_left_ratio": 0.2037,
+    "wall_right_ratio": 0.2334,
+    "vp_x": 0.7265,
+    "vp_y": 0.4441
+  },
+  "database/image_242.jpg": {
+    "index": 159,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.65625,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00128173828125,
+    "wall_left_ratio": 0.2117,
+    "wall_right_ratio": 0.2343,
+    "vp_x": 0.9252,
+    "vp_y": 0.5152
+  },
+  "database/image_243.jpg": {
+    "index": 160,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.65625,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.00323486328125,
+    "wall_left_ratio": 0.2083,
+    "wall_right_ratio": 0.2308,
+    "vp_x": 0.0,
+    "vp_y": 0.4945
+  },
+  "database/image_244.jpg": {
+    "index": 161,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6484375,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.00250244140625,
+    "wall_left_ratio": 0.2021,
+    "wall_right_ratio": 0.2389,
+    "vp_x": 0.9384,
+    "vp_y": 0.4976
+  },
+  "database/image_245.jpg": {
+    "index": 162,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9140625,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00286865234375,
+    "wall_left_ratio": 0.1853,
+    "wall_right_ratio": 0.2336,
+    "vp_x": 0.863,
+    "vp_y": 0.539
+  },
+  "database/image_246.jpg": {
+    "index": 163,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.953125,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00189208984375,
+    "wall_left_ratio": 0.1971,
+    "wall_right_ratio": 0.2292,
+    "vp_x": 0.7392,
+    "vp_y": 0.1524
+  },
+  "database/image_247.jpg": {
+    "index": 164,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.96875,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.0018310546875,
+    "wall_left_ratio": 0.2363,
+    "wall_right_ratio": 0.2577,
+    "vp_x": 0.4482,
+    "vp_y": 0.6399
+  },
+  "database/image_248.jpg": {
+    "index": 165,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9140625,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.002685546875,
+    "wall_left_ratio": 0.1843,
+    "wall_right_ratio": 0.2407,
+    "vp_x": 0.8736,
+    "vp_y": 0.5118
+  },
+  "database/image_249.jpg": {
+    "index": 166,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9765625,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.002197265625,
+    "wall_left_ratio": 0.21,
+    "wall_right_ratio": 0.2299,
+    "vp_x": 0.1568,
+    "vp_y": 0.6667
+  },
+  "database/image_25.jpg": {
+    "index": 167,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6484375,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.0029296875,
+    "wall_left_ratio": 0.2051,
+    "wall_right_ratio": 0.2277,
+    "vp_x": 0.0,
+    "vp_y": 0.4772
+  },
+  "database/image_250.jpg": {
+    "index": 168,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6640625,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.0035400390625,
+    "wall_left_ratio": 0.2107,
+    "wall_right_ratio": 0.2236,
+    "vp_x": 0.7523,
+    "vp_y": 0.4891
+  },
+  "database/image_251.jpg": {
+    "index": 169,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.953125,
+    "windows": [
+      true,
+      false,
+      true
+    ],
+    "floor_ratio": 0.001953125,
+    "wall_left_ratio": 0.2212,
+    "wall_right_ratio": 0.2225,
+    "vp_x": 1.0,
+    "vp_y": 0.4185
+  },
+  "database/image_252.jpg": {
+    "index": 170,
+    "room_type": "Corner",
     "dominant_wall": "Left",
     "corner_x": 0.640625,
     "windows": [
       true,
       true,
-      false
-    ],
-    "floor_ratio": 0.24407958984375,
-    "wall_left_ratio": 0.4794,
-    "wall_right_ratio": 0.4366
-  },
-  "database/image_214.jpg": {
-    "index": 128,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.390625,
-    "windows": [
-      false,
-      true,
       true
     ],
-    "floor_ratio": 0.210693359375,
-    "wall_left_ratio": 0.6282,
-    "wall_right_ratio": 0.6121
-  },
-  "database/image_215.jpg": {
-    "index": 129,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5078125,
-    "windows": [
-      true,
-      true,
-      false
-    ],
-    "floor_ratio": 0.31109619140625,
-    "wall_left_ratio": 0.0492,
-    "wall_right_ratio": 0.4933
-  },
-  "database/image_216.jpg": {
-    "index": 130,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5390625,
-    "windows": [
-      false,
-      false,
-      true
-    ],
-    "floor_ratio": 0.28216552734375,
-    "wall_left_ratio": 0.5795,
-    "wall_right_ratio": 0.3147
-  },
-  "database/image_217.jpeg": {
-    "index": 131,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.515625,
-    "windows": [
-      false,
-      true,
-      false
-    ],
-    "floor_ratio": 0.2095947265625,
-    "wall_left_ratio": 0.6676,
-    "wall_right_ratio": 0.4756
-  },
-  "database/image_218.jpg": {
-    "index": 132,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.3359375,
-    "windows": [
-      true,
-      true,
-      false
-    ],
-    "floor_ratio": 0.26068115234375,
-    "wall_left_ratio": 0.4048,
-    "wall_right_ratio": 0.514
-  },
-  "database/image_219.jpg": {
-    "index": 133,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.421875,
-    "windows": [
-      false,
-      true,
-      true
-    ],
-    "floor_ratio": 0.17718505859375,
-    "wall_left_ratio": 0.6431,
-    "wall_right_ratio": 0.5242
-  },
-  "database/image_22.jpg": {
-    "index": 134,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.4140625,
-    "windows": [
-      true,
-      true,
-      false
-    ],
-    "floor_ratio": 0.302490234375,
-    "wall_left_ratio": 0.2904,
-    "wall_right_ratio": 0.4846
-  },
-  "database/image_220.jpg": {
-    "index": 135,
-    "room_type": "Frontal",
-    "dominant_wall": "Left",
-    "corner_x": 0.5703125,
-    "windows": [
-      false,
-      true,
-      true
-    ],
-    "floor_ratio": 0.19464111328125,
-    "wall_left_ratio": 0.7418,
-    "wall_right_ratio": 0.4037
-  },
-  "database/image_221.jpg": {
-    "index": 136,
-    "room_type": "Frontal",
-    "dominant_wall": "Left",
-    "corner_x": 0.5546875,
-    "windows": [
-      true,
-      true,
-      false
-    ],
-    "floor_ratio": 0.18707275390625,
-    "wall_left_ratio": 0.5222,
-    "wall_right_ratio": 0.5587
-  },
-  "database/image_222.jpg": {
-    "index": 137,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5234375,
-    "windows": [
-      false,
-      true,
-      true
-    ],
-    "floor_ratio": 0.21112060546875,
-    "wall_left_ratio": 0.5281,
-    "wall_right_ratio": 0.4628
-  },
-  "database/image_223.jpg": {
-    "index": 138,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.515625,
-    "windows": [
-      true,
-      true,
-      false
-    ],
-    "floor_ratio": 0.2296142578125,
-    "wall_left_ratio": 0.3188,
-    "wall_right_ratio": 0.6179
-  },
-  "database/image_224.jpg": {
-    "index": 139,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5390625,
-    "windows": [
-      false,
-      true,
-      true
-    ],
-    "floor_ratio": 0.22833251953125,
-    "wall_left_ratio": 0.6844,
-    "wall_right_ratio": 0.4513
-  },
-  "database/image_225.jpg": {
-    "index": 140,
-    "room_type": "Frontal",
-    "dominant_wall": "Left",
-    "corner_x": 0.5703125,
-    "windows": [
-      false,
-      true,
-      true
-    ],
-    "floor_ratio": 0.31488037109375,
-    "wall_left_ratio": 0.7118,
-    "wall_right_ratio": 0.1279
-  },
-  "database/image_226.jpg": {
-    "index": 141,
-    "room_type": "Frontal",
-    "dominant_wall": "Left",
-    "corner_x": 0.59375,
-    "windows": [
-      true,
-      true,
-      false
-    ],
-    "floor_ratio": 0.3094482421875,
-    "wall_left_ratio": 0.3823,
-    "wall_right_ratio": 0.3405
-  },
-  "database/image_227.jpg": {
-    "index": 142,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.4609375,
-    "windows": [
-      true,
-      true,
-      false
-    ],
-    "floor_ratio": 0.1954345703125,
-    "wall_left_ratio": 0.411,
-    "wall_right_ratio": 0.776
-  },
-  "database/image_228.jpg": {
-    "index": 143,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5234375,
-    "windows": [
-      false,
-      true,
-      true
-    ],
-    "floor_ratio": 0.29486083984375,
-    "wall_left_ratio": 0.5607,
-    "wall_right_ratio": 0.2439
-  },
-  "database/image_229.jpg": {
-    "index": 144,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5078125,
-    "windows": [
-      false,
-      false,
-      false
-    ],
-    "floor_ratio": 0.2757568359375,
-    "wall_left_ratio": 0.1583,
-    "wall_right_ratio": 0.4242
-  },
-  "database/image_23.jpg": {
-    "index": 145,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.4609375,
-    "windows": [
-      false,
-      true,
-      false
-    ],
-    "floor_ratio": 0.1556396484375,
-    "wall_left_ratio": 0.683,
-    "wall_right_ratio": 0.6741
-  },
-  "database/image_230.jpg": {
-    "index": 146,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.4765625,
-    "windows": [
-      false,
-      true,
-      true
-    ],
-    "floor_ratio": 0.24517822265625,
-    "wall_left_ratio": 0.5376,
-    "wall_right_ratio": 0.3347
-  },
-  "database/image_231.jpg": {
-    "index": 147,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.53125,
-    "windows": [
-      false,
-      true,
-      true
-    ],
-    "floor_ratio": 0.2554931640625,
-    "wall_left_ratio": 0.6522,
-    "wall_right_ratio": 0.3145
-  },
-  "database/image_232.jpg": {
-    "index": 148,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.3984375,
-    "windows": [
-      false,
-      true,
-      true
-    ],
-    "floor_ratio": 0.26568603515625,
-    "wall_left_ratio": 0.4456,
-    "wall_right_ratio": 0.1577
-  },
-  "database/image_233.jpg": {
-    "index": 149,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5,
-    "windows": [
-      false,
-      true,
-      true
-    ],
-    "floor_ratio": 0.26141357421875,
-    "wall_left_ratio": 0.5596,
-    "wall_right_ratio": 0.307
-  },
-  "database/image_234.jpg": {
-    "index": 150,
-    "room_type": "Corner",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.515625,
-    "windows": [
-      true,
-      true,
-      false
-    ],
-    "floor_ratio": 0.2579345703125,
-    "wall_left_ratio": 0.449,
-    "wall_right_ratio": 0.5179
-  },
-  "database/image_235.jpg": {
-    "index": 151,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.4765625,
-    "windows": [
-      false,
-      false,
-      false
-    ],
-    "floor_ratio": 0.2108154296875,
-    "wall_left_ratio": 0.563,
-    "wall_right_ratio": 0.5208
-  },
-  "database/image_236.jpg": {
-    "index": 152,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5234375,
-    "windows": [
-      true,
-      false,
-      false
-    ],
-    "floor_ratio": 0.3089599609375,
-    "wall_left_ratio": 0.1626,
-    "wall_right_ratio": 0.4619
-  },
-  "database/image_237.jpg": {
-    "index": 153,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.484375,
-    "windows": [
-      true,
-      true,
-      false
-    ],
-    "floor_ratio": 0.3121337890625,
-    "wall_left_ratio": 0.2625,
-    "wall_right_ratio": 0.5521
-  },
-  "database/image_238.jpg": {
-    "index": 154,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.484375,
-    "windows": [
-      true,
-      true,
-      false
-    ],
-    "floor_ratio": 0.29473876953125,
-    "wall_left_ratio": 0.4958,
-    "wall_right_ratio": 0.6218
-  },
-  "database/image_239.jpg": {
-    "index": 155,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5390625,
-    "windows": [
-      true,
-      true,
-      false
-    ],
-    "floor_ratio": 0.20648193359375,
-    "wall_left_ratio": 0.371,
-    "wall_right_ratio": 0.4998
-  },
-  "database/image_24.jpg": {
-    "index": 156,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.4375,
-    "windows": [
-      false,
-      true,
-      true
-    ],
-    "floor_ratio": 0.2884521484375,
-    "wall_left_ratio": 0.45,
-    "wall_right_ratio": 0.4119
-  },
-  "database/image_240.jpg": {
-    "index": 157,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5390625,
-    "windows": [
-      false,
-      true,
-      false
-    ],
-    "floor_ratio": 0.15740966796875,
-    "wall_left_ratio": 0.557,
-    "wall_right_ratio": 0.4723
-  },
-  "database/image_241.jpg": {
-    "index": 158,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.40625,
-    "windows": [
-      false,
-      true,
-      true
-    ],
-    "floor_ratio": 0.250732421875,
-    "wall_left_ratio": 0.3528,
-    "wall_right_ratio": 0.4294
-  },
-  "database/image_242.jpg": {
-    "index": 159,
-    "room_type": "Frontal",
-    "dominant_wall": "Left",
-    "corner_x": 0.6015625,
-    "windows": [
-      true,
-      true,
-      false
-    ],
-    "floor_ratio": 0.2767333984375,
-    "wall_left_ratio": 0.4705,
-    "wall_right_ratio": 0.3665
-  },
-  "database/image_243.jpg": {
-    "index": 160,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.328125,
-    "windows": [
-      true,
-      true,
-      true
-    ],
-    "floor_ratio": 0.27447509765625,
-    "wall_left_ratio": 0.2469,
-    "wall_right_ratio": 0.39
-  },
-  "database/image_244.jpg": {
-    "index": 161,
-    "room_type": "Frontal",
-    "dominant_wall": "Left",
-    "corner_x": 0.59375,
-    "windows": [
-      false,
-      false,
-      true
-    ],
-    "floor_ratio": 0.2720947265625,
-    "wall_left_ratio": 0.5691,
-    "wall_right_ratio": 0.3273
-  },
-  "database/image_245.jpg": {
-    "index": 162,
-    "room_type": "Frontal",
-    "dominant_wall": "Left",
-    "corner_x": 0.6484375,
-    "windows": [
-      false,
-      false,
-      true
-    ],
-    "floor_ratio": 0.27362060546875,
-    "wall_left_ratio": 0.5812,
-    "wall_right_ratio": 0.4572
-  },
-  "database/image_246.jpg": {
-    "index": 163,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.4453125,
-    "windows": [
-      false,
-      true,
-      false
-    ],
-    "floor_ratio": 0.21649169921875,
-    "wall_left_ratio": 0.6177,
-    "wall_right_ratio": 0.4849
-  },
-  "database/image_247.jpg": {
-    "index": 164,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.4375,
-    "windows": [
-      false,
-      false,
-      true
-    ],
-    "floor_ratio": 0.28253173828125,
-    "wall_left_ratio": 0.1097,
-    "wall_right_ratio": 0.3876
-  },
-  "database/image_248.jpg": {
-    "index": 165,
-    "room_type": "Frontal",
-    "dominant_wall": "Left",
-    "corner_x": 0.5546875,
-    "windows": [
-      false,
-      false,
-      true
-    ],
-    "floor_ratio": 0.2703857421875,
-    "wall_left_ratio": 0.6056,
-    "wall_right_ratio": 0.262
-  },
-  "database/image_249.jpg": {
-    "index": 166,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.4921875,
-    "windows": [
-      true,
-      true,
-      false
-    ],
-    "floor_ratio": 0.1527099609375,
-    "wall_left_ratio": 0.3667,
-    "wall_right_ratio": 0.4023
-  },
-  "database/image_25.jpg": {
-    "index": 167,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5234375,
-    "windows": [
-      false,
-      true,
-      true
-    ],
-    "floor_ratio": 0.2274169921875,
-    "wall_left_ratio": 0.7028,
-    "wall_right_ratio": 0.443
-  },
-  "database/image_250.jpg": {
-    "index": 168,
-    "room_type": "Frontal",
-    "dominant_wall": "Left",
-    "corner_x": 0.6171875,
-    "windows": [
-      false,
-      true,
-      true
-    ],
-    "floor_ratio": 0.2022705078125,
-    "wall_left_ratio": 0.4939,
-    "wall_right_ratio": 0.1697
-  },
-  "database/image_251.jpg": {
-    "index": 169,
-    "room_type": "Frontal",
-    "dominant_wall": "Left",
-    "corner_x": 0.6171875,
-    "windows": [
-      true,
-      true,
-      false
-    ],
-    "floor_ratio": 0.3056640625,
-    "wall_left_ratio": 0.4203,
-    "wall_right_ratio": 0.4658
-  },
-  "database/image_252.jpg": {
-    "index": 170,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.53125,
-    "windows": [
-      true,
-      true,
-      false
-    ],
-    "floor_ratio": 0.18280029296875,
-    "wall_left_ratio": 0.542,
-    "wall_right_ratio": 0.5558
+    "floor_ratio": 0.0009765625,
+    "wall_left_ratio": 0.204,
+    "wall_right_ratio": 0.2371,
+    "vp_x": 0.2824,
+    "vp_y": 0.4892
   },
   "database/image_253.jpg": {
     "index": 171,
-    "room_type": "Frontal",
+    "room_type": "Corner",
     "dominant_wall": "Left",
-    "corner_x": 0.578125,
+    "corner_x": 0.921875,
     "windows": [
-      false,
       true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.079833984375,
-    "wall_left_ratio": 0.5278,
-    "wall_right_ratio": 0.2134
+    "floor_ratio": 0.0025634765625,
+    "wall_left_ratio": 0.2007,
+    "wall_right_ratio": 0.2268,
+    "vp_x": 0.0,
+    "vp_y": 0.5361
   },
   "database/image_254.jpg": {
     "index": 172,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.4765625,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.953125,
     "windows": [
-      false,
       true,
+      false,
       false
     ],
-    "floor_ratio": 0.188232421875,
-    "wall_left_ratio": 0.5532,
-    "wall_right_ratio": 0.7457
+    "floor_ratio": 0.00238037109375,
+    "wall_left_ratio": 0.2006,
+    "wall_right_ratio": 0.2429,
+    "vp_x": 0.2424,
+    "vp_y": 0.4994
   },
   "database/image_255.jpg": {
     "index": 173,
-    "room_type": "Frontal",
+    "room_type": "Corner",
     "dominant_wall": "Left",
-    "corner_x": 0.7109375,
+    "corner_x": 0.828125,
     "windows": [
-      false,
       true,
-      true
+      true,
+      false
     ],
-    "floor_ratio": 0.17071533203125,
-    "wall_left_ratio": 0.5631,
-    "wall_right_ratio": 0.184
+    "floor_ratio": 0.00177001953125,
+    "wall_left_ratio": 0.1901,
+    "wall_right_ratio": 0.2356,
+    "vp_x": 0.8934,
+    "vp_y": 0.4832
   },
   "database/image_256.jpg": {
     "index": 174,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.4609375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.953125,
     "windows": [
-      false,
       true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.29254150390625,
-    "wall_left_ratio": 0.4878,
-    "wall_right_ratio": 0.1052
+    "floor_ratio": 0.001708984375,
+    "wall_left_ratio": 0.2058,
+    "wall_right_ratio": 0.2336,
+    "vp_x": 0.0,
+    "vp_y": 0.5172
   },
   "database/image_257.jpg": {
     "index": 175,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.53125,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.953125,
     "windows": [
       true,
-      false,
+      true,
       false
     ],
-    "floor_ratio": 0.2366943359375,
-    "wall_left_ratio": 0.4821,
-    "wall_right_ratio": 0.6418
+    "floor_ratio": 0.00177001953125,
+    "wall_left_ratio": 0.1991,
+    "wall_right_ratio": 0.2274,
+    "vp_x": 0.1279,
+    "vp_y": 0.4911
   },
   "database/image_258.jpg": {
     "index": 176,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6484375,
     "windows": [
-      false,
       true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.24249267578125,
-    "wall_left_ratio": 0.4355,
-    "wall_right_ratio": 0.1985
+    "floor_ratio": 0.00244140625,
+    "wall_left_ratio": 0.2106,
+    "wall_right_ratio": 0.2339,
+    "vp_x": 0.4856,
+    "vp_y": 0.4497
   },
   "database/image_259.jpg": {
     "index": 177,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5234375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9765625,
     "windows": [
-      false,
       true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.32720947265625,
-    "wall_left_ratio": 0.4948,
-    "wall_right_ratio": 0.2017
+    "floor_ratio": 0.00189208984375,
+    "wall_left_ratio": 0.2008,
+    "wall_right_ratio": 0.2312,
+    "vp_x": 0.4564,
+    "vp_y": 0.2815
   },
   "database/image_26.jpg": {
     "index": 178,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5234375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.65625,
     "windows": [
-      false,
       true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.2208251953125,
-    "wall_left_ratio": 0.7433,
-    "wall_right_ratio": 0.3867
+    "floor_ratio": 0.001708984375,
+    "wall_left_ratio": 0.2006,
+    "wall_right_ratio": 0.2466,
+    "vp_x": 0.1331,
+    "vp_y": 0.4958
   },
   "database/image_260.jpg": {
     "index": 179,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9921875,
     "windows": [
-      false,
       true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.18218994140625,
-    "wall_left_ratio": 0.6338,
-    "wall_right_ratio": 0.2582
+    "floor_ratio": 0.0023193359375,
+    "wall_left_ratio": 0.1998,
+    "wall_right_ratio": 0.2216,
+    "vp_x": 0.8676,
+    "vp_y": 0.6165
   },
   "database/image_27.jpg": {
     "index": 180,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.40625,
-    "windows": [
-      false,
-      true,
-      false
-    ],
-    "floor_ratio": 0.195068359375,
-    "wall_left_ratio": 0.6781,
-    "wall_right_ratio": 0.6554
-  },
-  "database/image_28.jpg": {
-    "index": 181,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5390625,
-    "windows": [
-      false,
-      true,
-      false
-    ],
-    "floor_ratio": 0.1944580078125,
-    "wall_left_ratio": 0.6299,
-    "wall_right_ratio": 0.7142
-  },
-  "database/image_29.jpg": {
-    "index": 182,
-    "room_type": "Frontal",
+    "room_type": "Corner",
     "dominant_wall": "Left",
-    "corner_x": 0.5546875,
+    "corner_x": 0.828125,
     "windows": [
-      false,
+      true,
       false,
       true
     ],
-    "floor_ratio": 0.2998046875,
-    "wall_left_ratio": 0.6311,
-    "wall_right_ratio": 0.313
+    "floor_ratio": 0.00225830078125,
+    "wall_left_ratio": 0.2024,
+    "wall_right_ratio": 0.2277,
+    "vp_x": 0.7418,
+    "vp_y": 0.4945
+  },
+  "database/image_28.jpg": {
+    "index": 181,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9921875,
+    "windows": [
+      true,
+      true,
+      true
+    ],
+    "floor_ratio": 0.00201416015625,
+    "wall_left_ratio": 0.2109,
+    "wall_right_ratio": 0.2264,
+    "vp_x": 0.1927,
+    "vp_y": 0.47
+  },
+  "database/image_29.jpg": {
+    "index": 182,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.65625,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00250244140625,
+    "wall_left_ratio": 0.2037,
+    "wall_right_ratio": 0.2411,
+    "vp_x": 0.8352,
+    "vp_y": 0.4996
   },
   "database/image_3.jpg": {
     "index": 183,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5234375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.828125,
     "windows": [
       true,
       false,
       false
     ],
-    "floor_ratio": 0.2315673828125,
-    "wall_left_ratio": 0.4386,
-    "wall_right_ratio": 0.4584
+    "floor_ratio": 0.00140380859375,
+    "wall_left_ratio": 0.1885,
+    "wall_right_ratio": 0.2367,
+    "vp_x": 0.7245,
+    "vp_y": 0.5181
   },
   "database/image_30.jpg": {
     "index": 184,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.421875,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6640625,
     "windows": [
-      false,
+      true,
       false,
       false
     ],
-    "floor_ratio": 0.25390625,
-    "wall_left_ratio": 0.4369,
-    "wall_right_ratio": 0.6533
+    "floor_ratio": 0.001953125,
+    "wall_left_ratio": 0.2175,
+    "wall_right_ratio": 0.2472,
+    "vp_x": 0.2459,
+    "vp_y": 0.483
   },
   "database/image_31.jpg": {
     "index": 185,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.953125,
     "windows": [
-      false,
       true,
+      false,
       false
     ],
-    "floor_ratio": 0.24737548828125,
-    "wall_left_ratio": 0.6838,
-    "wall_right_ratio": 0.5183
+    "floor_ratio": 0.00189208984375,
+    "wall_left_ratio": 0.2096,
+    "wall_right_ratio": 0.2367,
+    "vp_x": 0.6543,
+    "vp_y": 0.2603
   },
   "database/image_32.jpg": {
     "index": 186,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.4765625,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.8203125,
     "windows": [
-      false,
       true,
+      false,
       false
     ],
-    "floor_ratio": 0.219970703125,
-    "wall_left_ratio": 0.6379,
-    "wall_right_ratio": 0.4318
+    "floor_ratio": 0.0028076171875,
+    "wall_left_ratio": 0.2135,
+    "wall_right_ratio": 0.2327,
+    "vp_x": 0.2734,
+    "vp_y": 0.0469
   },
   "database/image_33.jpg": {
     "index": 187,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9921875,
     "windows": [
       true,
-      false,
+      true,
       false
     ],
-    "floor_ratio": 0.245849609375,
-    "wall_left_ratio": 0.5519,
-    "wall_right_ratio": 0.5562
+    "floor_ratio": 0.00244140625,
+    "wall_left_ratio": 0.2217,
+    "wall_right_ratio": 0.2292,
+    "vp_x": 0.508,
+    "vp_y": 0.4934
   },
   "database/image_34.jpg": {
     "index": 188,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5078125,
+    "room_type": "Corner",
+    "dominant_wall": "Right",
+    "corner_x": 0.03125,
     "windows": [
       true,
       true,
       false
     ],
-    "floor_ratio": 0.19598388671875,
-    "wall_left_ratio": 0.1879,
-    "wall_right_ratio": 0.5721
+    "floor_ratio": 0.00244140625,
+    "wall_left_ratio": 0.1965,
+    "wall_right_ratio": 0.2222,
+    "vp_x": 1.0,
+    "vp_y": 0.5826
   },
   "database/image_35.jpg": {
     "index": 189,
     "room_type": "Corner",
     "dominant_wall": "Left",
-    "corner_x": 0.5546875,
+    "corner_x": 0.828125,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.26544189453125,
-    "wall_left_ratio": 0.2355,
-    "wall_right_ratio": 0.5184
+    "floor_ratio": 0.00115966796875,
+    "wall_left_ratio": 0.2087,
+    "wall_right_ratio": 0.2404,
+    "vp_x": 0.9823,
+    "vp_y": 0.4876
   },
   "database/image_36.jpg": {
     "index": 190,
-    "room_type": "Frontal",
+    "room_type": "Corner",
     "dominant_wall": "Left",
-    "corner_x": 0.5703125,
+    "corner_x": 0.953125,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.24713134765625,
-    "wall_left_ratio": 0.2338,
-    "wall_right_ratio": 0.5404
+    "floor_ratio": 0.0018310546875,
+    "wall_left_ratio": 0.2098,
+    "wall_right_ratio": 0.229,
+    "vp_x": 0.2875,
+    "vp_y": 0.5221
   },
   "database/image_37.jpg": {
     "index": 191,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.4921875,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.96875,
     "windows": [
-      false,
       true,
+      false,
       false
     ],
-    "floor_ratio": 0.23370361328125,
-    "wall_left_ratio": 0.4879,
-    "wall_right_ratio": 0.4468
+    "floor_ratio": 0.00177001953125,
+    "wall_left_ratio": 0.2023,
+    "wall_right_ratio": 0.2352,
+    "vp_x": 0.5194,
+    "vp_y": 0.5016
   },
   "database/image_38.jpg": {
     "index": 192,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.453125,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.984375,
     "windows": [
-      false,
       true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.1624755859375,
-    "wall_left_ratio": 0.5645,
-    "wall_right_ratio": 0.2583
+    "floor_ratio": 0.00213623046875,
+    "wall_left_ratio": 0.2069,
+    "wall_right_ratio": 0.2244,
+    "vp_x": 0.1163,
+    "vp_y": 0.5153
   },
   "database/image_39.jpg": {
     "index": 193,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.484375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6875,
     "windows": [
+      true,
       false,
-      false,
-      true
+      false
     ],
-    "floor_ratio": 0.2633056640625,
-    "wall_left_ratio": 0.6123,
-    "wall_right_ratio": 0.4423
+    "floor_ratio": 0.001953125,
+    "wall_left_ratio": 0.2151,
+    "wall_right_ratio": 0.235,
+    "vp_x": 0.453,
+    "vp_y": 0.6593
   },
   "database/image_4.jpg": {
     "index": 194,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.515625,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.828125,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.30206298828125,
-    "wall_left_ratio": 0.2869,
-    "wall_right_ratio": 0.5619
+    "floor_ratio": 0.00201416015625,
+    "wall_left_ratio": 0.1968,
+    "wall_right_ratio": 0.2218,
+    "vp_x": 0.2043,
+    "vp_y": 0.1273
   },
   "database/image_40.jpg": {
     "index": 195,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5078125,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.828125,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.27532958984375,
-    "wall_left_ratio": 0.3514,
-    "wall_right_ratio": 0.7277
+    "floor_ratio": 0.00201416015625,
+    "wall_left_ratio": 0.203,
+    "wall_right_ratio": 0.2303,
+    "vp_x": 1.0,
+    "vp_y": 0.477
   },
   "database/image_41.jpg": {
     "index": 196,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.4765625,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.953125,
     "windows": [
-      false,
       true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.24639892578125,
-    "wall_left_ratio": 0.6578,
-    "wall_right_ratio": 0.248
+    "floor_ratio": 0.00189208984375,
+    "wall_left_ratio": 0.1992,
+    "wall_right_ratio": 0.2474,
+    "vp_x": 0.0,
+    "vp_y": 0.5137
   },
   "database/image_42.jpg": {
     "index": 197,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.53125,
-    "windows": [
-      false,
-      true,
-      true
-    ],
-    "floor_ratio": 0.27508544921875,
-    "wall_left_ratio": 0.4974,
-    "wall_right_ratio": 0.3806
-  },
-  "database/image_43.jpg": {
-    "index": 198,
-    "room_type": "Frontal",
+    "room_type": "Corner",
     "dominant_wall": "Left",
-    "corner_x": 0.6171875,
+    "corner_x": 0.921875,
     "windows": [
-      false,
       true,
-      true
-    ],
-    "floor_ratio": 0.2373046875,
-    "wall_left_ratio": 0.6749,
-    "wall_right_ratio": 0.1698
-  },
-  "database/image_44.jpg": {
-    "index": 199,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.4765625,
-    "windows": [
-      false,
       true,
       false
     ],
-    "floor_ratio": 0.2825927734375,
-    "wall_left_ratio": 0.4559,
-    "wall_right_ratio": 0.6151
+    "floor_ratio": 0.001953125,
+    "wall_left_ratio": 0.1818,
+    "wall_right_ratio": 0.2233,
+    "vp_x": 0.8137,
+    "vp_y": 0.5033
+  },
+  "database/image_43.jpg": {
+    "index": 198,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.953125,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.00164794921875,
+    "wall_left_ratio": 0.1879,
+    "wall_right_ratio": 0.2208,
+    "vp_x": 0.0,
+    "vp_y": 0.5263
+  },
+  "database/image_44.jpg": {
+    "index": 199,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6484375,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.00250244140625,
+    "wall_left_ratio": 0.215,
+    "wall_right_ratio": 0.2253,
+    "vp_x": 0.3958,
+    "vp_y": 0.4067
   },
   "database/image_45.jpg": {
     "index": 200,
     "room_type": "Corner",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.453125,
+    "dominant_wall": "Left",
+    "corner_x": 0.984375,
     "windows": [
-      false,
       true,
-      true
+      true,
+      false
     ],
-    "floor_ratio": 0.167724609375,
-    "wall_left_ratio": 0.3505,
-    "wall_right_ratio": 0.245
+    "floor_ratio": 0.00372314453125,
+    "wall_left_ratio": 0.2249,
+    "wall_right_ratio": 0.2239,
+    "vp_x": 0.8849,
+    "vp_y": 0.4988
   },
   "database/image_46.jpg": {
     "index": 201,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5078125,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6640625,
     "windows": [
       true,
       false,
-      true
+      false
     ],
-    "floor_ratio": 0.25115966796875,
-    "wall_left_ratio": 0.451,
-    "wall_right_ratio": 0.41
+    "floor_ratio": 0.0035400390625,
+    "wall_left_ratio": 0.2042,
+    "wall_right_ratio": 0.2498,
+    "vp_x": 0.1268,
+    "vp_y": 0.4588
   },
   "database/image_47.jpg": {
     "index": 202,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5234375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9140625,
     "windows": [
-      false,
       true,
-      true
+      true,
+      false
     ],
-    "floor_ratio": 0.238525390625,
-    "wall_left_ratio": 0.6951,
-    "wall_right_ratio": 0.3365
+    "floor_ratio": 0.0018310546875,
+    "wall_left_ratio": 0.2162,
+    "wall_right_ratio": 0.2406,
+    "vp_x": 0.0,
+    "vp_y": 0.4658
   },
   "database/image_48.jpg": {
     "index": 203,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.4609375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.828125,
     "windows": [
-      false,
       true,
+      false,
       false
     ],
-    "floor_ratio": 0.2843017578125,
-    "wall_left_ratio": 0.4279,
-    "wall_right_ratio": 0.5144
+    "floor_ratio": 0.00146484375,
+    "wall_left_ratio": 0.2004,
+    "wall_right_ratio": 0.2335,
+    "vp_x": 0.1713,
+    "vp_y": 0.4776
   },
   "database/image_49.jpg": {
     "index": 204,
-    "room_type": "Frontal",
+    "room_type": "Corner",
     "dominant_wall": "Left",
-    "corner_x": 0.5546875,
+    "corner_x": 0.96875,
     "windows": [
-      false,
       true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.201171875,
-    "wall_left_ratio": 0.807,
-    "wall_right_ratio": 0.33
+    "floor_ratio": 0.0028076171875,
+    "wall_left_ratio": 0.1891,
+    "wall_right_ratio": 0.2285,
+    "vp_x": 0.0074,
+    "vp_y": 0.5091
   },
   "database/image_5.jpg": {
     "index": 205,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.453125,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.828125,
     "windows": [
-      false,
+      true,
       true,
       false
     ],
-    "floor_ratio": 0.12481689453125,
-    "wall_left_ratio": 0.6456,
-    "wall_right_ratio": 0.6005
+    "floor_ratio": 0.00177001953125,
+    "wall_left_ratio": 0.1962,
+    "wall_right_ratio": 0.2406,
+    "vp_x": 0.5212,
+    "vp_y": 0.5153
   },
   "database/image_50.jpg": {
     "index": 206,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6640625,
     "windows": [
-      false,
+      true,
       true,
       false
     ],
-    "floor_ratio": 0.232666015625,
-    "wall_left_ratio": 0.4268,
-    "wall_right_ratio": 0.7029
+    "floor_ratio": 0.0025634765625,
+    "wall_left_ratio": 0.1992,
+    "wall_right_ratio": 0.2452,
+    "vp_x": 0.6287,
+    "vp_y": 0.539
   },
   "database/image_51.jpg": {
     "index": 207,
     "room_type": "Corner",
-    "dominant_wall": "Right",
-    "corner_x": 0.21875,
+    "dominant_wall": "Left",
+    "corner_x": 0.953125,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.06170654296875,
-    "wall_left_ratio": 0.2219,
-    "wall_right_ratio": 0.536
+    "floor_ratio": 0.00201416015625,
+    "wall_left_ratio": 0.2251,
+    "wall_right_ratio": 0.2372,
+    "vp_x": 0.1101,
+    "vp_y": 0.518
   },
   "database/image_52.JPG": {
     "index": 208,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.4375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9140625,
     "windows": [
-      false,
       true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.24407958984375,
-    "wall_left_ratio": 0.7295,
-    "wall_right_ratio": 0.407
+    "floor_ratio": 0.001708984375,
+    "wall_left_ratio": 0.2168,
+    "wall_right_ratio": 0.2458,
+    "vp_x": 0.5579,
+    "vp_y": 0.2294
   },
   "database/image_53.jpg": {
     "index": 209,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5234375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.65625,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.16278076171875,
-    "wall_left_ratio": 0.4484,
-    "wall_right_ratio": 0.6305
+    "floor_ratio": 0.00244140625,
+    "wall_left_ratio": 0.2094,
+    "wall_right_ratio": 0.2338,
+    "vp_x": 0.5368,
+    "vp_y": 0.3282
   },
   "database/image_54.jpg": {
     "index": 210,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.4296875,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9609375,
     "windows": [
       true,
-      false,
+      true,
       false
     ],
-    "floor_ratio": 0.30596923828125,
-    "wall_left_ratio": 0.2036,
-    "wall_right_ratio": 0.5386
+    "floor_ratio": 0.00152587890625,
+    "wall_left_ratio": 0.2065,
+    "wall_right_ratio": 0.2332,
+    "vp_x": 0.8837,
+    "vp_y": 0.4682
   },
   "database/image_55.jpg": {
     "index": 211,
-    "room_type": "Frontal",
+    "room_type": "Corner",
     "dominant_wall": "Left",
-    "corner_x": 0.578125,
+    "corner_x": 0.6640625,
     "windows": [
-      false,
+      true,
       false,
       false
     ],
-    "floor_ratio": 0.22412109375,
-    "wall_left_ratio": 0.3462,
-    "wall_right_ratio": 0.4559
+    "floor_ratio": 0.00390625,
+    "wall_left_ratio": 0.1969,
+    "wall_right_ratio": 0.2335,
+    "vp_x": 0.0975,
+    "vp_y": 0.5131
   },
   "database/image_56.jpg": {
     "index": 212,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.484375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.953125,
     "windows": [
-      false,
       true,
-      true
+      true,
+      false
     ],
-    "floor_ratio": 0.2481689453125,
-    "wall_left_ratio": 0.4852,
-    "wall_right_ratio": 0.3334
+    "floor_ratio": 0.0020751953125,
+    "wall_left_ratio": 0.2052,
+    "wall_right_ratio": 0.2278,
+    "vp_x": 0.0,
+    "vp_y": 0.5113
   },
   "database/image_57.jpg": {
     "index": 213,
-    "room_type": "Frontal",
+    "room_type": "Corner",
     "dominant_wall": "Left",
-    "corner_x": 0.5703125,
+    "corner_x": 0.921875,
     "windows": [
       true,
       false,
-      false
+      true
     ],
-    "floor_ratio": 0.26171875,
-    "wall_left_ratio": 0.3176,
-    "wall_right_ratio": 0.4592
+    "floor_ratio": 0.0015869140625,
+    "wall_left_ratio": 0.2137,
+    "wall_right_ratio": 0.2286,
+    "vp_x": 0.8608,
+    "vp_y": 0.4824
   },
   "database/image_58.jpg": {
     "index": 214,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.46875,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.90625,
     "windows": [
+      true,
       false,
-      false,
-      true
+      false
     ],
-    "floor_ratio": 0.242431640625,
-    "wall_left_ratio": 0.4907,
-    "wall_right_ratio": 0.2379
+    "floor_ratio": 0.002197265625,
+    "wall_left_ratio": 0.2073,
+    "wall_right_ratio": 0.2479,
+    "vp_x": 0.9482,
+    "vp_y": 0.1096
   },
   "database/image_59.jpg": {
     "index": 215,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.484375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.953125,
     "windows": [
       true,
       true,
-      true
+      false
     ],
-    "floor_ratio": 0.2960205078125,
-    "wall_left_ratio": 0.4103,
-    "wall_right_ratio": 0.4135
+    "floor_ratio": 0.001708984375,
+    "wall_left_ratio": 0.2061,
+    "wall_right_ratio": 0.2305,
+    "vp_x": 0.9491,
+    "vp_y": 0.4955
   },
   "database/image_6.jpg": {
     "index": 216,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.484375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.953125,
     "windows": [
-      false,
       true,
+      false,
       false
     ],
-    "floor_ratio": 0.14581298828125,
-    "wall_left_ratio": 0.6277,
-    "wall_right_ratio": 0.6487
+    "floor_ratio": 0.0018310546875,
+    "wall_left_ratio": 0.1901,
+    "wall_right_ratio": 0.2294,
+    "vp_x": 0.513,
+    "vp_y": 0.4921
   },
   "database/image_60.jpg": {
     "index": 217,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.2578125,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.984375,
     "windows": [
-      false,
       true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.35760498046875,
-    "wall_left_ratio": 0.2908,
-    "wall_right_ratio": 0.4757
+    "floor_ratio": 0.002685546875,
+    "wall_left_ratio": 0.1968,
+    "wall_right_ratio": 0.2244,
+    "vp_x": 0.0522,
+    "vp_y": 0.4739
   },
   "database/image_61.jpg": {
     "index": 218,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.46875,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6640625,
     "windows": [
-      false,
       true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.28094482421875,
-    "wall_left_ratio": 0.5864,
-    "wall_right_ratio": 0.4921
+    "floor_ratio": 0.0029296875,
+    "wall_left_ratio": 0.1877,
+    "wall_right_ratio": 0.2306,
+    "vp_x": 0.7499,
+    "vp_y": 0.4739
   },
   "database/image_62.jpg": {
     "index": 219,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5078125,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.65625,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.26495361328125,
-    "wall_left_ratio": 0.2422,
-    "wall_right_ratio": 0.5859
+    "floor_ratio": 0.00244140625,
+    "wall_left_ratio": 0.1981,
+    "wall_right_ratio": 0.2194,
+    "vp_x": 0.8136,
+    "vp_y": 0.4929
   },
   "database/image_63.jpg": {
     "index": 220,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.4375,
-    "windows": [
-      false,
-      true,
-      true
-    ],
-    "floor_ratio": 0.2657470703125,
-    "wall_left_ratio": 0.5793,
-    "wall_right_ratio": 0.3022
-  },
-  "database/image_64.jpg": {
-    "index": 221,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.515625,
-    "windows": [
-      false,
-      true,
-      false
-    ],
-    "floor_ratio": 0.30023193359375,
-    "wall_left_ratio": 0.5099,
-    "wall_right_ratio": 0.3333
-  },
-  "database/image_65.jpg": {
-    "index": 222,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.453125,
-    "windows": [
-      true,
-      true,
-      false
-    ],
-    "floor_ratio": 0.2344970703125,
-    "wall_left_ratio": 0.2861,
-    "wall_right_ratio": 0.7457
-  },
-  "database/image_66.jpg": {
-    "index": 223,
-    "room_type": "Frontal",
-    "dominant_wall": "Left",
-    "corner_x": 0.5625,
-    "windows": [
-      true,
-      true,
-      false
-    ],
-    "floor_ratio": 0.213623046875,
-    "wall_left_ratio": 0.3182,
-    "wall_right_ratio": 0.6985
-  },
-  "database/image_67.jpg": {
-    "index": 224,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.484375,
-    "windows": [
-      true,
-      true,
-      true
-    ],
-    "floor_ratio": 0.26336669921875,
-    "wall_left_ratio": 0.3427,
-    "wall_right_ratio": 0.4553
-  },
-  "database/image_68.jpg": {
-    "index": 225,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.4765625,
-    "windows": [
-      false,
-      true,
-      true
-    ],
-    "floor_ratio": 0.22796630859375,
-    "wall_left_ratio": 0.6542,
-    "wall_right_ratio": 0.2006
-  },
-  "database/image_69.jpg": {
-    "index": 226,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5,
-    "windows": [
-      true,
-      true,
-      false
-    ],
-    "floor_ratio": 0.2467041015625,
-    "wall_left_ratio": 0.328,
-    "wall_right_ratio": 0.5754
-  },
-  "database/image_7.jpg": {
-    "index": 227,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5390625,
-    "windows": [
-      false,
-      true,
-      true
-    ],
-    "floor_ratio": 0.25262451171875,
-    "wall_left_ratio": 0.6158,
-    "wall_right_ratio": 0.3364
-  },
-  "database/image_70.jpg": {
-    "index": 228,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.4921875,
-    "windows": [
-      false,
-      true,
-      true
-    ],
-    "floor_ratio": 0.2186279296875,
-    "wall_left_ratio": 0.5924,
-    "wall_right_ratio": 0.4575
-  },
-  "database/image_71.jpg": {
-    "index": 229,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.3671875,
-    "windows": [
-      false,
-      true,
-      true
-    ],
-    "floor_ratio": 0.2054443359375,
-    "wall_left_ratio": 0.5125,
-    "wall_right_ratio": 0.4352
-  },
-  "database/image_72.jpeg": {
-    "index": 230,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.53125,
-    "windows": [
-      true,
-      false,
-      false
-    ],
-    "floor_ratio": 0.22393798828125,
-    "wall_left_ratio": 0.4313,
-    "wall_right_ratio": 0.5828
-  },
-  "database/image_73.jpeg": {
-    "index": 231,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.3984375,
-    "windows": [
-      false,
-      true,
-      true
-    ],
-    "floor_ratio": 0.23968505859375,
-    "wall_left_ratio": 0.5602,
-    "wall_right_ratio": 0.5353
-  },
-  "database/image_74.jpg": {
-    "index": 232,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.4609375,
-    "windows": [
-      false,
-      true,
-      false
-    ],
-    "floor_ratio": 0.21624755859375,
-    "wall_left_ratio": 0.3678,
-    "wall_right_ratio": 0.7587
-  },
-  "database/image_75.jpg": {
-    "index": 233,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.4765625,
-    "windows": [
-      false,
-      true,
-      true
-    ],
-    "floor_ratio": 0.23529052734375,
-    "wall_left_ratio": 0.6234,
-    "wall_right_ratio": 0.4207
-  },
-  "database/image_76.jpg": {
-    "index": 234,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5078125,
-    "windows": [
-      false,
-      true,
-      true
-    ],
-    "floor_ratio": 0.2447509765625,
-    "wall_left_ratio": 0.6196,
-    "wall_right_ratio": 0.269
-  },
-  "database/image_77.jpg": {
-    "index": 235,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.4375,
-    "windows": [
-      true,
-      true,
-      false
-    ],
-    "floor_ratio": 0.25103759765625,
-    "wall_left_ratio": 0.4102,
-    "wall_right_ratio": 0.6478
-  },
-  "database/image_78.jpg": {
-    "index": 236,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5,
-    "windows": [
-      false,
-      true,
-      true
-    ],
-    "floor_ratio": 0.1964111328125,
-    "wall_left_ratio": 0.6755,
-    "wall_right_ratio": 0.4646
-  },
-  "database/image_79.jpg": {
-    "index": 237,
-    "room_type": "Frontal",
-    "dominant_wall": "Left",
-    "corner_x": 0.5859375,
-    "windows": [
-      false,
-      true,
-      true
-    ],
-    "floor_ratio": 0.22564697265625,
-    "wall_left_ratio": 0.6941,
-    "wall_right_ratio": 0.2407
-  },
-  "database/image_8.jpg": {
-    "index": 238,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.09375,
-    "windows": [
-      false,
-      false,
-      false
-    ],
-    "floor_ratio": 0.3192138671875,
-    "wall_left_ratio": 0.1593,
-    "wall_right_ratio": 0.5704
-  },
-  "database/image_80.jpg": {
-    "index": 239,
-    "room_type": "Frontal",
-    "dominant_wall": "Left",
-    "corner_x": 0.5625,
-    "windows": [
-      false,
-      true,
-      true
-    ],
-    "floor_ratio": 0.28570556640625,
-    "wall_left_ratio": 0.6714,
-    "wall_right_ratio": 0.4225
-  },
-  "database/image_81.jpg": {
-    "index": 240,
-    "room_type": "Frontal",
-    "dominant_wall": "Left",
-    "corner_x": 0.59375,
-    "windows": [
-      true,
-      false,
-      false
-    ],
-    "floor_ratio": 0.275390625,
-    "wall_left_ratio": 0.6473,
-    "wall_right_ratio": 0.4408
-  },
-  "database/image_82.jpg": {
-    "index": 241,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.484375,
-    "windows": [
-      true,
-      true,
-      false
-    ],
-    "floor_ratio": 0.2515869140625,
-    "wall_left_ratio": 0.462,
-    "wall_right_ratio": 0.7323
-  },
-  "database/image_83.jpg": {
-    "index": 242,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.359375,
-    "windows": [
-      false,
-      true,
-      true
-    ],
-    "floor_ratio": 0.2445068359375,
-    "wall_left_ratio": 0.4388,
-    "wall_right_ratio": 0.4823
-  },
-  "database/image_84.jpg": {
-    "index": 243,
-    "room_type": "Frontal",
-    "dominant_wall": "Left",
-    "corner_x": 0.6015625,
-    "windows": [
-      true,
-      true,
-      false
-    ],
-    "floor_ratio": 0.21087646484375,
-    "wall_left_ratio": 0.6136,
-    "wall_right_ratio": 0.6268
-  },
-  "database/image_85.jpg": {
-    "index": 244,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.4765625,
-    "windows": [
-      false,
-      true,
-      true
-    ],
-    "floor_ratio": 0.3109130859375,
-    "wall_left_ratio": 0.4904,
-    "wall_right_ratio": 0.0509
-  },
-  "database/image_86.jpg": {
-    "index": 245,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.4453125,
-    "windows": [
-      true,
-      false,
-      false
-    ],
-    "floor_ratio": 0.2823486328125,
-    "wall_left_ratio": 0.3148,
-    "wall_right_ratio": 0.5808
-  },
-  "database/image_87.jpeg": {
-    "index": 246,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.4765625,
-    "windows": [
-      false,
-      true,
-      false
-    ],
-    "floor_ratio": 0.20947265625,
-    "wall_left_ratio": 0.4728,
-    "wall_right_ratio": 0.6755
-  },
-  "database/image_88.jpg": {
-    "index": 247,
-    "room_type": "Frontal",
+    "room_type": "Corner",
     "dominant_wall": "Left",
     "corner_x": 0.6484375,
     "windows": [
-      false,
       true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.26043701171875,
-    "wall_left_ratio": 0.525,
-    "wall_right_ratio": 0.4114
+    "floor_ratio": 0.0028076171875,
+    "wall_left_ratio": 0.1973,
+    "wall_right_ratio": 0.2472,
+    "vp_x": 0.8272,
+    "vp_y": 0.4911
+  },
+  "database/image_64.jpg": {
+    "index": 221,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.96875,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.00262451171875,
+    "wall_left_ratio": 0.2028,
+    "wall_right_ratio": 0.2313,
+    "vp_x": 0.6724,
+    "vp_y": 0.5362
+  },
+  "database/image_65.jpg": {
+    "index": 222,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.828125,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00225830078125,
+    "wall_left_ratio": 0.2009,
+    "wall_right_ratio": 0.2314,
+    "vp_x": 1.0,
+    "vp_y": 0.4618
+  },
+  "database/image_66.jpg": {
+    "index": 223,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9921875,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00238037109375,
+    "wall_left_ratio": 0.2252,
+    "wall_right_ratio": 0.2418,
+    "vp_x": 1.0,
+    "vp_y": 0.4959
+  },
+  "database/image_67.jpg": {
+    "index": 224,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6640625,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.00250244140625,
+    "wall_left_ratio": 0.1965,
+    "wall_right_ratio": 0.2456,
+    "vp_x": 1.0,
+    "vp_y": 0.465
+  },
+  "database/image_68.jpg": {
+    "index": 225,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.671875,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.0030517578125,
+    "wall_left_ratio": 0.207,
+    "wall_right_ratio": 0.2351,
+    "vp_x": 0.0072,
+    "vp_y": 0.4987
+  },
+  "database/image_69.jpg": {
+    "index": 226,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.921875,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.0010986328125,
+    "wall_left_ratio": 0.2081,
+    "wall_right_ratio": 0.2407,
+    "vp_x": 0.2169,
+    "vp_y": 0.4807
+  },
+  "database/image_7.jpg": {
+    "index": 227,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.8203125,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.001953125,
+    "wall_left_ratio": 0.2053,
+    "wall_right_ratio": 0.2396,
+    "vp_x": 0.5424,
+    "vp_y": 0.6322
+  },
+  "database/image_70.jpg": {
+    "index": 228,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9609375,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00164794921875,
+    "wall_left_ratio": 0.2047,
+    "wall_right_ratio": 0.228,
+    "vp_x": 1.0,
+    "vp_y": 0.8147
+  },
+  "database/image_71.jpg": {
+    "index": 229,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.96875,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00360107421875,
+    "wall_left_ratio": 0.1919,
+    "wall_right_ratio": 0.2358,
+    "vp_x": 0.5235,
+    "vp_y": 0.4637
+  },
+  "database/image_72.jpeg": {
+    "index": 230,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.65625,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00238037109375,
+    "wall_left_ratio": 0.2102,
+    "wall_right_ratio": 0.2423,
+    "vp_x": 1.0,
+    "vp_y": 0.4886
+  },
+  "database/image_73.jpeg": {
+    "index": 231,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.953125,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.002197265625,
+    "wall_left_ratio": 0.2003,
+    "wall_right_ratio": 0.229,
+    "vp_x": 0.0,
+    "vp_y": 0.5012
+  },
+  "database/image_74.jpg": {
+    "index": 232,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6484375,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.0028076171875,
+    "wall_left_ratio": 0.2024,
+    "wall_right_ratio": 0.2344,
+    "vp_x": 0.3165,
+    "vp_y": 0.5085
+  },
+  "database/image_75.jpg": {
+    "index": 233,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.9765625,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00250244140625,
+    "wall_left_ratio": 0.2094,
+    "wall_right_ratio": 0.2363,
+    "vp_x": 0.0,
+    "vp_y": 0.4812
+  },
+  "database/image_76.jpg": {
+    "index": 234,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.65625,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.001953125,
+    "wall_left_ratio": 0.2037,
+    "wall_right_ratio": 0.2383,
+    "vp_x": 0.0482,
+    "vp_y": 0.508
+  },
+  "database/image_77.jpg": {
+    "index": 235,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.65625,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00335693359375,
+    "wall_left_ratio": 0.2081,
+    "wall_right_ratio": 0.2329,
+    "vp_x": 0.4417,
+    "vp_y": 0.2947
+  },
+  "database/image_78.jpg": {
+    "index": 236,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6484375,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.0020751953125,
+    "wall_left_ratio": 0.1932,
+    "wall_right_ratio": 0.2354,
+    "vp_x": 0.0,
+    "vp_y": 0.4919
+  },
+  "database/image_79.jpg": {
+    "index": 237,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.953125,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00177001953125,
+    "wall_left_ratio": 0.2119,
+    "wall_right_ratio": 0.2225,
+    "vp_x": 0.8991,
+    "vp_y": 0.5039
+  },
+  "database/image_8.jpg": {
+    "index": 238,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.96875,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00213623046875,
+    "wall_left_ratio": 0.1992,
+    "wall_right_ratio": 0.2324,
+    "vp_x": 1.0,
+    "vp_y": 0.5004
+  },
+  "database/image_80.jpg": {
+    "index": 239,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6484375,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00213623046875,
+    "wall_left_ratio": 0.2053,
+    "wall_right_ratio": 0.2308,
+    "vp_x": 0.7651,
+    "vp_y": 0.474
+  },
+  "database/image_81.jpg": {
+    "index": 240,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.953125,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00177001953125,
+    "wall_left_ratio": 0.2008,
+    "wall_right_ratio": 0.2239,
+    "vp_x": 0.0,
+    "vp_y": 1.0
+  },
+  "database/image_82.jpg": {
+    "index": 241,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.828125,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.0023193359375,
+    "wall_left_ratio": 0.2233,
+    "wall_right_ratio": 0.2255,
+    "vp_x": 0.3962,
+    "vp_y": 0.251
+  },
+  "database/image_83.jpg": {
+    "index": 242,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6640625,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.00250244140625,
+    "wall_left_ratio": 0.1945,
+    "wall_right_ratio": 0.2368,
+    "vp_x": 0.7736,
+    "vp_y": 0.462
+  },
+  "database/image_84.jpg": {
+    "index": 243,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.921875,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00164794921875,
+    "wall_left_ratio": 0.2003,
+    "wall_right_ratio": 0.2407,
+    "vp_x": 0.6852,
+    "vp_y": 0.7144
+  },
+  "database/image_85.jpg": {
+    "index": 244,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6484375,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.002685546875,
+    "wall_left_ratio": 0.2009,
+    "wall_right_ratio": 0.2362,
+    "vp_x": 0.1268,
+    "vp_y": 0.5239
+  },
+  "database/image_86.jpg": {
+    "index": 245,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6484375,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00274658203125,
+    "wall_left_ratio": 0.2192,
+    "wall_right_ratio": 0.2327,
+    "vp_x": 0.9312,
+    "vp_y": 0.4736
+  },
+  "database/image_87.jpeg": {
+    "index": 246,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6640625,
+    "windows": [
+      true,
+      false,
+      false
+    ],
+    "floor_ratio": 0.00244140625,
+    "wall_left_ratio": 0.2123,
+    "wall_right_ratio": 0.2424,
+    "vp_x": 0.4771,
+    "vp_y": 0.5018
+  },
+  "database/image_88.jpg": {
+    "index": 247,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6640625,
+    "windows": [
+      true,
+      true,
+      false
+    ],
+    "floor_ratio": 0.00323486328125,
+    "wall_left_ratio": 0.2054,
+    "wall_right_ratio": 0.2325,
+    "vp_x": 0.0,
+    "vp_y": 0.5019
   },
   "database/image_89.jpg": {
     "index": 248,
-    "room_type": "Frontal",
+    "room_type": "Corner",
     "dominant_wall": "Left",
-    "corner_x": 0.5703125,
+    "corner_x": 0.9609375,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.17657470703125,
-    "wall_left_ratio": 0.5261,
-    "wall_right_ratio": 0.6456
+    "floor_ratio": 0.00140380859375,
+    "wall_left_ratio": 0.2003,
+    "wall_right_ratio": 0.2526,
+    "vp_x": 1.0,
+    "vp_y": 0.4928
   },
   "database/image_9.jpg": {
     "index": 249,
-    "room_type": "Frontal",
+    "room_type": "Corner",
     "dominant_wall": "Left",
-    "corner_x": 0.6171875,
+    "corner_x": 0.96875,
     "windows": [
       true,
       false,
-      true
+      false
     ],
-    "floor_ratio": 0.32244873046875,
-    "wall_left_ratio": 0.3337,
-    "wall_right_ratio": 0.2379
+    "floor_ratio": 0.0028076171875,
+    "wall_left_ratio": 0.1876,
+    "wall_right_ratio": 0.2333,
+    "vp_x": 0.9353,
+    "vp_y": 0.4613
   },
   "database/image_90.jpg": {
     "index": 250,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.4140625,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.96875,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.192626953125,
-    "wall_left_ratio": 0.4064,
-    "wall_right_ratio": 0.7458
+    "floor_ratio": 0.00189208984375,
+    "wall_left_ratio": 0.2028,
+    "wall_right_ratio": 0.2321,
+    "vp_x": 0.1484,
+    "vp_y": 0.4709
   },
   "database/image_91.jpg": {
     "index": 251,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.4296875,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.953125,
     "windows": [
-      false,
       true,
-      true
+      true,
+      false
     ],
-    "floor_ratio": 0.1876220703125,
-    "wall_left_ratio": 0.5568,
-    "wall_right_ratio": 0.5253
+    "floor_ratio": 0.002197265625,
+    "wall_left_ratio": 0.1997,
+    "wall_right_ratio": 0.2272,
+    "vp_x": 0.0,
+    "vp_y": 0.4973
   },
   "database/image_92.jpg": {
     "index": 252,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.46875,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.8203125,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.212646484375,
-    "wall_left_ratio": 0.4564,
-    "wall_right_ratio": 0.5262
+    "floor_ratio": 0.00091552734375,
+    "wall_left_ratio": 0.2057,
+    "wall_right_ratio": 0.2368,
+    "vp_x": 0.4764,
+    "vp_y": 0.6701
   },
   "database/image_93.jpg": {
     "index": 253,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.46875,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.65625,
     "windows": [
-      false,
       true,
-      true
+      false,
+      false
     ],
-    "floor_ratio": 0.23138427734375,
-    "wall_left_ratio": 0.6013,
-    "wall_right_ratio": 0.3105
+    "floor_ratio": 0.001708984375,
+    "wall_left_ratio": 0.193,
+    "wall_right_ratio": 0.2448,
+    "vp_x": 0.0,
+    "vp_y": 0.4937
   },
   "database/image_94.jpg": {
     "index": 254,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.4375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.640625,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.227783203125,
-    "wall_left_ratio": 0.4502,
-    "wall_right_ratio": 0.6862
+    "floor_ratio": 0.0029296875,
+    "wall_left_ratio": 0.2054,
+    "wall_right_ratio": 0.2329,
+    "vp_x": 0.2468,
+    "vp_y": 0.4724
   },
   "database/image_95.jpg": {
     "index": 255,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.4140625,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.671875,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.31549072265625,
-    "wall_left_ratio": 0.1289,
-    "wall_right_ratio": 0.7106
+    "floor_ratio": 0.0032958984375,
+    "wall_left_ratio": 0.2035,
+    "wall_right_ratio": 0.2332,
+    "vp_x": 1.0,
+    "vp_y": 0.4136
   },
   "database/image_96.jpg": {
     "index": 256,
-    "room_type": "Frontal",
-    "dominant_wall": "Right",
-    "corner_x": 0.390625,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.6640625,
     "windows": [
-      false,
       true,
-      true
+      true,
+      false
     ],
-    "floor_ratio": 0.3094482421875,
-    "wall_left_ratio": 0.3372,
-    "wall_right_ratio": 0.3888
+    "floor_ratio": 0.00274658203125,
+    "wall_left_ratio": 0.1925,
+    "wall_right_ratio": 0.2316,
+    "vp_x": 0.8491,
+    "vp_y": 0.489
   },
   "database/image_97.jpg": {
     "index": 257,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.5234375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.65625,
     "windows": [
-      false,
       true,
-      true
+      true,
+      false
     ],
-    "floor_ratio": 0.19378662109375,
-    "wall_left_ratio": 0.7784,
-    "wall_right_ratio": 0.4044
+    "floor_ratio": 0.0018310546875,
+    "wall_left_ratio": 0.1881,
+    "wall_right_ratio": 0.2393,
+    "vp_x": 0.7823,
+    "vp_y": 0.479
   },
   "database/image_98.jpg": {
     "index": 258,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.4609375,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.828125,
     "windows": [
       true,
-      true,
+      false,
       false
     ],
-    "floor_ratio": 0.29345703125,
-    "wall_left_ratio": 0.225,
-    "wall_right_ratio": 0.5652
+    "floor_ratio": 0.002197265625,
+    "wall_left_ratio": 0.2031,
+    "wall_right_ratio": 0.2311,
+    "vp_x": 0.1516,
+    "vp_y": 0.4976
   },
   "database/image_99.jpg": {
     "index": 259,
-    "room_type": "Frontal",
-    "dominant_wall": "Symmetric",
-    "corner_x": 0.515625,
+    "room_type": "Corner",
+    "dominant_wall": "Left",
+    "corner_x": 0.984375,
     "windows": [
-      false,
       true,
-      false
+      false,
+      true
     ],
-    "floor_ratio": 0.285888671875,
-    "wall_left_ratio": 0.3151,
-    "wall_right_ratio": 0.1044
+    "floor_ratio": 0.00286865234375,
+    "wall_left_ratio": 0.2107,
+    "wall_right_ratio": 0.2411,
+    "vp_x": 0.5032,
+    "vp_y": 0.5013
   }
 }
