@@ -509,10 +509,7 @@ async def search_similar(image: UploadFile = File(...), top_k: int = 5):
         depth_sim = compute_depth_similarity(q_depth, _db_depth_maps[idx])
         area_penalty = abs(data["floor_ratio"] - q_ratio)
 
-        # Wall layout similarity (camera angle matching)
-        c_wall_left = data.get("wall_left_ratio", 0.0)
-        c_wall_right = data.get("wall_right_ratio", 0.0)
-        wall_sim = 1.0 - (abs(q_wall_left - c_wall_left) + abs(q_wall_right - c_wall_right)) / 2.0
+        # wall_sim removed — camera angle fully covered by vp_sim (VP is more precise)
 
         # Vanishing Point similarity (NEW!)
         c_vp_x = data.get("vp_x", 0.5)
@@ -538,11 +535,10 @@ async def search_similar(image: UploadFile = File(...), top_k: int = 5):
             # One or both have no windows → neutral
             win_pos_sim = 0.5
 
-        final_score = (floor_iou 
+        final_score = (floor_iou * 0.5
                       + (ceiling_iou * 0.3) 
                       + (depth_sim * 0.5) 
-                      + (wall_sim * 0.4) 
-                      + (vp_sim * 0.7)
+                      + (vp_sim * 0.9)
                       + (scale_sim * 0.4)
                       + (win_pos_sim * 0.5)
                       - (area_penalty * 0.5) 

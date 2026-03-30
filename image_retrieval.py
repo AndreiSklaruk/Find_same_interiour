@@ -682,10 +682,7 @@ def search_similar(query_image_path, top_k=5):
         # 4. Совпадение глубины (NCC)
         depth_sim = compute_depth_similarity(q_depth, db_depth_maps[idx])
         
-        # 5. Wall layout similarity
-        c_wall_left = data.get("wall_left_ratio", 0.0)
-        c_wall_right = data.get("wall_right_ratio", 0.0)
-        wall_sim = 1.0 - (abs(q_wall_left - c_wall_left) + abs(q_wall_right - c_wall_right)) / 2.0
+        # wall_sim removed — camera angle fully covered by vp_sim (VP is more precise)
 
         # 6. Vanishing Point similarity (NEW!)
         c_vp_x = data.get("vp_x", 0.5)
@@ -699,11 +696,10 @@ def search_similar(query_image_path, top_k=5):
         # 7. Финальный балл
         area_penalty = abs(data["floor_ratio"] - q_ratio)
 
-        final_score = (floor_iou 
+        final_score = (floor_iou * 0.5
                       + (ceiling_iou * 0.3) 
                       + (depth_sim * 0.3) 
-                      + (wall_sim * 0.4) 
-                      + (vp_sim * 0.5)       # ← NEW: Vanishing Point
+                      + (vp_sim * 0.9)
                       - (area_penalty * 0.5) 
                       - (collision_percent * 2.0))
         
